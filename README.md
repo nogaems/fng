@@ -1,2 +1,2 @@
 # fng
-Fantasy Name Generator (all scripts were taken from http://www.fantasynamegenerators.com/)
+Fantasy Name Generator (all scripts were taken from [this site](http://www.fantasynamegenerators.com/))
