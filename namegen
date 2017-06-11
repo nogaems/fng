@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+# -*- mode: python-mode;
+# coding: utf-8
+import os
+import argparse
+import pprint
+import readline
+
+generators = [name.split('.')[0] for name in os.listdir(
+    'generators') if os.path.isfile('generators/' + name) and
+    not name.startswith('_')]
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-l', '--list',
+                    help='List available generators', action="store_true")
+parser.add_argument('-t', '--type',
+                    help='Type of generator', action='store')
+parser.add_argument('--var', help='A variable that can be be requested by generator',
+                    action='store')
+parser.add_argument('-n', '--num',
+                    help='Number of names', action='store')
+args = parser.parse_args()
+
+if args.list:
+    pprint.pprint(sorted(generators), compact=True, indent=1)
+    exit(0)
+if args.type:
+    if args.type not in generators:
+        print('Generator {} does not exists!'.format(args.type))
+        exit(1)
+    if args.var:
+        var = args.var
+    else:
+        var = ''
+    if args.num:
+        try:
+            num = int(args.num)
+            if num <= 0:
+                raise ValueError
+        except ValueError as e:
+            print("'num' should be positive 'int'")
+            exit(1)
+    else:
+        num = 1
+    code = 'from generators.{} import {};values = list({}.nameGen({}))'.format(
+        args.type, args.type,
+        args.type, var
+    )
+    result = []
+    for _ in range((num - 1) // 10 + 1):
+        exec(code)
+        result += values.copy()
+    print(result[:num])
+    exit(0)
+parser.print_usage()
