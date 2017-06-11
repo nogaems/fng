@@ -1,0 +1,50 @@
+__all__ = ['belarusianNames']
+
+# Don't look below, you will not understand this Python code :) I don't.
+
+from js2py.pyjs import *
+# setting scope
+var = Scope( JS_BUILTINS )
+set_global_object(var)
+
+# Code follows:
+var.registers(['nameGen'])
+@Js
+def PyJsHoisted_nameGen_(type, this, arguments, var=var):
+    var = Scope({'arguments':arguments, 'this':this, 'type':type}, var)
+    var.registers(['nm1', 'nm4', 'type', 'nm3', 'tp', 'nm2', 'result'])
+    var.put('nm1', Js([Js('Žmitrok'), Js('Žyhimont'), Js('Adam'), Js('Alaksandr'), Js('Alaksiej'), Js('Aleš'), Js('Aleh'), Js('Alhierd'), Js('Alizar'), Js('Aloiza'), Js('Alyaksandr'), Js('Alyaksey'), Js('Ambros'), Js('Anatol'), Js('Andrey'), Js('Anton'), Js('Arkadzey'), Js('Artsyom'), Js('Bagumil'), Js('Bahdan'), Js('Bahuslaŭ'), Js('Barys'), Js('Bazyl'), Js('Bračyslaǔ'), Js('Branislaŭ'), Js('Branislaǔ'), Js('Budzimir'), Js('Chaslaŭ'), Js('Dabramil'), Js('Danila'), Js('Daniley'), Js('Danyl'), Js('Davyd'), Js('Dzmitry'), Js('Francišak'), Js('Frantsishak'), Js('Habrush'), Js('Halšan'), Js('Harasim'), Js('Hienad1'), Js('Hieorhi'), Js('Hilar'), Js('Hipalit'), Js('Hleb'), Js('Hryharey'), Js('Ihar'), Js('Ihnat'), Js('Illya'), Js('Iosif'), Js('Ivan'), Js('Iziasaǔ'), Js('Jaǔchim'), Js('Jaǔhien'), Js('Jahaila'), Js('Jakaǔ'), Js('Jan'), Js('Janka'), Js('Jaraslaŭ'), Js('Jury'), Js('Juryj'), Js('Kastuš'), Js('Kazimir'), Js('Keistur'), Js('Khrystafor'), Js('Kipryjan'), Js('Kirill'), Js('Kirlya'), Js('Kiryla'), Js('Kryshtop'), Js('Ksaver'), Js('Laǔren'), Js('Ladzimir'), Js('Lazar'), Js('Leǔ'), Js('Leanid'), Js('Lianid'), Js('Lukhym'), Js('Lyavon'), Js('Lyutsyjan'), Js('Lyutsyyan'), Js('Makar'), Js('Maksim'), Js('Martsin'), Js('Matviy'), Js('Michaš'), Js('Michail'), Js('Mikalaj'), Js('Mikhail'), Js('Mikhal'), Js('Mikhalay'), Js('Mikhayla'), Js('Mikita'), Js('Mikola'), Js('Milaslaŭ'), Js('Miraslaŭ'), Js('Miron'), Js('Mitrafan'), Js('Mitrypan'), Js('Mstsislaŭ'), Js('Nil'), Js('Nykyfor'), Js('Paval'), Js('Pavel'), Js('Petruso'), Js('Pilip'), Js('Pilipey'), Js('Piotr'), Js('Prakop'), Js('Prokip'), Js('Pyatro'), Js('Pyotra'), Js('Radaslaǔ'), Js('Radzim'), Js('Radzislaŭ'), Js('Rahvalod'), Js('Rastsislaŭ'), Js('Ruslan'), Js('Ryhor'), Js('Samul'), Js('Savastsyan'), Js('Savel'), Js('Sciapan'), Js('Siarhiej'), Js('Slavamir'), Js('Stafan'), Js('Stanislaŭ'), Js('Stanislaǔ'), Js('Stefan'), Js('Svidryhaila'), Js('Svyataslaŭ'), Js('Syarhey'), Js('Symon'), Js('Tamash'), Js('Taras'), Js('Todar'), Js('Tsikhamir'), Js('Tsimon'), Js('Tsypryjan'), Js('Tsypryyan'), Js('Uladzimier'), Js('Uladzimir'), Js('Uladzislaŭ'), Js('Usiaslaǔ'), Js('Usievalad'), Js('Vaclaǔ'), Js('Valadar'), Js('Valentyn'), Js('Valyantsin'), Js('Varfalomey'), Js('Vasil'), Js('Vasilya'), Js('Viačaslaǔ'), Js('Viktar'), Js('Vincuk'), Js('Vitaǔt'), Js('Vitali'), Js('Yakiv'), Js('Yakub'), Js('Yan'), Js('Yaramir'), Js('Yaraslaŭ'), Js('Yazep'), Js('Yullyan'), Js('Yuray'), Js('Yurey'), Js('Yury'), Js('Zair'), Js('Zasim'), Js('Zianon'), Js('Zmitser')]))
+    var.put('nm2', Js([Js('Adarka'), Js('Adelyayda'), Js('Ahata'), Js('Ahnesya'), Js('Aksana'), Js('Aksenya'), Js('Ala'), Js('Aleksandra'), Js('Alena'), Js('Alyaksandra'), Js('Alzhbeta'), Js('Anastasia'), Js('Anastasiya'), Js('Anna'), Js('Arkadzya'), Js('Arshula'), Js('Aryna'), Js('Bahumila'), Js('Bahuslava'), Js('Balaslava'), Js('Bračyslava'), Js('Branislava'), Js('Bratsyslava'), Js('Chaslava'), Js('Dabramila'), Js('Daminika'), Js('Darja'), Js('Darya'), Js('Euphrosyne'), Js('Fanya'), Js('Frantsishka'), Js('Habrusya'), Js('Halina'), Js('Hanna'), Js('Hela'), Js('Iryna'), Js('Iziasava'), Js('Izyaslava'), Js('Kalina'), Js('Karalina'), Js('Katsyaryna'), Js('Kazimira'), Js('Khryshtsina'), Js('Klaŭdzya'), Js('Kulina'), Js('Laŭra'), Js('Laŭrela'), Js('Larysa'), Js('Lydia'), Js('Lyubava'), Js('Lyudmila'), Js('Lyutsyna'), Js('Magdusya'), Js('Mahareta'), Js('Malanya'), Js('Marja'), Js('Marta'), Js('Marya'), Js('Maryja'), Js('Maryya'), Js('Matruna'), Js('Mikhalina'), Js('Milalslava'), Js('Miraslava'), Js('Nadzeya'), Js('Nastassya'), Js('Natallya'), Js('Odarka'), Js('Paŭla'), Js('Paŭlina'), Js('Palaha'), Js('Paraska'), Js('Pradslava'), Js('Rada'), Js('Radaslava'), Js('Radzislava'), Js('Rahnieda'), Js('Raina'), Js('Razala'), Js('Renya'), Js('Ruzha'), Js('Ruzhana'), Js('Slavamira'), Js('Sophia'), Js('Stanislava'), Js('Stefanija'), Js('Tadora'), Js('Taresya'), Js('Tatsyana'), Js('Uladzimira'), Js('Uladzislava'), Js('Ullyana'), Js('Usiaslava'), Js('Usiavalada'), Js('Valancina'), Js('Valantyna'), Js('Valera'), Js('Valyantsina'), Js('Vasilina'), Js('Vera'), Js('Veranika'), Js('Viačaslava'), Js('Vitala'), Js('Volha'), Js('Yanina'), Js('Yuliya'), Js('Yustyna'), Js('Zdzislava'), Js('Zora'), Js('Zvenislava')]))
+    var.put('nm3', Js([Js('Šakvin'), Js('Šaus'), Js('Šavel'), Js('Šavzin'), Js('Šerech'), Js('Šukieloyts'), Js('Šupa'), Js('Žaboraǔ'), Js('Žylinski'), Js('Abecedarski'), Js('Adamovič'), Js('Aleksandrovič'), Js('Aleksiutovič'), Js('Aničenka'), Js('Astroǔski'), Js('Azhur'), Js('Baǔharyn'), Js('Baǔharynovič'), Js('Bahdanovič'), Js('Bahuševič'), Js('Baraǔkin'), Js('Baradulin'), Js('Bazarevič'), Js('Bič'), Js('Biadula'), Js('Biarizkin'), Js('Bohšsa'), Js('Borushko'), Js('Bulachaum'), Js('Cieraškovič'), Js('Cierashkovich'), Js('Doǔnar'), Js('Harecki'), Js('Harun'), Js('Hierasimovič'), Js('Hilevič'), Js('Hrybanač'), Js('Hryc'), Js('Hryckievič'), Js('Hryniavicki'), Js('Husoǔski'), Js('Ihnatoǔski'), Js('Ipataǔ'), Js('Jaǔmienaǔ'), Js('Jahoraǔ'), Js('Janučkievič'), Js('Jaraslavič'), Js('Jelizarjeǔ'), Js('Jermalovič'), Js('Jucho'), Js('Kalinoǔski'), Js('Kamienski'), Js('Karski'), Js('Kaspiarovič'), Js('Kavalenak'), Js('Kazloǔski'), Js('Kipel'), Js('Kiseleǔ'), Js('Kolas'), Js('Konan'), Js('Kopysski'), Js('Kraǔčanka'), Js('Kryčceǔski'), Js('Kryžanoušski'), Js('Kupala'), Js('Kupava'), Js('Labyncaǔ'), Js('Lastoǔsk'), Js('Lecka'), Js('Litvak'), Js('Lojka'), Js('Lučanok'), Js('Luckievič'), Js('Lukašuk'), Js('Lyakh'), Js('Lysenko'), Js('Mašseraǔ'), Js('Maldzis'), Js('Maračkin'), Js('Marcinkievič'), Js('Mikalajšanka'), Js('Motyl'), Js('Navumčyk'), Js('Novik'), Js('Paškievič'), Js('Platonaǔ'), Js('Praškovič'), Js('Rahojša'), Js('Rahula'), Js('Rasolka'), Js('Rusak'), Js('Sambuk'), Js('Sapieha'), Js('Siaredzič'), Js('Siarhiejeǔ'), Js('Skaryna'), Js('Starčanka'), Js('Statkievič'), Js('Sviontak'), Js('Taraškievič'), Js('Tarasaǔ'), Js('Tkačoǔ'), Js('Trusaǔ'), Js('Tryhybovič'), Js('Tumash'), Js('Ulicionak'), Js('Vakhromeyev'), Js('Vasilenak'), Js('Viarcinski'), Js('Volacič'), Js('Yakovenko'), Js('Yaroš'), Js('Yuko'), Js('Zablocki')]))
+    var.put('nm4', Js([Js('Šakvina'), Js('Šaus'), Js('Šavel'), Js('Šavzina'), Js('Šerech'), Js('Šukieloyts'), Js('Šupa'), Js('Žaborava'), Js('Žylinskaja'), Js('Abecedarskaja'), Js('Adamovič'), Js('Aleksandrovič'), Js('Aleksiutovič'), Js('Aničenka'), Js('Astroǔskaja'), Js('Azhur'), Js('Baǔharyna'), Js('Baǔharynovič'), Js('Bahdanovič'), Js('Bahuševič'), Js('Baraǔkina'), Js('Baradulina'), Js('Bazarevič'), Js('Bič'), Js('Biadula'), Js('Biarizkina'), Js('Bohšsa'), Js('Borushko'), Js('Bulachaum'), Js('Bykava'), Js('Cieraškovič'), Js('Cierashkovich'), Js('Doǔnar'), Js('Harecki'), Js('Harun'), Js('Hierasimovič'), Js('Hilevič'), Js('Hrybanava'), Js('Hryc'), Js('Hryckievič'), Js('Hryniavicki'), Js('Husoǔskaja'), Js('Ihnatoǔskaja'), Js('Ipatava'), Js('Jaǔmienava'), Js('Jahorava'), Js('Jaraslavič'), Js('Jelizarjeva'), Js('Jermalovič'), Js('Jucho'), Js('Kalinoǔskaja'), Js('Kamienskaja'), Js('Karskaja'), Js('Kaspiarovič'), Js('Kavalenak'), Js('Kazloǔskaja'), Js('Kipel'), Js('Kiseleǔ'), Js('Kisialova'), Js('Kolas'), Js('Konan'), Js('Kopysski'), Js('Kraǔčanka'), Js('Kryčceǔskaja'), Js('Kryžanoǔskaja'), Js('Kupala'), Js('Kupava'), Js('Labyncava'), Js('Lastoǔskaja'), Js('Lecka'), Js('Litvak'), Js('Lojka'), Js('Lučanok'), Js('Luckievič'), Js('Lukašuk'), Js('Lyakh'), Js('Lysenko'), Js('Mašerava'), Js('Maldzis'), Js('Maračkina'), Js('Marcinkievič'), Js('Mikalajšanka'), Js('Motyl'), Js('Navumčyk'), Js('Novik'), Js('Paškievič'), Js('Parchomienka'), Js('Platonava'), Js('Praškovič'), Js('Rahojša'), Js('Rahula'), Js('Rasolka'), Js('Rusak'), Js('Sambuk'), Js('Sapieha'), Js('Siaredzič'), Js('Siarhiejeva'), Js('Skaryna'), Js('Staniuta'), Js('Starčanka'), Js('Statkievič'), Js('Sviontak'), Js('Taraškievič'), Js('Tarasava'), Js('Tkačova'), Js('Trusava'), Js('Tryhybovič'), Js('Tumash'), Js('Ulicionak'), Js('Vakhromeyev'), Js('Vasilenak'), Js('Viarcinskaja'), Js('Volacič'), Js('Yakovenko'), Js('Yanushkievich'), Js('Yaroš'), Js('Yuko'), Js('Zablocki')]))
+    var.put('tp', var.get('type'))
+    var.put('result', Js([]))
+    #for JS loop
+    var.put('i', Js(0.0))
+    while (var.get('i')<Js(10.0)):
+        try:
+            if PyJsStrictEq(var.get('tp'),Js(1.0)):
+                var.put('rnd', ((var.get('Math').callprop('random')*var.get('nm2').get('length'))|Js(0.0)))
+                var.put('rnd2', ((var.get('Math').callprop('random')*var.get('nm4').get('length'))|Js(0.0)))
+                var.put('names', ((var.get('nm2').get(var.get('rnd'))+Js(' '))+var.get('nm4').get(var.get('rnd2'))))
+                var.get('nm2').callprop('splice', var.get('rnd'), Js(1.0))
+                var.get('nm4').callprop('splice', var.get('rnd2'), Js(1.0))
+            else:
+                var.put('rnd', ((var.get('Math').callprop('random')*var.get('nm1').get('length'))|Js(0.0)))
+                var.put('rnd2', ((var.get('Math').callprop('random')*var.get('nm3').get('length'))|Js(0.0)))
+                var.put('names', ((var.get('nm1').get(var.get('rnd'))+Js(' '))+var.get('nm3').get(var.get('rnd2'))))
+                var.get('nm1').callprop('splice', var.get('rnd'), Js(1.0))
+                var.get('nm3').callprop('splice', var.get('rnd2'), Js(1.0))
+            var.get('result').callprop('push', var.get('names'))
+        finally:
+                (var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1))
+    pass
+    return var.get('result')
+PyJsHoisted_nameGen_.func_name = 'nameGen'
+var.put('nameGen', PyJsHoisted_nameGen_)
+pass
+pass
+
+
+# Add lib to the module scope
+belarusianNames = var.to_python()

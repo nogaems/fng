@@ -1,0 +1,58 @@
+function nameGen(type){
+	var tp = type;
+	var nm1 = ["Almighty","Blessed","Celestial","Dear","Dearest","Divine","Eternal","Exalted","Glorious","Gracious","Hallowed","Heavenly","Holy","Illustrious","Immortal","Infinite","Magnificent","Most esteemed","Most merciful","My","Our","Revered","Sacred"];
+	var nm2 = ["Mother","Father","God","Mother","Father","God","master","spirit"];
+	var nm3 = ["beacon in the dark","beacon in the heavens","beacon of my life","brightest light in the skies","bringer of all that's good","creator of all life","creator of all that's good","creator of heaven and Earth","custodian of life","divine light of the heavens","eternal beacon of hope","eternal light in the darkness","eternal light of life","eternal praise upon you","eternal soul in the heavens","ever-living creator","glorious light of my life","glory be to you","guardian of souls","hallowed be your name","hallowed maker of the universe","infinite light of the world","keeper of souls","light of our lives","merciful creator","my deliverer","my guardian","my keeper","my keeper and guardian","my redeemer","my refuge and salvation","my shepherd","my true salvation","praised be your name","protector of life","protector of souls","redeemer of souls","ruler in the heavens","ruler in the skies","ruler of heaven and Earth"];
+	var nm4 = ["I ask of you in my burdened hour","I ask of you in your name","I ask of you with a troubled heart","I beg of you to hear my voice","I beg you to hear my prayer","I come to you in my time of need","I come to you in my times of trouble","I come to you with a heavy heart","I humbly come to you with a troubled heart","I need you in my troubled hour","I need you now in my time of need","grant me your audience","hear me now in my desperate hour","hear my despaired prayer","hear my prayer in my troubled hour","hear my voice in my time of need","hear your humble servant","in my time of need I come to you","listen to my humble prayer","overhear my desperate prayer","please grant me your audience","with troubled heart I come to you","witness me in my time of need","your humble servant calls to you","your humble servant requires your aid"];
+	var nm5 = ["Cleanse my heart","Cleanse my mind","Cleanse my soul","Cleanse my spirit","Grant me a sign","Grant me courage","Grant me strength","Grant me wisdom","Grant me your presence","Guide me","Guide my hand","Guide my heart","Guide my mind","Guide my soul","Illuminate me","Illuminate me with your light","Illuminate me with your soul","Kindle my inner fire","Lead me","Lead me by my hand","Renew my courage","Renew my strength","Renew my wisdom","Show me mercy","Show me the way","Sustain me","Sustain me with your power","Sustain me with your spirit","Touch my soul","Touch my spirit","Watch over me"];
+	var nm6 = ["may","might"];
+	var nm7 = ["ache no longer","be alleviated of my anguish","be delivered from evil","be filled with joy","be lost no longer","be relieved of my pain","be strong once more","conquer your foes","exchange my sadness for joy","find my path","go forth in your name","guide others in your name","illuminate the darkness","lift my burdens","lighten my encumbrance","live in peace","make the right choice","overcome my grief","overcome my obstacles","proclaim your praise","repel the evil forces","save my eternal soul","save others","shed my hardships","show the world your greatness","slay my enemies","soothe my inner turmoil","step out of the shadows","strengthen my resolve","vanquish my demons"];
+	var nm8 = ["ask","beg","request","seek","plead"];
+	var nm9 = ["as your devout follower","as your faithful child","as your humble servant","completely at your mercy","in your almighty name","in your divine presence","in your eternal light","in your eternal presence","in your hallowed name","in your most holy name","on both my knees","with a sincere heart","with absolute devotion","with open arms","with true devotion"];
+	var nm10 = ["all-powerful god","almighty spirit","bountiful spirit","brightest light","bringer of life","bringer of light","creator of all","creator of the universe","divine creator","divine shepherd","eternal flame","eternal guardian","eternal holiness","eternal keeper","eternal light","fire in our souls","flame in our souls","giver of life","giver of love","god in the heavens","god of gods","infinite light","light in the heavens","most merciful god","righteous creator"];
+	var nm11 = ["Absolve","Anoint","Bless","Empower","Exalt","Favor","Glorify","Grace","Honor","Provide","Strengthen","Support","Sustain"];
+	var nm12 = ["almighty","divine","eternal","glorious","gracious","hallowed","heavenly","holy","illustrious","infinite","sacred"];
+	var nm13 = ["favor","flame","grace","kindness","light","love","mercy","soul","warmth","wisdom"];
+	
+	var nm14 = ["I come before you to confess me sins","I come to you to confess my sins","I come to you with a remorseful heart","I have a confession to make for I have sinned","I have sinned in a moment of weakness","I lost your light and stepped into darkness","I need to relieve my heart of darkness","I strayed from the path and stepped into darkness","I strayed from your path","I wandered from your path and come to confess my sins","I wish to confess my mistakes","ashamed I admit that I have sinned","temptation took hold of me in a moment of weakness","with a heavy heart I come to you","with guilty heart I come to you"];
+	var nm15 = ["Absolve me","Forgive me","Have mercy on me","I deserted you","I don't know what come over me","I failed you","I fell from the path","I had a terrible lapse in judgment","I made a mistake","I was blinded","I was feebleminded","I was foolish","I was stupid","I went astray","I'm so sorry","I'm sorry","I've let you down","My apologies","My mind was weak","My sincerest apologies"];
+	var nm16 = ["I accepted a bribe in a moment of greed and weakness","I brawled in an intoxicated moment of total weakness","I broke a promise I should've kept","I craved wealth and let greed get the better of me","I cursed with your name in a moment of sorrow","I cursed your name in a moment of anger","I desired more power to change the world","I did not love others as you do","I did not read your scriptures on the most holy day","I did not spread your word as well as I could","I have not loved you with all my heart","I let drink take over my mind","I made a vulgar joke at the expense of another","I neglected to congregate with the saints","I passed judgment where it wasn't my right to do so","I played with temptation and paid the price","I pretended not to know you when I was under pressure","I put my job before you","I slept through a sermon after a sleepless night","I spoke ill of a fellow devout follower","I spoke ill of my own parents","I spread a rumor at the expense of another","I succumbed to earthly desires","I took part in a game of chance with money I should've saved","I took what isn't mine","I was angry at you and your ways","I was led to believe there was another god besides yourself","I was tempted by the flesh of another","I withheld part of the truth when asked for it","my anger led me to seek my own justice","my anger turned to an uncontrollable rage","my annoyances led to a rivalry based on anger","my envy led me to take that which doesn't belong to me","my greed led me to embezzle money for my family's sake","my laziness led me to skip a day's worth of work","my lust got the better of me in a moment of weakness","my passion led me to ignore those I loved","my pride led me to attack another in a moment of of weakness","my pride led me to disobey my own parents","my pride led me to lie"];
+	var nm17 = ["Absolve me of my sins","Clear my soul of darkness","Forgive me for my flaws","Forgive me for my mistakes","Grant me your forgiveness","I accept your punishment","I am truly sorry","I beg your forgiveness","I seek redemption","I wish to repent","Liberate me of my darkness","Liberate me of my sins","Purge me of sin","Relieve me of my sins","Wipe away my sins"];
+	var nm18 = ["I won't fail you again","absolve me of these demons","allow me to mend my ways","allow me to prove myself once more","brighten the darkness in my soul","bring light to my darkened soul","cure me of my flaws","deliver me from evil","give me a second chance","grant me a chance to restore my faith","grant me another chance","have mercy on my soul","heal me of these self inflicted wounds","relieve me of my demons","unburden me of this pain"];
+	var nm19 = ["Allow me to repent","Amend my darkened soul","Cast your judgment","Chasten me for my sins","Discipline me as you see fit","I accept my deserved punishment","I accept your chosen verdict","I accept your retribution","I await your conviction","I put my fate in your hands","Pass judgment upon me","Pass your judgment","Punish me as you see fit","Sanction me for my sins","Show me mercy"];
+	var nm20 = ["can make amends for my mistakes","can return to the path of righteousness","can strengthen my resolve","can walk the right path once again","may bask in your glory anew","may be rid of this guilt and live life afresh","may delight in your presence without guilt","may delight in your will","may feel the warmth of your light once more","may feel your divine power anew","may live in your glory afresh","may live my life the right way again","may once again walk beneath your light","may relish in your eternal grace once more","may savor your eternal soul once more","may spread your glory to others","may start afresh in your divine grace","may strengthen my soul to ward of evil anew","may take comfort in your eternal light","may walk in your steps once more"];
+
+	var rnd = Math.random() * nm1.length | 0;
+	var rnd2 = Math.random() * nm2.length | 0;
+	var rnd3 = Math.random() * nm3.length | 0;
+	if(tp === 1){
+		var rnd4 = Math.random() * nm4.length | 0;
+		var rnd5 = Math.random() * nm5.length | 0;
+		var rnd6 = Math.random() * nm6.length | 0;
+		var rnd7 = Math.random() * nm7.length | 0;
+		var rnd8 = Math.random() * nm8.length | 0;
+		var rnd9 = Math.random() * nm9.length | 0;
+		var rnd10 = Math.random() * nm10.length | 0;
+		var rnd11 = Math.random() * nm11.length | 0;
+		var rnd12 = Math.random() * nm12.length | 0;
+		var rnd13 = Math.random() * nm13.length | 0;
+		var name = nm1[rnd] + " " + nm2[rnd2] + ", " + nm3[rnd3] + ", " + nm4[rnd4] + ". " + nm5[rnd5] + " so I " + nm6[rnd6] + " " + nm7[rnd7] + ". I " + nm8[rnd8] + " this of you " + nm9[rnd9] + ", o " + nm10[rnd10] + ". " + nm11[rnd11] + " me with your " + nm12[rnd12] + " " + nm13[rnd13] + ".";
+	}else{
+		var rnd4 = Math.random() * nm14.length | 0;
+		var rnd5 = Math.random() * nm15.length | 0;
+		var rnd6 = Math.random() * nm16.length | 0;
+		var rnd7 = Math.random() * nm17.length | 0;
+		var rnd8 = Math.random() * nm18.length | 0;
+		var rnd9 = Math.random() * nm19.length | 0;
+		var rnd10 = Math.random() * nm20.length | 0;
+		var name = nm1[rnd] + " " + nm2[rnd2] + ", " + nm3[rnd3] + ", " + nm14[rnd4] + ". " + nm15[rnd5] + ", " + nm16[rnd6] + ". " + nm17[rnd7] + ", " + nm18[rnd8] + ". " + nm19[rnd9] + " so I " + nm20[rnd10] + ".";
+	}
+	if(document.getElementById("result")){
+		document.getElementById("placeholder").removeChild(document.getElementById("result"));
+	}
+	
+	var element = document.createElement("div");
+	element.setAttribute("id", "result");
+	element.appendChild(document.createTextNode(name));
+	document.getElementById("placeholder").appendChild(element);
+}	

@@ -1,0 +1,42 @@
+__all__ = ['bearPets']
+
+# Don't look below, you will not understand this Python code :) I don't.
+
+from js2py.pyjs import *
+# setting scope
+var = Scope( JS_BUILTINS )
+set_global_object(var)
+
+# Code follows:
+var.registers(['nm1', 'nm2', 'nameGen'])
+@Js
+def PyJsHoisted_nameGen_(type, this, arguments, var=var):
+    var = Scope({'arguments':arguments, 'this':this, 'type':type}, var)
+    var.registers(['tp', 'result', 'type'])
+    var.put('tp', var.get('type'))
+    var.put('result', Js([]))
+    #for JS loop
+    var.put('i', Js(0.0))
+    while (var.get('i')<Js(10.0)):
+        try:
+            if PyJsStrictEq(var.get('tp'),Js(1.0)):
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm2').get('length'))))
+                var.put('names', var.get('nm2').get(var.get('rnd')))
+            else:
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm1').get('length'))))
+                var.put('names', var.get('nm1').get(var.get('rnd')))
+            var.get('result').callprop('push', var.get('names'))
+        finally:
+                (var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1))
+    pass
+    return var.get('result')
+PyJsHoisted_nameGen_.func_name = 'nameGen'
+var.put('nameGen', PyJsHoisted_nameGen_)
+var.put('nm1', Js([Js('Adalbero'), Js('Aloysius'), Js('Andy'), Js('Anuk'), Js('Arcadius'), Js('Arcot'), Js('Arkadios'), Js('Arktos'), Js('Armel'), Js('Arnbjorn'), Js('Arshag'), Js('Art'), Js('Artair'), Js('Artan'), Js('Arther'), Js('Arthfael'), Js('Arthmael'), Js('Arthog'), Js('Arthur'), Js('Artie'), Js('Artis'), Js('Arto'), Js('Artorius'), Js('Arttu'), Js('Artturi'), Js('Artur'), Js('Arturas'), Js('Arturo'), Js('Arty'), Js('Asbjorn'), Js('Attie'), Js('Atty'), Js('Auberon'), Js('Avery'), Js('Avonaco'), Js('Bam-Bam'), Js('Bamard'), Js('Bamey'), Js('Banjo'), Js('Barbell'), Js('Barend'), Js('Barley'), Js('Barnard'), Js('Barnea'), Js('Barney'), Js('Barnie'), Js('Barny'), Js('Barret'), Js('Barrett'), Js('Barry'), Js('Basil'), Js('Bastian'), Js('Beamard'), Js('Bear'), Js('Bearnabus'), Js('Bearnard'), Js('Behrend'), Js('Beirne'), Js('Bemelle'), Js('Bemot'), Js('Benard'), Js('Benat'), Js('Benno'), Js('Benton'), Js('Beorn'), Js('Beornheard'), Js('Beowulf'), Js('Ber'), Js('Beraco'), Js('Beranger'), Js('Beregiso'), Js('Berend'), Js('Berengar'), Js('Berengarius'), Js('Berenger'), Js('Berenguer'), Js('Berernger'), Js('Beringar'), Js('Beringarius'), Js('Berinhard'), Js('Bern'), Js('Bernaldino'), Js('Bernard'), Js('Bernardino'), Js('Bernardo'), Js('Bernardus'), Js('Bernardyn'), Js('Bernat'), Js('Bernd'), Js('Berndt'), Js('Berne'), Js('Berney'), Js('Bernfried'), Js('Bernhard'), Js('Bernhardt'), Js('Bernie'), Js('Bernon'), Js('Bernt'), Js('Bernward'), Js('Berny'), Js('Bero'), Js('Billie'), Js('Biorna'), Js('Bitsy'), Js('Bjarne'), Js('Bjarni'), Js('Bjoern'), Js('Bjorn'), Js('Bjornar'), Js('Bjorne'), Js('Blubber'), Js('Bobby'), Js('Bobo'), Js('Boo Boo'), Js('Boots'), Js('Burnard'), Js('Burney'), Js('Buttercup'), Js('Buttons'), Js('Calico'), Js('Capps'), Js('Caramel'), Js('Casey'), Js('Cedar'), Js('Chancie'), Js('Charlie'), Js('Chip'), Js('Coco'), Js('Cornelius'), Js('Dopey'), Js('Dov'), Js('Drogo'), Js('Dubi'), Js('Dusty'), Js('Eden'), Js('Edun'), Js('Einstein'), Js('Enyeto'), Js('Esben'), Js('Espen'), Js('Finley'), Js('Flubber'), Js('Fluffy'), Js('Frankie'), Js('Freddy'), Js('Garcia'), Js('Geoff'), Js('George'), Js('Georgie'), Js('Georgy'), Js('Gerben'), Js('Grumpy'), Js('Gunnbjorn'), Js('Hallbjorn'), Js('Hamilton'), Js('Happy'), Js('Hartz'), Js('Hausu'), Js('Henri'), Js('Henry'), Js('Hohots'), Js('Honaw'), Js('Honon'), Js('Horace'), Js('Howell'), Js('Humbert'), Js('Humphrey'), Js('Huslu'), Js('Jack'), Js('James'), Js('Jammy'), Js('Jasper'), Js('Joachim'), Js('Johnny'), Js('Jonsey'), Js('Jupiter'), Js('Justin'), Js('Kolbjorn'), Js('Kuma'), Js('Kuruk'), Js('Lannie'), Js('Lennie'), Js('Liwanu'), Js('Louis'), Js('Machk'), Js('Mahon'), Js('Marley'), Js('Marshmellow'), Js('Mathe'), Js('Mathuin'), Js('Matoskah'), Js('Mecho'), Js('Mitch'), Js('Molimo'), Js('Myr'), Js('Nanook'), Js('Nanuk'), Js('Nibbs'), Js('Niels'), Js('Norman'), Js('Notaku'), Js("O'Berry"), Js('Oberon'), Js('Oliver'), Js('Omar'), Js('Orion'), Js('Ors'), Js('Orsen'), Js('Orsin'), Js('Orsino'), Js('Orso'), Js('Orson'), Js('Osbeorn'), Js('Osborn'), Js('Osborne'), Js('Osbourne'), Js('Oscar'), Js('Otso'), Js('Ottille'), Js('Otto'), Js('Ourson'), Js('Panda'), Js('Pandy'), Js('Pat'), Js('Patches'), Js('Pebbles'), Js('Ponty'), Js('Popey'), Js('Preben'), Js('Pridbjorn'), Js('Quadro'), Js('Rio'), Js('Robbie'), Js('Rocky'), Js('Rolly'), Js('Rum'), Js('Sabby'), Js('Sammy'), Js('Scoot'), Js('Scottie'), Js('Sebastian'), Js('Sewati'), Js('Shorty'), Js('Sigbjorn'), Js('Skittle'), Js('Sleepy'), Js('Smokey'), Js('Snowball'), Js('Sonny'), Js('Sooty'), Js('Spencer'), Js('Spike'), Js('Spiky'), Js('Stormy'), Js('Sugar'), Js('Sunshine'), Js('Svenbjorn'), Js('Tabby'), Js('Talbert'), Js('Tarben'), Js('Tatty'), Js('Teddy'), Js('Telutci'), Js('Theo'), Js('Theodore'), Js('Thorben'), Js('Thorbern'), Js('Thorbjorn'), Js('Thorburn'), Js('Thorton'), Js('Tickles'), Js('Tims'), Js('Toby'), Js('Toffy'), Js('Tony'), Js('Torben'), Js('Torbern'), Js('Torbernus'), Js('Torbjorn'), Js('Tottles'), Js('Trevor'), Js('Trump'), Js('Tubby'), Js('Tuketu'), Js('Turi'), Js('Twinky'), Js('Ucumari'), Js('Uffo'), Js('Uigbiorn'), Js('Urs'), Js('Ursino'), Js('Ursinus'), Js('Ursus'), Js('Uther'), Js('Uzumati'), Js('Vemados'), Js('Vermundo'), Js('Vernados'), Js('Victor'), Js('Waffle'), Js('Walter'), Js('Willie'), Js('Winston'), Js('Woodsy'), Js('Wyborn'), Js('Yana'), Js('Zed')]))
+var.put('nm2', Js([Js('Abby'), Js('Angel'), Js('Apple-pie'), Js('Arcadia'), Js('Ariane'), Js('Armelle'), Js('Arthuretta'), Js('Arthurine'), Js('Arti'), Js('Averi'), Js('Averie'), Js('Avery'), Js('Ayla'), Js('Banjo'), Js('Barrett'), Js('Barretta'), Js('Beatrice'), Js('Bella'), Js('Bemadette'), Js('Bera'), Js('Beratrice'), Js('Berdine'), Js('Berengari'), Js('Berengaria'), Js('Berenice'), Js('Bern'), Js('Bernadea'), Js('Bernadete'), Js('Bernadett'), Js('Bernadette'), Js('Bernadina'), Js('Bernadine'), Js('Bernarda'), Js('Bernarde'), Js('Bernardete'), Js('Bernardetta'), Js('Bernardette'), Js('Bernardina'), Js('Bernardine'), Js('Bernardita'), Js('Berne'), Js('Berneen'), Js('Bernelle'), Js('Bitsy'), Js('Blubber'), Js('Bobo'), Js('Boo Boo'), Js('Boots'), Js('Bubbles'), Js('Buttercup'), Js('Buttons'), Js('Calico'), Js('Calista'), Js('Callista'), Js('Callisto'), Js('Caramel'), Js('Clymene'), Js('Coco'), Js('Dandelion'), Js('Dopey'), Js('Doris'), Js('Dusty'), Js('Eden'), Js('Eferhild'), Js('Eferhilda'), Js('Elizabeth'), Js('Emily'), Js('Fatima'), Js('Flubber'), Js('Fluffy'), Js('Georgy'), Js('Grumpy'), Js('Hagar'), Js('Happy'), Js('Hausu'), Js('Heltu'), Js('Honey'), Js('Irene'), Js('Isobel'), Js('Izzy'), Js('Jammy'), Js('Jane'), Js('Jerica'), Js('Jewel'), Js('Jupiter'), Js('Justine'), Js('Kuma'), Js('Louis'), Js('Louise'), Js('Lusela'), Js('Maggie'), Js('Mahtowa'), Js('Margaret'), Js('Marshmellow'), Js('Mecislava'), Js('Melanie'), Js('Miffy'), Js('Myr'), Js('Nadetta'), Js('Nadette'), Js('Nibbs'), Js('Nita'), Js('Orsa'), Js('Orsaline'), Js('Orse'), Js('Orsel'), Js('Orselina'), Js('Orseline'), Js('Orsina'), Js('Orsola'), Js('Orsolya'), Js('Osha'), Js('Ottilie'), Js('Pam'), Js('Panda'), Js('Pandy'), Js('Pat'), Js('Patches'), Js('Patricia'), Js('Peaches'), Js('Pebbles'), Js('Penny'), Js('Persephone'), Js('Poe'), Js('Polly'), Js('Puddles'), Js('Queenie'), Js('Rio'), Js('Rolly'), Js('Rosie'), Js('Roxie'), Js('Sabby'), Js('Samantha'), Js('Sammie'), Js('Sandra'), Js('Sapata'), Js('Sargie'), Js('Sienna'), Js('Skittle'), Js('Sleepy'), Js('Smokey'), Js('Snowball'), Js('Sugar'), Js('Sunshine'), Js('Susanna'), Js('Susie'), Js('Suzie'), Js('Tabby'), Js('Taffy'), Js('Tatty'), Js('Thorborg'), Js('Tickles'), Js('Toffy'), Js('Torborg'), Js('Tottles'), Js('Tubby'), Js('Twinky'), Js('Ursa'), Js('Ursala'), Js('Ursel'), Js('Ursella'), Js('Ursicina'), Js('Ursina'), Js('Ursine'), Js('Urska'), Js('Ursula'), Js('Ursule'), Js('Ursulina'), Js('Urszula'), Js('Uschi'), Js('Valerie'), Js('Venus'), Js('Veronica'), Js('Versula'), Js('Viola'), Js('Violet'), Js('Violette'), Js('Waffle'), Js('Wilhelmina'), Js('Winifred'), Js('Winnie'), Js('Winona')]))
+pass
+pass
+
+
+# Add lib to the module scope
+bearPets = var.to_python()

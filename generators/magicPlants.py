@@ -1,0 +1,77 @@
+__all__ = ['magicPlants']
+
+# Don't look below, you will not understand this Python code :) I don't.
+
+from js2py.pyjs import *
+# setting scope
+var = Scope( JS_BUILTINS )
+set_global_object(var)
+
+# Code follows:
+var.registers(['nm1', 'nm4', 'nameGen', 'nm5', 'nm8', 'nm3', 'nm7', 'nm2', 'nm6'])
+@Js
+def PyJsHoisted_nameGen_(this, arguments, var=var):
+    var = Scope({'arguments':arguments, 'this':this}, var)
+    var.registers(['result'])
+    var.put('result', Js([]))
+    #for JS loop
+    var.put('i', Js(0.0))
+    while (var.get('i')<Js(10.0)):
+        try:
+            if (var.get('i')<Js(5.0)):
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm1').get('length'))))
+                var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm2').get('length'))))
+                var.put('names', ((var.get('nm1').get(var.get('rnd'))+Js(' '))+var.get('nm2').get(var.get('rnd2'))))
+            else:
+                if (var.get('i')<Js(7.0)):
+                    var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm3').get('length'))))
+                    var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm4').get('length'))))
+                    var.put('rnd3', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm8').get('length'))))
+                    var.put('names', ((var.get('nm3').get(var.get('rnd'))+var.get('nm4').get(var.get('rnd2')))+var.get('nm8').get(var.get('rnd3'))))
+                else:
+                    if (var.get('i')<Js(9.0)):
+                        var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm3').get('length'))))
+                        var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm4').get('length'))))
+                        var.put('rnd3', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm5').get('length'))))
+                        if (var.get('rnd')>Js(9.0)):
+                            while (var.get('rnd3')>Js(9.0)):
+                                var.put('rnd3', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm5').get('length'))))
+                        var.put('rnd4', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm6').get('length'))))
+                        var.put('rnd5', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm8').get('length'))))
+                        var.put('names', ((((var.get('nm3').get(var.get('rnd'))+var.get('nm4').get(var.get('rnd2')))+var.get('nm5').get(var.get('rnd3')))+var.get('nm6').get(var.get('rnd4')))+var.get('nm8').get(var.get('rnd5'))))
+                    else:
+                        var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm3').get('length'))))
+                        var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm4').get('length'))))
+                        var.put('rnd3', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm5').get('length'))))
+                        if (var.get('rnd')>Js(9.0)):
+                            while (var.get('rnd3')>Js(9.0)):
+                                var.put('rnd3', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm5').get('length'))))
+                        var.put('rnd4', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm6').get('length'))))
+                        var.put('rnd5', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm5').get('length'))))
+                        if ((var.get('rnd3')>Js(9.0)) or (var.get('rnd')>Js(9.0))):
+                            while (var.get('rnd5')>Js(9.0)):
+                                var.put('rnd5', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm5').get('length'))))
+                        var.put('rnd6', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm7').get('length'))))
+                        var.put('rnd7', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm8').get('length'))))
+                        var.put('names', ((((((var.get('nm3').get(var.get('rnd'))+var.get('nm4').get(var.get('rnd2')))+var.get('nm5').get(var.get('rnd3')))+var.get('nm6').get(var.get('rnd4')))+var.get('nm5').get(var.get('rnd5')))+var.get('nm7').get(var.get('rnd6')))+var.get('nm8').get(var.get('rnd7'))))
+            var.get('result').callprop('push', var.get('names'))
+        finally:
+                (var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1))
+    pass
+    return var.get('result')
+PyJsHoisted_nameGen_.func_name = 'nameGen'
+var.put('nameGen', PyJsHoisted_nameGen_)
+var.put('nm1', Js([Js('Abyss'), Js('Aching'), Js('Ancestor'), Js('Angel'), Js("Angel's"), Js('Anxious'), Js('Aquatic'), Js('Arching'), Js('Arctic'), Js('Aromatic'), Js('Ash'), Js('Ashen'), Js('Assassin'), Js('Banshee'), Js('Barbed'), Js('Barren'), Js('Bitter'), Js('Black'), Js('Bleak'), Js('Bleeding'), Js('Blessed'), Js('Blight'), Js('Blister'), Js('Blood'), Js('Blue'), Js('Bone'), Js('Boomerang'), Js('Bouncing'), Js('Bright'), Js('Bronze'), Js('Candy'), Js('Canis'), Js('Cave'), Js('Chameleon'), Js('Chilling'), Js('Cliff'), Js('Cold'), Js('Corrupt'), Js('Corrupted'), Js('Corrupting'), Js('Coughing'), Js('Crawling'), Js('Creeping'), Js('Creepy'), Js('Crimson'), Js('Curse'), Js('Dancing'), Js('Dawn'), Js('Daydream'), Js('Dead'), Js('Deadly'), Js('Death'), Js("Death's"), Js('Delicious'), Js('Demon'), Js("Demon's"), Js("Devil's"), Js('Dim'), Js('Dire'), Js('Dragon'), Js("Dragon's"), Js('Dream'), Js('Drifting'), Js('Drowsy'), Js('Dusk'), Js('Dwarf'), Js('Dwarven'), Js('Eagle'), Js('Echo'), Js('Elven'), Js('Emperor'), Js('Fake'), Js('Fanged'), Js('Fatigue'), Js('Fear'), Js('Fearful'), Js('Fever'), Js('Fire'), Js('Fjord'), Js('Flying'), Js('Fragrant'), Js('Frost'), Js('Frozen'), Js('Funeral'), Js('Funky'), Js('Ghost'), Js('Giant'), Js('Glacier'), Js('Glow'), Js('Glowing'), Js('Golden'), Js('Grand'), Js('Grave'), Js('Gray'), Js('Green'), Js('Grim'), Js('Grumpy'), Js('Hammer'), Js('Hanging'), Js('Happy'), Js('Harmless'), Js('Hate'), Js('Heart'), Js("Heart's"), Js('Hidden'), Js('Hollow'), Js('Horned'), Js('Hot'), Js('Hovering'), Js('Humble'), Js('Ice'), Js('Imp'), Js('Imperial'), Js('Infecting'), Js('Inferno'), Js('Invisible'), Js('Island'), Js('Itching'), Js('Jealous'), Js('Jester'), Js('Joyful'), Js("King's"), Js("Knight's"), Js('Lethal'), Js("Life's"), Js('Lion'), Js('Love'), Js('Lunar'), Js("Mage's"), Js('Majestic'), Js('Mammoth'), Js('Marsh'), Js('Master'), Js("Mercy's"), Js('Mimic'), Js('Miracle'), Js('Mock'), Js('Mocking'), Js("Monk's"), Js('Moon'), Js('Mound'), Js('Mountain'), Js('Nasty'), Js('Naughty'), Js('Nervous'), Js('Night'), Js('Nightmare'), Js('Nordic'), Js('Noxious'), Js('Ocean'), Js('Orange'), Js('Orcish'), Js('Ordinary'), Js('Perfumed'), Js('Pest'), Js('Phantom'), Js('Phoenix'), Js('Pink'), Js('Pipe'), Js('Piranha'), Js('Pixy'), Js('Plague'), Js('Pleasant'), Js('Poisonous'), Js('Prancing'), Js('Putrid'), Js('Pygmy'), Js("Queen's"), Js('Quiet'), Js('Rare'), Js('Rash'), Js('Raven'), Js('Red'), Js('Regal'), Js('Restoration'), Js('River'), Js('Rock'), Js('Rotten'), Js('Royal'), Js('Sacred'), Js('Sad'), Js('Salty'), Js('Sanguine'), Js('Savage'), Js('Scented'), Js('Screaming'), Js('Sentient'), Js('Serpent'), Js('Shadow'), Js('Shield'), Js('Shocking'), Js('Shrine'), Js('Shy'), Js('Silent'), Js('Silver'), Js('Skeletal'), Js('Skulking'), Js('Skull'), Js('Sleeping'), Js('Sleepy'), Js('Smelly'), Js('Smooth'), Js('Sneeze'), Js('Sneezing'), Js('Snow'), Js('Solar'), Js('Sore'), Js('Sour'), Js('Spicy'), Js('Spider'), Js('Spiky'), Js('Spirit'), Js('Spitfire'), Js('Star'), Js('Stink'), Js('Stinking'), Js('Sugar'), Js('Sun'), Js('Sunny'), Js('Swamp'), Js('Sweet'), Js('Tall'), Js('Tangle'), Js('Tangled'), Js('Taunting'), Js('Tear'), Js('Tickle'), Js('Tiny'), Js('Toxic'), Js('Tube'), Js('Tundra'), Js('Twilight'), Js('Twin'), Js('Twisted'), Js('Urban'), Js('Venomous'), Js('Vision'), Js('Void'), Js('Volcano'), Js('Walking'), Js('Warm'), Js('Weeping'), Js('Whisper'), Js('White'), Js('Whomping'), Js('Wicked'), Js('Wild'), Js('Wisdom'), Js('Wolf'), Js('Yellow')]))
+var.put('nm2', Js([Js('Aconite'), Js('Ambrosia'), Js('Annie'), Js('Azolla'), Js('Bamboo'), Js('Bean'), Js('Bearberry'), Js('Belladonna'), Js('Berry'), Js('Betty'), Js('Bindweed'), Js('Bite'), Js('Bittercress'), Js('Bittersweet'), Js('Bitterweed'), Js('Blade'), Js('Bloom'), Js('Bower'), Js('Buxus'), Js('Boxwood'), Js('Brier'), Js('Brittlebush'), Js('Broadleaf'), Js('Bush'), Js('Buttons'), Js('Cabbage'), Js('Cane'), Js('Cap'), Js('Clove'), Js('Clover'), Js('Collard'), Js('Colwort'), Js('Coneflower'), Js('Cornel'), Js('Cotton'), Js('Cress'), Js('Daisy'), Js('Deadnettle'), Js('Dewberry'), Js('Dindle'), Js('Dogbane'), Js('Duscle'), Js('Fairymoss'), Js('Felonwood'), Js('Felonwort'), Js('Fennel'), Js('Fern'), Js('Feverfew'), Js('Fieldcress'), Js('Fig'), Js('Flax'), Js('Flower'), Js('Fluxroot'), Js('Fumewort'), Js('Gallberry'), Js('Garget'), Js('Garlic'), Js('Geranium'), Js('Gilliflower'), Js('Ginger'), Js('Goldenglow'), Js('Grapevine'), Js('Grass'), Js('Groundberry'), Js('Gutweed'), Js('Hair'), Js('Haldi'), Js('Harlequin'), Js('Hedge'), Js('Hellebore'), Js('Hemp'), Js('Hibiscus'), Js('Hogweed'), Js('Holly'), Js('Hops'), Js('Horse Nettle'), Js('Houseleek'), Js('Huckleberry'), Js('Ink Plant'), Js('Inkberry'), Js('Itchweed'), Js('Ivy'), Js('Jack-in-the-Bush'), Js('Joy'), Js('Juniper'), Js('Laceflower'), Js('Laurel'), Js('Lavender'), Js('Lilac'), Js('Lily'), Js('Lotus'), Js('Milfoil'), Js('Milkweed'), Js('Mint'), Js('Morel'), Js('Moss'), Js('Mulberry'), Js('Needle'), Js('Nettle'), Js('Nightshade'), Js('Parsley'), Js('Parsnip'), Js('Pea'), Js('Pepper'), Js('Pine'), Js('Plant'), Js('Poinsetta'), Js('Poisonberry'), Js('Poisonflower'), Js('Poke'), Js('Pokeroot'), Js('Pokeweed'), Js('Polkweed'), Js('Poppy'), Js('Pudina'), Js('Ragweed'), Js('Rantipole'), Js('Raspberry'), Js('Ribwort'), Js('Roadweed'), Js('Rock Fern'), Js('Root'), Js('Rose'), Js('Rosemary'), Js('Rye'), Js('Saffron'), Js('Sage'), Js('Sanguinary'), Js('Shadblow'), Js('Shadbush'), Js('Silkweed'), Js('Skunkweed'), Js('Snakeberry'), Js('Snowdrop'), Js('Sorrel'), Js('Spoolwood'), Js('Stammerwort'), Js('Stickweed'), Js('Sugarcane'), Js('Sugarplum'), Js('Sunflower'), Js('Swallow-wort'), Js('Swinies'), Js('Tansy'), Js('Tassel'), Js('Tea'), Js('Thimbleberry'), Js('Thimbleweed'), Js('Thistle'), Js('Thorn'), Js('Thousand-leaf'), Js('Thyme'), Js('Tongue'), Js('Toothwort'), Js('Touch-me-not'), Js('Tulip'), Js('Tulsi'), Js('Vine'), Js('Violet'), Js('Waybread'), Js('Weed'), Js('Wheat'), Js('Wild Rose'), Js('Windroot'), Js('Wineberry'), Js('Winterberry'), Js('Wintercress'), Js('Woodbine'), Js('Wormwood'), Js('Woundwort')]))
+var.put('nm3', Js([Js('a'), Js('e'), Js('i'), Js('o'), Js('u'), Js('a'), Js('e'), Js('i'), Js('o'), Js('u'), Js('ea'), Js('ei'), Js('eo'), Js('ae'), Js('ai'), Js('ia'), Js('io'), Js('ua'), Js('aa'), Js('ee'), Js('oo'), Js('ou'), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js('')]))
+var.put('nm4', Js([Js('b'), Js('c'), Js('d'), Js('f'), Js('g'), Js('h'), Js('k'), Js('l'), Js('m'), Js('n'), Js('p'), Js('r'), Js('s'), Js('t'), Js('v'), Js('w'), Js('x'), Js('y'), Js('z'), Js('bl'), Js('br'), Js('ch'), Js('chr'), Js('cl'), Js('cr'), Js('dl'), Js('dr'), Js('fl'), Js('fr'), Js('fy'), Js('gl'), Js('gr'), Js('kl'), Js('kn'), Js('kr'), Js('ph'), Js('phr'), Js('pl'), Js('pr'), Js('sc'), Js('sh'), Js('shr'), Js('sl'), Js('sm'), Js('sn'), Js('sp'), Js('sr'), Js('str'), Js('th'), Js('thr'), Js('tr'), Js('vl')]))
+var.put('nm5', Js([Js('a'), Js('e'), Js('i'), Js('o'), Js('u'), Js('a'), Js('e'), Js('i'), Js('o'), Js('u'), Js('ea'), Js('ei'), Js('eo'), Js('ae'), Js('ai'), Js('ia'), Js('io'), Js('ua'), Js('aa'), Js('ee'), Js('oo'), Js('ou')]))
+var.put('nm6', Js([Js('b'), Js('c'), Js('d'), Js('f'), Js('g'), Js('h'), Js('j'), Js('k'), Js('l'), Js('m'), Js('n'), Js('p'), Js('q'), Js('r'), Js('s'), Js('t'), Js('v'), Js('w'), Js('x'), Js('y'), Js('z'), Js('b'), Js('c'), Js('d'), Js('f'), Js('g'), Js('h'), Js('j'), Js('k'), Js('l'), Js('m'), Js('n'), Js('p'), Js('q'), Js('r'), Js('s'), Js('t'), Js('v'), Js('w'), Js('x'), Js('y'), Js('z'), Js('bb'), Js('bd'), Js('bg'), Js('bl'), Js('br'), Js('bs'), Js('cc'), Js('ch'), Js('chr'), Js('cl'), Js('cr'), Js('dd'), Js('df'), Js('dg'), Js('dl'), Js('dr'), Js('ds'), Js('dt'), Js('fd'), Js('ff'), Js('fg'), Js('fl'), Js('fm'), Js('fn'), Js('fp'), Js('fr'), Js('fy'), Js('gd'), Js('gg'), Js('ght'), Js('gl'), Js('gr'), Js('gth'), Js('hh'), Js('hl'), Js('hm'), Js('hn'), Js('hs'), Js('ht'), Js('kd'), Js('kk'), Js('kl'), Js('km'), Js('kn'), Js('kr'), Js('lb'), Js('ld'), Js('lf'), Js('lg'), Js('lk'), Js('ll'), Js('lm'), Js('ln'), Js('lp'), Js('ls'), Js('lt'), Js('ly'), Js('mb'), Js('md'), Js('mf'), Js('mk'), Js('ml'), Js('mm'), Js('mn'), Js('mp'), Js('ms'), Js('my'), Js('nc'), Js('nd'), Js('nf'), Js('ng'), Js('nk'), Js('nl'), Js('nm'), Js('nn'), Js('np'), Js('ns'), Js('nt'), Js('ny'), Js('ph'), Js('phr'), Js('pl'), Js('pp'), Js('pr'), Js('ql'), Js('qr'), Js('qs'), Js('rc'), Js('rd'), Js('rf'), Js('rg'), Js('rh'), Js('rk'), Js('rl'), Js('rm'), Js('rn'), Js('rp'), Js('rr'), Js('rs'), Js('rsh'), Js('rt'), Js('rth'), Js('rw'), Js('sb'), Js('sc'), Js('sd'), Js('sf'), Js('sg'), Js('sh'), Js('shr'), Js('sk'), Js('sl'), Js('sm'), Js('sn'), Js('sp'), Js('sr'), Js('ss'), Js('st'), Js('str'), Js('sw'), Js('sy'), Js('th'), Js('thr'), Js('tr'), Js('tt'), Js('vl'), Js('zh'), Js('zl'), Js('zr'), Js('zz')]))
+var.put('nm7', Js([Js('b'), Js('bb'), Js('c'), Js('cc'), Js('d'), Js('dd'), Js('f'), Js('ff'), Js('g'), Js('gg'), Js('h'), Js('j'), Js('k'), Js('kk'), Js('l'), Js('ll'), Js('m'), Js('mm'), Js('n'), Js('nn'), Js('p'), Js('pp'), Js('r'), Js('rr'), Js('s'), Js('ss'), Js('t'), Js('tt'), Js('v'), Js('w'), Js('x'), Js('xx'), Js('y'), Js('z'), Js('zz')]))
+var.put('nm8', Js([Js('ac'), Js('ade'), Js('age'), Js('aire'), Js('aisy'), Js('alda'), Js('amire'), Js('ane'), Js('anium'), Js('anor'), Js('ard'), Js('ary'), Js('asse'), Js('ax'), Js('ead'), Js('eaf'), Js('ebore'), Js('edil'), Js('eed'), Js('eek'), Js('eet'), Js('egon'), Js('el'), Js('elas'), Js('elda'), Js('ender'), Js('equin'), Js('erry'), Js('ess'), Js('et'), Js('etta'), Js('ettle'), Js('etty'), Js('ianna'), Js('ie'), Js('ier'), Js('ies'), Js('ina'), Js('ine'), Js('inque'), Js('ip'), Js('iper'), Js('ire'), Js('irin'), Js('iscus'), Js('ite'), Js('ium'), Js('oil'), Js('ole'), Js('olla'), Js('on'), Js('onna'), Js('ons'), Js('oo'), Js('ood'), Js('oom'), Js('oot'), Js('ore'), Js('orn'), Js('ort'), Js('os'), Js('osie'), Js('oss'), Js('osse'), Js('otus'), Js('ove'), Js('over'), Js('ow'), Js('ower'), Js('uin'), Js('um'), Js('us'), Js('ush')]))
+pass
+pass
+
+
+# Add lib to the module scope
+magicPlants = var.to_python()

@@ -1,0 +1,57 @@
+var nm1 = ["Baked","Barbecued","Basted","Blanched","Braised","Breaded","Brined","Broasted","Cooked","Cured","Deep-Fried","Dried","Dry-Roasted","Engine-Cooked","Fire-Grilled","Fire-Roasted","Fried","Gentle-Fried","Grilled","Infused","Marinated","Oven-Baked","Oven-Grilled","Pan-Fried","Pickled","Poached","Pressure-Cooked","Pressure-Fried","Roasted","Sautéed","Seared","Shallow-Fried","Simmered","Slow-Cooked","Smoked","Steamed","Stewed","Stir-Fried","Stuffed","Tea-Smoked","Tenderized","Thermal-Cooked"];
+var nm2 = ["Almonds & Avocado","Apple & Lavender","Apples & Mustard","Apples & Walnut","Apricot & Basil","Apricots & Honey","Aspargus","Basil & Cinnamon","Basil & Clove","Basil & Lime","Basil & Mint","Beets & Lemon","Beets & Orange","Bittersweet","Black Pepper","Blackberry & Ginger","Blueberry","Blueberry & Mushroom","Butter","Carrot & Corriander","Carrot & Violet","Potatoes &","Rice &","Pasta & ","Carrots & Ginger","Casserole of","Cheese &","Chestnuts &","Chilli","Cinnamon","Cinnamon & Thyme","Cocoa & Mushroom","Coconut","Coconut & Ginger","Confit of","Coriander & Lemon","Cranberry","Creamy","Cucumber &","Cucumber & Lime","Curry of","Dark Ale","Dark Beer","Easter-Style","Egg & Beans","Egg & Beet","Egg & Coconut","Fennel","Fennel & Garlic","Fennel & Lemon","Fennel & Lime","Fennel & Orange","Figs & Olive","Forest","Garlic","Garlic & Ginger","Garlic & Lime","Garlic & Onion","Garlic & Rosemary","Garlic & Tomato","Ginger","Ginger & Honey","Hazelnut","Herbs &","Honey","Honey & Almond","Honey & Nuts","Honey & Thyme","Honey-Coated","Hot & Spicy","Hot & Sweet","Jasmine","Juniper","Lemon","Lemongrass","Light Ale","Light Beer","Lime","Lime & Ginger","Lime-Coated","Mango & Pine","Mint","Mint & Berry","Mint & Mustard","Mint & Orange","Mountain","Mushroom","Mushroom & Apricot","Mushroom & Garlic","Mushroom & Rosemary","Mustard","Mustard & Garlic","Mustard & Rosemary","Mustard & Thyme","Northern-Style","Nuts &","Olive","Olives & Mustard","Onions & Cream","Onions & Tomato","Orange","Orange & Mustard","Orange & Olive","Oregano","Paprika","Parmesan","Parsnip & Pear","Peach & Vinegar","Peanuts &","Peas & Mushroom","Pepper","Pepper & Garlic","Pepper & Lime","Pepper & Mango","Peppermint","Pine","Pineapple","Raspberry & Peanut","Red Whine","Rhubarb","Rosemary","Rosemary & Onion","Saffron","Saffron & Shallot","Salt & Pepper","Salt & Savory","Salted","Salty & Sour","Savory","Sour","Sour & Cream","Souther-Style","Soy","Stew of","Sugar","Sweet & Fresh","Sweet & Savory","Sweet & Spicy","Sweet 'n Sour","Thyme & Parsley","Tomatos &","Truffles &","Vanilla","Vanilla & Mint","Vegetables &","Vinegar","Walnuts &","Wasabi","Watercress","Western-Style","White Wine","Yogurt"];
+var nm3 = ["Aberrant","Abyss","Aether","Arcane","Arctic","Boulder","Canyon","Cave","Chaos","Cloud","Crescent","Crown","Dark","Dream","Ember","Enchanted","Ethereal","Faceless","Falchion","False","Fire","Flame","Fluffy","Fog","Frost","Fruit","Fume","Giant","Glass","Golden","Grand","Grave","Great","Grim","Harmony","Hell","Ice","Infernal","Iron","Lance","Lesser","Light","Lunar","Mammoth","Marsh","Masked","Moon","Moss","Mountain","Night","Nightmare","Phase","Planar","Primal","Pulse","Pygmy","Radiant","Rain","River","Saber","Salt","Scent","Scythe","Shade","Shadow","Silk","Silver","Smoke","Snow","Solar","Spark","Star","Stone","Storm","Sun","Thunder","Timeless","Void","Volcanic"];
+var nm4 = ["Aardvark","Abyssinian","Addax","Affenpinscher","Akbash","Akita","Albatross","Alligator","Alpaca","Anemone Fish","Angelfish","Angora","Anole","Ant","Anteater","Antelope","Aoudad","Ape","Argali","Armadillo","Avocet","Axolot","Baboon","Badger","Balinese","Bandicoot","Barb","Barnacle","Barracuda","Basilisk","Bat","Beagle","Bear","Bearded Dragon","Beaver","Beetle","Bighorn","Binturong","Bird","Bird","Birman","Bison","Bison","Bloodhound","Boa","Boar","Bobcat","Bombay","Bongo","Bonobo","Booby","Borer","Budgerigar","Buffalo","Bull","Bull Terrier","Bulldog","Bullfrog","Bunny","Burmese","Burro","Butterfly","Caiman","Camel","Canary","Capuchin","Capybara","Caracal","Cardinal","Caribou","Cassowary","Cat","Cat","Caterpillar","Catfish","Centipede","Chameleon","Chamois","Cheetah","Cheetah","Chicken","Chihuahua","Chimpanzee","Chimpanzee","Chinchilla","Chinchilla","Chinook","Chipmunk","Cichlid","Civet","Coati","Cockroach","Collie","Colt","Cony","Coral","Cougar","Cow","Coyote","Crab","Crane","Crocodile","Crocodile","Crow","Cuscus","Cuttlefish","Dachshund","Dalmatian","Darter","Deer","Dhole","Dingo","Dingo","Discus","Dodo","Doe","Dog","Dog","Dog","Dolphin","Donkey","Dormouse","Dragonfly","Drever","Dromedary","Duck","Duckbill","Dugong","Dunker","Eagle","Earwig","Echidna","Egret","Eland","Eland","Elephant","Eleuth","Elk","Emu","Emu","Ermine","Ewe","Falcon","Fawn","Ferret","Finch","Firefinch","Fish","Flamingo","Flamingo","Flounder","Fly","Fossa","Fox","Frigatebird","Frog","Fulgorid","Gar","Gazelle","Gecko","Gemsbok","Gerbil","Gharial","Gibbon","Gila monster","Giraffe","Gnu","Goat","Goatfish","Goose","Gopher","Gorilla","Grasshopper","Greyhound","Grizzly bear","Ground hog","Grouse","Guanaco","Guinea Pig","Guinea pig","Guppy","Hamlet","Hamster","Hare","Harrier","Hartebeest","Havanese","Hedgehog","Heron","Himalayan","Hippopotamus","Hog","Hornbill","Hornet","Horse","Hound","Human","Hummingbird","Hyena","Ibex","Ibis","Iguana","Impala","Indri","Insect","Jackal","Jackrabbit","Jaguar","Javanese","Jay","Jellyfish","Jerboa","Kakapo","Kangaroo","Katydid","Kid","Kingfisher","Kinkajou","Kitten","Kiwi","Koala","Koodoo","Kookaburra","Kudu","Labradoodle","Ladybird","Lamb","Lechwe","Lemming","Lemur","Leopard","Liger","Lion","Lionfish","Lizard","Llama","Lobster","Locust","Longclaw","Lovebird","Lynx","Macaw","Magpie","Maltese","Manatee","Mandrill","Mantis","Mare","Markhor","Marmoset","Marmot","Marten","Mastiff","Mastigodryas","Mayfly","Meerkat","Millipede","Mink","Mole","Molly","Mongoose","Mongrel","Monkey","Monkey","Moorhen","Moose","Moth","Mountain goat","Mouse","Mule","Musk deer","Musk-ox","Muskrat","Mustang","Mynah bird","Neanderthal","Newfoundland","Newt","Nightingale","Numbat","Ocelot","Ocelot","Octopus","Oedemera","Okapi","Okapi","Olm","Opossum","Orang-utan","Orangutan","Orca","Oryx","Ostrich","Otter","Owl","Ox","Oyster","Pademelon","Panda","Panther","Parakeet","Parrot","Peacock","Peccary","Pekingese","Pelican","Penguin","Persian","Pheasant","Pig","Pika","Pike","Piranha","Platypus","Pointer","Polar bear","Pony","Poodle","Porcupine","Porpoise","Possum","Prairie dog","Prawn","Pronghorn","Puffin","Puffin","Pug","Puma","Puppy","Quagga","Quail","Quetzal","Quokka","Quoll","Rabbit","Raccoon","Raccoon","Ragdoll","Ram","Rat","Rattlesnake","Raven","Reindeer","Reptile","Retriever","Rhinoceros","Robin","Roebuck","Rottweiler","Salamander","Saola","Scorpion","Seahorse","Seal","Serval","Shark","Sheep","Sheepdog","Shrew","Shrimp","Siamese","Siberian","Silver fox","Skink","Skunk","Sloth","Snail","Snake","Snowshoe","Somali","Spaniel","Spanish Flag","Sparrow","Sparrowhawk","Spider","Sponge","Springbok","Squid","Squirrel","Stallion","Starfish","Starling","Steer","Stingray","Stoat","Stork","Sunfish","Swan","Tamarin","Tang","Tapir","Tarantula","Tarsier","Tayra","Termite","Terrier","Tetra","Tiffany","Tiger","Toad","Tortoise","Toucan","Triggerfish","Tropicbird","Trunkfish","Tuatara","Turkey","Turtle","Uakari","Uguisu","Vicuna","Vulture","Wallaby","Walrus","Walrus","Wapiti","Warthog","Wasp","Waterbuck","Weasel","Weaver","Whale","Whippet","Wildcat","Wildebeest","Wolf","Wolverine","Wombat","Woodchuck","Woodlouse","Woodpecker","Wrasse","Yak","Zebra","Zebu","Zonkey","Zorse"];
+var nm5 = ["Griffin","Cockatrice","Basilisk","Dragonturtle","Wolpertinger","Goldhorn","Jackalope","Kelpie","Bugbear","Roc","Drake","Dragon","Wyvern","Strix","Minotaur","Crocotta","Penghou","Chimera","Pegasus","Unicorn","Manticore","Bunyip","Moon Rabbit","Hydra","Jörmungandr","Mammoth"];
+var nm7 = ["Bombe","Bonbons","Bread","Buns","Cake","Candy","Cheesecake","Cobbler","Cone","Cookies","Crispies","Crumble","Custard","Delight","Doughnut","Fruit Salad","Fruitcake","Fudge","Genoise","Gingerbread","Ice Cream","Ice Lollies","Jam","Jelly","Milk","Molten Cake","Mooncake","Pancakes","Pastry","Pavlova","Pie","Pound Cake","Pud","Pudding","Roll","Snacks","Sorbet","Soufflé","Split","Steamed Pudding","Strudel","Sundae","Surprise","Tart","Tarte Tatin","Toast","Toffee","Trifle","Wafer","Waffles","Whip","Yogurt"];
+
+var nm8 = ["","","","","","","","","","","","","","","","","","","","","","b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z","ch","sh","ph","br","cr","dr","gr","kr","pr","str","vr","wr","","bl","cl","gl","fl","kl","pl","sl"];
+var nm9 = ["a","e","i","o","u"];
+var nm10 = ["sh","ch","ph","cr","dr","gr","str","cl","gl","kl","b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z","bb","cc","dd","gg","kk","ll","mm","nn","pp","rr","ss","tt"];
+var nm11 = ["a","e","i","o","u","ea","eo","ia","io"];
+var nm12 = [" Fruit"," Nut"," Root"," Shoot","baco","bage","bana","bola","bosu","cado","can","ccoli","chee","chini","choke","cket","cona","cory","cot","cress","curi","damia","darin","dilla","dine","dish","dnut","flower","fruit","gette","guaro","gus","jube","kin","kra","ku","lal","lasan","le","lery","lini","lly","lon","loupe","mansi","mato","mber","mbi","mble","me","melo","mia","mmon","mon","mond","mquat","na","nach","nana","nate","nce","nda","ndu","ne","nge","nger","ngo","nip","ntine","nut","paw","paya","pe","per","ple","quat","quila","rac","ragus","rana","rang","rant","ranth","rd","rel","riac","rian","ricot","riman","rin","rind","rine","rlan","ro","rola","rra","rrot","rry","rula","san","shew","snip","tain","tato","taya","te","til","tillo","tine","to","tron","tuce","va","ve","ves","wan","wesh","wi","ya","yote"];
+
+function nameGen(){
+	var br = "";
+	var element = document.createElement("div");
+	$('#placeholder').css('textTransform', 'capitalize');
+	element.setAttribute("id", "result");
+	
+	for(i = 0; i < 10; i++){
+		if(i < 4){
+			rnd = Math.floor(Math.random() * nm1.length);		
+			if(i < 4){
+				rnd2 = Math.floor(Math.random() * nm3.length);	
+				rnd3 = Math.floor(Math.random() * nm4.length);	
+				names = nm1[rnd] + " " + nm3[rnd2] + " " + nm4[rnd3];		
+			}else{
+				rnd3 = Math.floor(Math.random() * nm5.length);
+				names = nm1[rnd] + " " + nm5[rnd3];
+			}
+		}else if(i < 8){
+			rnd = Math.floor(Math.random() * nm7.length);		
+			if(i < 6){
+				rnd2 = Math.floor(Math.random() * nm3.length);	
+				rnd3 = Math.floor(Math.random() * nm2.length);	
+				names = nm3[rnd2] + " " + nm2[rnd3] + " " + nm7[rnd];		
+			}else{
+				rnd3 = Math.floor(Math.random() * nm5.length);
+				names = nm5[rnd3] + " " + nm7[rnd];
+			}
+		}else{
+			rnd = Math.floor(Math.random() * nm8.length);
+			rnd2 = Math.floor(Math.random() * nm9.length);	
+			rnd3 = Math.floor(Math.random() * nm10.length);	
+			rnd4 = Math.floor(Math.random() * nm11.length);	
+			rnd5 = Math.floor(Math.random() * nm12.length);	
+			names = nm8[rnd] + nm9[rnd2] + nm10[rnd3] + nm11[rnd4] + nm12[rnd5] + " " + nm7[rnd2];
+		}
+		br = document.createElement('br');	
+		element.appendChild(document.createTextNode(names));
+		element.appendChild(br);
+	}
+	if(document.getElementById("result")){
+		document.getElementById("placeholder").removeChild(document.getElementById("result"));
+	}		
+	document.getElementById("placeholder").appendChild(element);
+}

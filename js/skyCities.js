@@ -1,0 +1,55 @@
+var nm1 = ["","","","","","b","c","d","dh","f","g","h","l","m","n","ph","s","sh","th","v","w"];
+var nm2 = ["a","e","i","o","u","a","e","o","a","e","i","o","u","a","e","o","ea","ae","ia","ai","eo"];
+var nm3 = ["b","b","f","f","ff","g","g","h","h","j","j","l","l","ll","m","m","mm","n","n","nn","r","r","s","s","ss","th","th","v","v","b","bh","bl","bs","br","f","ff","fl","fr","g","gh","gn","gl","h","hn","hl","hm","j","l","lf","ll","lt","lc","lb","ld","lm","ln","lr","lw","m","mm","mn","mr","n","nn","ns","nth","nt","nm","nf","nph","pr","phr","r","rl","rm","rn","s","sf","sh","sp","st","sw","ss","sn","sm","th","v"];
+var nm4 = ["","","","","","sh","ph","h","l","m","n","r","s","th"];
+
+var br = "";
+
+function nameGen(){	
+
+	var nm7 = ["Aer","Aera","Aere","Aeri","Air","Ar","Aro","Atmo","Avi","Avia","Avis","Azu","Brey","Cele","Celes","Chi","Chinoo","Cir","Circo","Clo","Clod","Clou","Cloud","Cyclo","Empear","Exa","Exalo","Flur","Gal","Gale","Hali","Halo","Huri","Huric","Impe","Imper","Mis","Mur","Oxy","Ozo","Sky","Skye","Son","Sona","Soni","Stra","Tempe","Tempes","Tro","Tropo","Tum","Tumu","Tumul","Ven","Venti","Vol","Vola","Vox","Xy","Zeph","Zephy"];
+	var nm8 = ["polis","more","bay","bell","bury","cairn","call","crest","cross","drift","ham","helm","hold","holde","mere","mire","mond","moor","more","rest","run","wich","star","storm","strand","summit","tide","wallow","ward","watch","well"];
+
+	var nm9 = ["Aera","Aeranas","Aeria","Aeris","Aeros","Ara","Aros","Atmos","Auris","Aurora","Avia","Avian","Avis","Azur","Azura","Azuros","Borealis","Breyze","Celes","Cerul","Cerulea","Cerulis","Cerulle","Cerullis","Chinook","Circos","Cirrus","Clode","Empearal","Ether","Ethis","Ethos","Exalos","Flurris","Gale","Gayle","Halitos","Halitus","Halo","Halos","Helios","Horizon","Huricus","Imperos","Mistral","Mulus","Murmus","Nimbus","Orion","Oxyn","Ozon","Sonas","Sonis","Sono","Sonus","Spheris","Spheros","Stratos","Tempeste","Tempestus","Tropos","Tumul","Tumulus","Ventis","Volance","Volaris","Vox","Voxis","Welkis","Xygen","Zephyr","Zephys","Zures","Zuros"];
+	var nm10 = ["New ","Nova ","","","","","","",""];
+
+	var nm5 = ["Aeranas","Aerene","Aeria","Aeris","Aeros","Aerule","Albatross","Angel","Apex","Apogee","Ataraxia","Ataraxis","Atmos","Aura","Aurora","Avia","Avian","Avis","Azura","Azure","Azuris","Billow","Bliss","Borealis","Buoya","Bustard","Cassowary","Celes","Celeste","Cerulea","Cerulis","Cerulle","Chinook","Cirrostratus","Cirrus","Condor","Crane","Crow","Crown","Cuckoo","Cumulus","Dove","Eagle","Elysium","Empyre","Empyrea","Empyris","Falcon","Flamingo","Gale","Griffin","Gull","Halo","Halos","Harmony","Harpy","Hippogriff","Hummingbird","Imperos","Macaw","Mistral","Mistros","Murmus","Nebula","Nightingale","Nightowl","Obelisk","Owl","Ozone","Peacock","Pegasus","Pelican","Phoenix","Pigeon","Raven","Serenity","Solace","Sonas","Sonus","Sparrow","Spire","Stork","Storm","Stormy","Stratos","Stratus","Swan","Swift","Thunder","Toocan","Tranquility","Tropos","Tumul","Tumulus","Utopia","Valkyrie","Ventis","Vertex","Volance","Volantis","Volar","Volaris","Vortex","Vox","Voxis","Vulture","Windy","Zenith","Zephyr","Zephys","Zion"];
+	$('#placeholder').css('textTransform', 'capitalize');
+	var element = document.createElement("div");
+	element.setAttribute("id", "result");
+	for(i = 0; i < 10; i++){
+		if(i < 4){
+			rnd = Math.floor(Math.random() * nm1.length);
+			rnd2 = Math.floor(Math.random() * nm2.length);
+			rnd3 = Math.floor(Math.random() * nm3.length);
+			rnd4 = Math.floor(Math.random() * nm2.length);
+			rnd5 = Math.floor(Math.random() * nm4.length);
+			if(i < 3){
+				names = "The city of " + nm1[rnd] + nm2[rnd2] + nm3[rnd3] + nm2[rnd4] + nm4[rnd5];
+			}else if(i < 6){
+				rnd8 = Math.floor(Math.random() * nm3.length);
+				rnd9 = Math.floor(Math.random() * nm2.length);
+				names = "The city of " + nm1[rnd] + nm2[rnd2] + nm3[rnd3] + nm2[rnd4] + nm3[rnd8] + nm2[rnd9] + nm4[rnd5];
+			}
+		}else if(i < 7){
+			rnd = Math.floor(Math.random() * nm7.length);
+			rnd2 = Math.floor(Math.random() * nm8.length);
+			names = nm7[rnd] + nm8[rnd2];
+			nm7.splice(rnd, 1);
+			nm8.splice(rnd2, 1);
+		}else{
+			rnd = Math.floor(Math.random() * nm9.length);
+			rnd2 = Math.floor(Math.random() * nm10.length);
+			names = nm10[rnd2] + nm9[rnd];
+			nm9.splice(rnd, 1);
+			nm10.splice(rnd2, 1);
+		}
+		br = document.createElement('br');	
+		element.appendChild(document.createTextNode(names));
+		element.appendChild(br);
+	}
+	if(document.getElementById("result")){
+		document.getElementById("placeholder").removeChild(document.getElementById("result"));
+	}		
+	document.getElementById("placeholder").appendChild(element);
+}

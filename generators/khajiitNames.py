@@ -1,0 +1,52 @@
+__all__ = ['khajiitNames']
+
+# Don't look below, you will not understand this Python code :) I don't.
+
+from js2py.pyjs import *
+# setting scope
+var = Scope( JS_BUILTINS )
+set_global_object(var)
+
+# Code follows:
+var.registers(['names4', 'nameGen', 'names3'])
+@Js
+def PyJsHoisted_nameGen_(type, this, arguments, var=var):
+    var = Scope({'arguments':arguments, 'this':this, 'type':type}, var)
+    var.registers(['names1', 'names2', 'result', 'type'])
+    var.put('tp', var.get('type'))
+    if PyJsStrictEq(var.get('tp'),Js(2.0)):
+        var.put('names1', Js([Js("Dra'"), Js("Daro'"), Js("Ko'"), Js("Ab'"), Js("Ak'"), Js("Akh'"), Js("Dar'"), Js("Do'"), Js("Dro'"), Js("Fa'"), Js("J'"), Js("Ja'"), Js("Ji'"), Js("Jo'"), Js("K'"), Js("M'"), Js("Ma'"), Js("Qa'"), Js("R'"), Js("Ra'"), Js("Ri'"), Js("S'"), Js("Za'"), Js("Zan'"), Js("Ab'"), Js("Ak'"), Js("Akh'"), Js("Dar'"), Js("Do'"), Js("Dro'"), Js("Fa'"), Js("J'"), Js("Ja'"), Js("Ji'"), Js("Jo'"), Js("K'"), Js("M'"), Js("Ma'"), Js("Qa'"), Js("R'"), Js("Ra'"), Js("Ri'"), Js("S'"), Js("Za'"), Js("Zan'"), Js('Am'), Js('Baa'), Js('Baad'), Js('Bhi'), Js('Bhis'), Js('Dah'), Js('Dahl'), Js('Dro'), Js('Has'), Js('Hass'), Js('Hel'), Js('Heln'), Js('Hus'), Js('Job'), Js('Joba'), Js('Jod'), Js('Jodh'), Js('Jos'), Js('Josh'), Js('Jot'), Js('Joto'), Js('Kaz'), Js('Kaza'), Js('Kes'), Js('Kesh'), Js('Kha'), Js('Khar'), Js('Mo'), Js('Moham'), Js('Moj'), Js('Na'), Js('Om'), Js('Ran'), Js('Rana'), Js('Sha'), Js('Sho'), Js('Shol'), Js('Sin'), Js('The'), Js('Then'), Js('Ther'), Js('Urj'), Js('Urja'), Js('Urjo'), Js('Vas'), Js('Vash'), Js('Wad'), Js('Wada'), Js('Zoa'), Js('Zoar')]))
+        var.put('names2', Js([Js('barri'), Js('qanar'), Js('sakhar'), Js('shavir'), Js('tasarr'), Js('zah'), Js('zaymar'), Js('zhirr'), Js('farahn'), Js('marash'), Js('shanji'), Js('zharim'), Js('bassa'), Js('dar'), Js('dara'), Js('darsha'), Js('dumiwa'), Js('fazir'), Js('jahirr'), Js('jhan'), Js('jidarr'), Js('jirr'), Js('karim'), Js('khar'), Js('kothre'), Js('mhirr'), Js('raska'), Js('ren-dar'), Js('sava'), Js('shajirr'), Js('tesh'), Js('thri-dar'), Js('vassa'), Js('virr'), Js('zaadha'), Js('zahn'), Js('zahr'), Js('zakar'), Js('zhid'), Js('aaj-Dar'), Js('aana'), Js('aasha'), Js('abhi'), Js('addha'), Js('adirr'), Js('agh'), Js('akha'), Js('aksa'), Js('amha'), Js('andra'), Js('anir'), Js('anni'), Js('ara'), Js('argo'), Js('ari'), Js('arkhu'), Js('arr'), Js('arr-Jo'), Js('arsha'), Js('asha'), Js('ashi'), Js('athad'), Js('atharr'), Js('athra'), Js('ato'), Js('ava'), Js('averr'), Js('azha'), Js('azirr'), Js('dargo'), Js('dirsha'), Js('dran'), Js('enji'), Js('esi'), Js('fer'), Js('ha'), Js('had'), Js('han'), Js('hani'), Js('hannar'), Js('har'), Js('harr'), Js('hasta'), Js('hirr'), Js('hur'), Js('idzo'), Js('ier'), Js('in-Dar'), Js('iq'), Js('irr'), Js('iska'), Js('jhad'), Js('jhera'), Js('jiradh'), Js('jirr'), Js('kar'), Js('kheran'), Js('lani'), Js('lima'), Js('ngil'), Js('nor'), Js('orad'), Js('randru-jo'), Js('rassa'), Js('raym'), Js('rjo'), Js('rris'), Js('saad'), Js('sha'), Js('siri'), Js('tasarr'), Js('zaddha'), Js('zaka'), Js('ar'), Js('bar'), Js('bil'), Js('der'), Js('dul'), Js('gh'), Js('ir'), Js('kir'), Js('med'), Js('nir'), Js('noud'), Js('sien'), Js('soud'), Js('taba'), Js('tabe'), Js('urabi')]))
+    else:
+        var.put('names1', Js([Js("Dra'"), Js("Daro'"), Js("Ko'"), Js("La'"), Js("Dar'"), Js("Do'"), Js("Dro'"), Js("J'"), Js("Ja'"), Js("Ji'"), Js("Jo'"), Js("M'"), Js("Ma'"), Js("Qa'"), Js("Ra'"), Js("Ri'"), Js("S'"), Js("Dar'"), Js("Do'"), Js("Dro'"), Js("J'"), Js("Ja'"), Js("Ji'"), Js("Jo'"), Js("M'"), Js("Ma'"), Js("Qa'"), Js("Ra'"), Js("Ri'"), Js("S'"), Js("Dar'"), Js("Do'"), Js("Dro'"), Js("J'"), Js("Ja'"), Js("Ji'"), Js("Jo'"), Js("M'"), Js("Ma'"), Js("Qa'"), Js("Ra'"), Js("Ri'"), Js("S'"), Js('A'), Js('Aba'), Js('Aban'), Js('Abh'), Js('Abhu'), Js('Ada'), Js('Adan'), Js('Add'), Js('Addh'), Js('Adh'), Js('Adha'), Js('Aff'), Js('Affr'), Js('Ahd'), Js('Ahda'), Js('Ahdn'), Js('Ahdr'), Js('Ahj'), Js('Ahja'), Js('Ahji'), Js('Ahk'), Js('Ahka'), Js('Ahn'), Js('Ahna'), Js('Ahnd'), Js('Ahni'), Js('Ahz'), Js('Ahzi'), Js('Ain'), Js('Aina'), Js('Aji'), Js('Ajir'), Js('Anj'), Js('Anja'), Js('Anu'), Js('Anur'), Js('Ara'), Js('Arab'), Js('Arav'), Js('Ash'), Js('Ashi'), Js('Ashn'), Js('Ata'), Js('Atah'), Js('Atr'), Js('Atra'), Js('Ayi'), Js('Ayis'), Js('Azi'), Js('Bah'), Js('Bahd'), Js('Bai'), Js('Bais'), Js('Bhi'), Js('Bhis'), Js('Bhu'), Js('Bhus'), Js('Chi'), Js('Chir'), Js('Dah'), Js('Dahl'), Js('Dahn'), Js('Dro'), Js('Eka'), Js('Ekap'), Js('Ela'), Js('Fa'), Js('Hab'), Js('Haba'), Js('Har'), Js('Hara'), Js('Idh'), Js('Idha'), Js('Ine'), Js('Iner'), Js('Ino'), Js('Inor'), Js('Kaa'), Js('Kaas'), Js('Kha'), Js('Kham'), Js('Khay'), Js('Khaz'), Js('Khi'), Js('Khin'), Js('Ki'), Js('Kis'), Js('Kise'), Js('Kish'), Js('Kisi'), Js('Mo'), Js('Na'), Js('Nah'), Js('Nahs'), Js('Nis'), Js('Nisa'), Js('Ra'), Js('Rab'), Js('Rabi'), Js('Ri'), Js('Sa'), Js('Sha'), Js('Shab'), Js('Sham'), Js('Shav'), Js('Shi'), Js('Shiv'), Js('Sho'), Js('Shom'), Js('Shot'), Js('Shu'), Js('Shun'), Js('Shur'), Js('So'), Js('Ta'), Js('Tal'), Js('Tala'), Js('Tsa'), Js('Tsab'), Js('Tsaj'), Js('Tsal'), Js('Tsan'), Js('Tsar'), Js('Tsav'), Js('Tsi'), Js('Tsiy'), Js('Tsr'), Js('Tsra'), Js('Uba'), Js('Ubaa'), Js('Uda'), Js('Udar'), Js('Unj'), Js('Unja'), Js('Vaj'), Js('Vajh'), Js('Van'), Js('Vanj'), Js('Yus'), Js('Yush'), Js('Za'), Js('Zab'), Js('Zabh'), Js('Zah'), Js('Zahr'), Js('Zay'), Js('Zayn')]))
+        var.put('names2', Js([Js('aba'), Js('abhi'), Js('abi'), Js('ada'), Js('adhi'), Js('ahin'), Js('ahna'), Js('ahni'), Js('ahra'), Js('aji'), Js('ajma'), Js('amla'), Js('ani'), Js('ara'), Js('aranji'), Js('ari'), Js('arji'), Js('arra'), Js('asa'), Js('asha'), Js('ashi'), Js('asi'), Js('asma'), Js('assa'), Js('assi'), Js('asuna'), Js('ava'), Js('avi'), Js('azami'), Js('azda'), Js('ba'), Js('bah'), Js('bhi'), Js('dahna'), Js('dahra'), Js('dasha'), Js('drashi'), Js('eena'), Js('ena'), Js('feliz'), Js('hana'), Js('hasa'), Js('hashi'), Js('hba'), Js('hbah'), Js('heh'), Js('herra'), Js('hi'), Js('hila'), Js('hinda'), Js('hira'), Js('hiranirr'), Js('hni'), Js('hrazad'), Js('ia'), Js('idasha'), Js('ila'), Js('imba'), Js('ini'), Js('inna'), Js('ira'), Js('iranirr'), Js('irra'), Js('isa'), Js('isi'), Js('ivva'), Js('ja'), Js('jadhi'), Js('jarsi'), Js('ji'), Js('jirra'), Js('jjan'), Js('khtar'), Js('ki'), Js('la'), Js('lajma'), Js('lani'), Js('leena'), Js('mada'), Js('mara'), Js('mba'), Js('mla'), Js('muzi'), Js('nabi'), Js('nara'), Js('nari'), Js('ni'), Js('nita'), Js('nja'), Js('njarsi'), Js('nji'), Js('nna'), Js('pi'), Js('ra'), Js('raji'), Js('ranirr'), Js('ranji'), Js('rasha'), Js('rashi'), Js('rassa'), Js('ravi'), Js('raya'), Js('ri'), Js('riba'), Js('rina'), Js('rivva'), Js('rji'), Js('rra'), Js('rranirr'), Js('rri'), Js('rrina'), Js('sa'), Js('sari'), Js('sha'), Js('shima'), Js('si'), Js('sma'), Js('srin'), Js('ssa'), Js('ssi'), Js('suna'), Js('therra'), Js('tima'), Js('uki'), Js('ura'), Js('uzi'), Js('va'), Js('vani'), Js('vari'), Js('vi'), Js('ya'), Js('yla'), Js('zami'), Js('zda'), Js('zhinda'), Js('zita'), Js('zura')]))
+    var.put('result', Js([]))
+    #for JS loop
+    var.put('i', Js(0.0))
+    while (var.get('i')<Js(10.0)):
+        try:
+            if (var.get('i')<Js(5.0)):
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('names1').get('length'))))
+                var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('names2').get('length'))))
+                var.put('names', (var.get('names1').get(var.get('rnd'))+var.get('names2').get(var.get('rnd2'))))
+            else:
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('names1').get('length'))))
+                var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('names2').get('length'))))
+                var.put('rnd3', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('names3').get('length'))))
+                var.put('rnd4', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('names4').get('length'))))
+                var.put('names', ((((var.get('names1').get(var.get('rnd'))+var.get('names2').get(var.get('rnd2')))+Js(' '))+var.get('names3').get(var.get('rnd3')))+var.get('names4').get(var.get('rnd4'))))
+            var.get('result').callprop('push', var.get('names'))
+        finally:
+                (var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1))
+    pass
+    return var.get('result')
+PyJsHoisted_nameGen_.func_name = 'nameGen'
+var.put('nameGen', PyJsHoisted_nameGen_)
+var.put('names3', Js([Js('Ah'), Js('Boora'), Js('Hamnu'), Js('Jar'), Js('Khar'), Js('Ka'), Js('Mahr'), Js('Ravi'), Js('Rou'), Js('Sah'), Js('Sih'), Js('Sohl'), Js('Tawak'), Js('Zah'), Js('Ahr'), Js('Bava'), Js('Havnu'), Js('Java'), Js('Kahra'), Js('Kihr'), Js('Marah'), Js('Rawi'), Js('Roj'), Js('Saj'), Js('Sij'), Js('Sal'), Js('Tarvak'), Js('Zahj'), Js('Ahj'), Js('Bahraja'), Js('Hannu'), Js('Jahk'), Js('Khanj'), Js('Kiji'), Js('Mahri'), Js('Rajiv'), Js('Rahk'), Js('Sara'), Js('Sira'), Js('Sajil'), Js('Tovik'), Js('Xa'), Js('A'), Js('Bara'), Js('Hammu'), Js('Ja'), Js('Kha'), Js('Ki'), Js('Mah'), Js('Rai'), Js('Ro'), Js('Sa'), Js('Si'), Js('Sol'), Js('Tavak'), Js('Za')]))
+var.put('names4', Js([Js('biri'), Js('bus'), Js('davi'), Js('han'), Js('hir'), Js('kar'), Js('manni'), Js('mnin'), Js('nai'), Js('oni'), Js('rabi'), Js('spoor'), Js('stae'), Js('tani'), Js('vandi'), Js('bari'), Js('bes'), Js('dawi'), Js('haan'), Js('hior'), Js('kahr'), Js('mahni'), Js('mnihn'), Js('naihn'), Js('ani'), Js('rabbi'), Js('spaer'), Js('stee'), Js('tanni'), Js('vadni'), Js('bihrri'), Js('bussi'), Js('dhari'), Js('rhan'), Js('hirn'), Js('ghar'), Js('mhan'), Js('mnirn'), Js('nair'), Js('onihr'), Js('garvi'), Js('kpoor'), Js('stavir'), Js('tannil'), Js('gandihr'), Js('bihrith'), Js('busihr'), Js('dawihn'), Js('hasin'), Js('hirin'), Js('karon'), Js('manrin'), Js('nmin'), Js('nahir'), Js('ohin'), Js('radir'), Js('sopor'), Js('stahe'), Js('tamil'), Js('vanadi')]))
+pass
+pass
+
+
+# Add lib to the module scope
+khajiitNames = var.to_python()

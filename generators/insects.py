@@ -1,0 +1,36 @@
+__all__ = ['insects']
+
+# Don't look below, you will not understand this Python code :) I don't.
+
+from js2py.pyjs import *
+# setting scope
+var = Scope( JS_BUILTINS )
+set_global_object(var)
+
+# Code follows:
+var.registers(['nm1', 'nameGen'])
+@Js
+def PyJsHoisted_nameGen_(this, arguments, var=var):
+    var = Scope({'arguments':arguments, 'this':this}, var)
+    var.registers(['result'])
+    var.put('result', Js([]))
+    #for JS loop
+    var.put('i', Js(0.0))
+    while (var.get('i')<Js(10.0)):
+        try:
+            var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm1').get('length'))))
+            var.put('names', var.get('nm1').get(var.get('rnd')))
+            var.get('result').callprop('push', var.get('names'))
+        finally:
+                (var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1))
+    pass
+    return var.get('result')
+PyJsHoisted_nameGen_.func_name = 'nameGen'
+var.put('nameGen', PyJsHoisted_nameGen_)
+var.put('nm1', Js([Js('Abella'), Js('Acrisius'), Js('Adiyis'), Js('Afelhuq'), Js('Ahmose'), Js('Aikazax'), Js('Aine'), Js('Akhenaten'), Js('Akhenaton'), Js('Alagos'), Js('Alakyrr'), Js('Alexei'), Js('Alta'), Js('Amenemhet'), Js('Amenhotep'), Js('Anansi'), Js('Anastera'), Js('Annelida'), Js('Aphrodite'), Js('Appendix'), Js('Arachnaut'), Js('Arachne'), Js('Arachnophia'), Js('Aragog'), Js('Araneidae'), Js('Archimedes'), Js('Argyrodes'), Js('Ariados'), Js('Arkaitz'), Js('Atahez'), Js('Aten'), Js('Atum'), Js('Auberon'), Js('Aurantia'), Js('Avicularia'), Js('Baeiira'), Js('Bain'), Js('Balboa'), Js('Beebop'), Js('Beetlejuice'), Js('BigWilly'), Js('Bine'), Js('Bitsy'), Js('Block'), Js('Blolphork'), Js('Blomphwun'), Js('Bloodbite'), Js('Bluestar'), Js('Boris'), Js('Breeze'), Js('BugLightyear'), Js('BugZapper'), Js('BuggedOut'), Js('Bumble'), Js('Bummezhei'), Js('Bumphdult'), Js('Buzzboss'), Js('Cavatica'), Js('Charlotte'), Js('Charm'), Js('Chip'), Js('Cleopatra'), Js('Clunph'), Js('Crawly'), Js('CrazyLegs'), Js('Creep'), Js('CreepyCrawly'), Js('Cricket'), Js('Crollh'), Js('Cuddles'), Js('Cure'), Js('Dancer'), Js('Dancingqueen'), Js('Defodio'), Js('Despduis'), Js('Despmtor'), Js('Dhaundax'), Js('Dhaunrysn'), Js('Dodger'), Js('Dracula'), Js('Droknal'), Js('Dulfgrult'), Js('Dune'), Js('Dyrage'), Js('EarthwormJim'), Js('EatindirtAFK'), Js('Edmund'), Js('EekASpider'), Js('Ekicak'), Js('ElTarantulo'), Js('Elania'), Js('Elarinya'), Js('Elifif'), Js('Eruanna'), Js('Eshacer'), Js('Ette'), Js('Evuvug'), Js('Ew'), Js('Ezeroc'), Js('Facehugger'), Js('Fanui'), Js('Fejjofui'), Js('Feriave'), Js('Fidget'), Js('Firefly'), Js('Flash'), Js('Flogfooz'), Js('Floof'), Js('Fluffy'), Js('FluffyCuddle'), Js('Flutter'), Js('Folt'), Js('Francis'), Js('Fuzzy'), Js('Gahan'), Js('George'), Js('Geverspike'), Js('Ghoddomau'), Js('Ghuddedio'), Js('Ghulftumb'), Js('Gidget'), Js('Gigit'), Js('Glider'), Js('Glork'), Js('Glowstick'), Js('Glowy'), Js('Gook'), Js('Gumph'), Js('Gwaeron'), Js('Gwilwileth'), Js('Haemosu'), Js('Haldor'), Js('Hallucinated'), Js('Happyfeet'), Js('Harrison'), Js('Hatshepsut'), Js('Haze'), Js('Hendra'), Js('Henna'), Js('Hercules'), Js('Hesutu'), Js('Hive'), Js('Hopper'), Js('Hugo'), Js('Humor'), Js('IBite'), Js('ISpinwebz'), Js('Ibavof'), Js('Ibirod'), Js('Icanhazbug'), Js('Icanhazfly'), Js('Ichozuc'), Js('Idophor'), Js('Iguker'), Js('Ijushir'), Js('Ilphstra'), Js('Ilztzyr'), Js('ImInUrSox'), Js('Imhotep'), Js('Impedimenta'), Js('Incey'), Js('Interwebz'), Js('Itsy'), Js('ItsyBitsy'), Js('Iwijech'), Js('Ixophiw'), Js('Iyevaj'), Js('Jettesue'), Js('Jim'), Js('Jitterbug'), Js('John'), Js('Johnny'), Js('Juice'), Js('Jumpingbean'), Js('Kahu'), Js('Kaia'), Js('Kaiba'), Js('Kaljou'), Js('Kerosyn'), Js('Khepri'), Js('Klax'), Js('Kloozuck'), Js('KneesUp'), Js('Kraque'), Js('Krigon'), Js('Kyshf'), Js('Lakkucoa'), Js('Lartath'), Js('Lazzuxei'), Js('Legs'), Js('Lennon'), Js('Lhaccujoi'), Js('Lhupposue'), Js('Libnrak'), Js('Lightbuzzer'), Js('Lirlt'), Js('Llyrrad'), Js('Lokghper'), Js('Loki'), Js('Lollipop'), Js('Loon'), Js('Lorn'), Js('Lucky'), Js('Lumos'), Js('Luna'), Js('Matikah'), Js('McCartney'), Js('MelReynolds'), Js('Meleth'), Js('Menes'), Js('Mighund'), Js('Mirdan'), Js('Mothball'), Js('Mothra'), Js('MrSquishy'), Js('Mudbottom'), Js('MuddyBuddy'), Js('Myze'), Js('Nanzi'), Js('Naraku'), Js('Ned'), Js('Nefertari'), Js('Nematoda'), Js('Ninltkim'), Js('Nosferatu'), Js('Noshg'), Js('Nulljss'), Js('Nuzzle'), Js('Off'), Js('Okispe'), Js('Orifel'), Js('Orlyafin'), Js('Ovepaq'), Js('Ozzy'), Js('Painfuldeath'), Js('Palk'), Js('Palluhae'), Js('Paul'), Js('Pebbleskull'), Js('Pedro'), Js('Peepers'), Js('Peripatus'), Js('PeterParker'), Js('Phad'), Js('Phammaxia'), Js('Phiqquvuo'), Js('Phirrushuu'), Js('Phisrd'), Js('Physco'), Js('Pipez'), Js('Pipsqueak'), Js('Protego'), Js('Pyihel'), Js('Pythagoras'), Js('Qualnvrae'), Js('Quickstep'), Js('Raffashua'), Js('Raid'), Js('Rakkan'), Js('Ramessu'), Js('Reclusa'), Js('Redd'), Js('Rhavaniel'), Js('Ringo'), Js('Rocky'), Js('Rosa'), Js('Rosie'), Js('Rune'), Js('Saraswati'), Js('Satan'), Js('Sausage'), Js('Scarletfever'), Js('Scissa'), Js('Scruff'), Js('Scuttlebutt'), Js('Sectar'), Js('Semmiheu'), Js('SereneGrace'), Js('Serenity'), Js('Serpigo'), Js('Seti'), Js('Seymora'), Js('Seymore'), Js('Shellby'), Js('Shelley'), Js('Shelloholic'), Js('Shellshocked'), Js('Shellton'), Js('Shelob'), Js('Shimmer'), Js('Shittewio'), Js('Shuyyabuo'), Js('Sideswipe'), Js('Sipuncula'), Js('Skirax'), Js('Skitter'), Js('Skitterbug'), Js('Skitters'), Js('Skittles'), Js('Skreech'), Js('Skrill'), Js('Slasgh'), Js('Slash'), Js('Slerdach'), Js('Sliphche'), Js('Snendos'), Js('Snuggles'), Js('SonOfaBee'), Js('Song'), Js('Spaghetti'), Js('SpeedBuggy'), Js('Spidey'), Js('Spidrid'), Js('Spin'), Js('Spinarak'), Js('Spindle'), Js('Spinner'), Js('Spinnerz'), Js('Splat'), Js('Squiggles'), Js('Squiggly'), Js('Squirmy'), Js('Squish'), Js('Starr'), Js('Stemrdtur'), Js('Steve'), Js('Sticker'), Js('Stingerthorn'), Js('Stingy'), Js('Strafe'), Js('Strider'), Js('Sunshine'), Js('Surskit'), Js('Swoml'), Js('Swucran'), Js('Sylvester'), Js('Tabitha'), Js('Tank'), Js('Thalhlhejae'), Js('Thatzaer'), Js('Threst'), Js('Thutmose'), Js('Tickle'), Js('Tickles'), Js('Tiger'), Js('Tigga'), Js('Tiki'), Js('Tilly'), Js('Tiltelm'), Js('Tranquility'), Js('Tremor'), Js('Trov'), Js('Tsuchigumo'), Js('Tsuki'), Js('Tuvok'), Js('Twist'), Js('Twitch'), Js('Typchray'), Js('Ucashes'), Js('Udadiy'), Js('Ujarak'), Js('Umusaq'), Js('Ungoliant'), Js('Utabuch'), Js('Uyureg'), Js('Vavb'), Js('Venatoria'), Js('Vespera'), Js('Vessex'), Js('Vin'), Js('VitaminDirt'), Js('Vittorio'), Js('Vladimar'), Js('Vore'), Js('Vorryn'), Js('Vowwalhoe'), Js('Voyyozaa'), Js('Wash'), Js('Waterspout'), Js('Webber'), Js('Webby'), Js('Webmaster'), Js('Webslinger'), Js('Webster'), Js('Webzya'), Js('Whitie'), Js('Wincey'), Js('Wippiyeu'), Js('Wolfgang'), Js('Woolslayer'), Js('Wyphem'), Js('Xaggavea'), Js('Xennowua'), Js('Xunkiira'), Js('Xuzzayua'), Js('Zechchenoa'), Js('Zkirax'), Js('Zoll'), Js('Zorphax')]))
+pass
+pass
+
+
+# Add lib to the module scope
+insects = var.to_python()

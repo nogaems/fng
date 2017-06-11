@@ -1,0 +1,36 @@
+__all__ = ['professions']
+
+# Don't look below, you will not understand this Python code :) I don't.
+
+from js2py.pyjs import *
+# setting scope
+var = Scope( JS_BUILTINS )
+set_global_object(var)
+
+# Code follows:
+var.registers(['nm1', 'nameGen'])
+@Js
+def PyJsHoisted_nameGen_(this, arguments, var=var):
+    var = Scope({'arguments':arguments, 'this':this}, var)
+    var.registers(['result'])
+    var.put('result', Js([]))
+    #for JS loop
+    var.put('i', Js(0.0))
+    while (var.get('i')<Js(10.0)):
+        try:
+            var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm1').get('length'))))
+            var.put('names', var.get('nm1').get(var.get('rnd')))
+            var.get('result').callprop('push', var.get('names'))
+        finally:
+                (var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1))
+    pass
+    return var.get('result')
+PyJsHoisted_nameGen_.func_name = 'nameGen'
+var.put('nameGen', PyJsHoisted_nameGen_)
+var.put('nm1', Js([Js('Academic'), Js('Accountant'), Js('Acolyte'), Js('Acrobat'), Js('Actor'), Js('Administrator'), Js('Adventurer'), Js('Advisor'), Js('Alchemist'), Js('Almoner'), Js('Animal Breeder'), Js('Animal Handler'), Js('Anthropologist'), Js('Apothecary'), Js('Archaeologist'), Js('Archer'), Js('Architect'), Js('Archivist'), Js('Armorer'), Js('Arms Merchant'), Js('Artisan'), Js('Artist'), Js('Ascetic'), Js('Assassin'), Js('Astrologist'), Js('Astronomist'), Js('Baker'), Js('Bandit'), Js('Banker'), Js('Barber'), Js('Bard'), Js('Barkeep'), Js('Barmaid'), Js('Barrister'), Js('Beastmaster'), Js('Beekeeper'), Js('Beggar'), Js('Biologist'), Js('Blacksmith'), Js('Board Member'), Js('Boatman'), Js('Bodyguard'), Js('Bookbinder'), Js('Botanist'), Js('Bottler'), Js('Bounty Hunter'), Js('Brewer'), Js('Brick Maker'), Js('Bricklayer'), Js('Bridge Builder'), Js('Brigand'), Js('Buccaneer'), Js('Buckle Maker'), Js('Builder'), Js('Bureaucrat'), Js('Burglar'), Js('Butcher'), Js('Butler'), Js('Cannoneer'), Js('Caravan Leader'), Js('Carder'), Js('Carpenter'), Js('Carter'), Js('Cartographer'), Js('Cartwright'), Js('Chamberlain'), Js('Chandler'), Js('Charioteer'), Js('Cheesemaker'), Js('Chef'), Js('Chemist'), Js('Chirurgeon'), Js('Clergy'), Js('Cleric'), Js('Clerk'), Js('Clock Maker'), Js('Clothes Washer'), Js('Clothier'), Js('Clown'), Js('Coachman'), Js('Coinsmith'), Js('Commander'), Js('Con Artist'), Js('Conjurer'), Js('Cook'), Js('Cooper'), Js('Counselor'), Js('Courtesan'), Js('Courtier'), Js('Cowherd'), Js('Craftsman'), Js('Crossbowman'), Js('Crusader'), Js('Cutler'), Js('Cutpurse'), Js('Dairymaid'), Js('Dancer'), Js('Demonologist'), Js('Dentist'), Js('Detective'), Js('Diplomat'), Js('Distiller'), Js('Diver'), Js('Doctor'), Js('Drayman'), Js('Driver'), Js('Druid'), Js('Duchess'), Js('Duelist'), Js('Duke'), Js('Dyer'), Js('Economist'), Js('Enchanter'), Js('Engineer'), Js('Engraver'), Js('Executioner'), Js('Explorer'), Js('Falconer'), Js('Farmer'), Js('Farrier'), Js('Ferryman'), Js('Firemaker'), Js('Fisherman'), Js('Fishmonger'), Js('Fletcher'), Js('Forester'), Js('Fortune Teller'), Js('Friar'), Js('Furrier'), Js('Gambler'), Js('Gardener'), Js('Gatekeeper'), Js('Gemsmith'), Js('Geologist'), Js('Geomancer'), Js('Gladiator'), Js('Glassblower'), Js('Glazier'), Js('Glovemaker'), Js('Goldsmith'), Js('Gravedigger'), Js('Groom'), Js('Guard'), Js('Guildmaster'), Js('Hacker'), Js('Handmaiden'), Js('Hatter'), Js('Hayward'), Js('Healer'), Js('Herald'), Js('Herbalist'), Js('Herder'), Js('Herdsman'), Js('Highwayman'), Js('Historian'), Js('Horse Breeder'), Js('Horse Trainer'), Js('Hounds Master'), Js('Hunter'), Js('Illuminator'), Js('Innkeeper'), Js('Inscriptionist'), Js('Instructor'), Js('Interpreter'), Js('Inventor'), Js('Investor'), Js('Jailer'), Js('Jester'), Js('Jewelcrafter'), Js('Jeweler'), Js('Judge'), Js('Juggler'), Js('King'), Js('Knight'), Js('Lady'), Js('Lady in Waiting'), Js('Lantern Maker'), Js('Lawyer'), Js('Leatherworker'), Js('Librarian'), Js('Lighthouse Keeper'), Js('Limner'), Js('Linguist'), Js('Loanshark'), Js('Locksmith'), Js('Longbowman'), Js('Lord'), Js('Loremaster'), Js('Lumberjack'), Js('Machinist'), Js('Magician'), Js('Maid'), Js('Maidservant'), Js('Man at Arms'), Js('Marine'), Js('Marksman'), Js('Mason'), Js('Mayor'), Js('Mechanic'), Js('Mercenary'), Js('Merchant'), Js('Messenger'), Js('Meteorologist'), Js('Midwife'), Js('Milkmaid'), Js('Miller'), Js('Milliner'), Js('Mine Owner'), Js('Miner'), Js('Minion'), Js('Minister'), Js('Minstrel'), Js('Mirror Maker'), Js('Moneylender'), Js('Monk'), Js('Monster slayer'), Js('Mortician'), Js('Mourner'), Js('Mugger'), Js('Mule Driver'), Js('Musician'), Js('Necromancer'), Js('Nun'), Js('Nurse'), Js('Officer'), Js('Page'), Js('Painter'), Js('Paladin'), Js('Paper Maker'), Js('Paratrooper'), Js('Pastor'), Js('Pastry Cook'), Js('Pawnbroker'), Js('Peasant'), Js('Peddler'), Js('Perfumer'), Js('Pharmacist'), Js('Philosopher'), Js('Philospher'), Js('Photographer'), Js('Physician'), Js('Pickpocket'), Js('Pigkeeper'), Js('Pilgrim'), Js('Pilot'), Js('Pirate'), Js('Pit Fighter'), Js('Poet'), Js('Politician'), Js('Postman'), Js('Potter'), Js('Preacher'), Js('Priest'), Js('Prince'), Js('Princess'), Js('Procurer'), Js('Professor'), Js('Programmer'), Js('Prophet'), Js('Pursemaker'), Js('Pyromancer'), Js('Pyrotechnician'), Js('Quartermaster'), Js('Queen'), Js('Raider'), Js('Ranger'), Js('Rat-Catcher'), Js('Ratcatcher'), Js('Riflesmith'), Js('Rogue'), Js('Roofer'), Js('Rope Maker'), Js('Ropemaker'), Js('Royal Advisor'), Js('Rugmaker'), Js('Runecrafter'), Js('Saddler'), Js('Sage'), Js('Sailor'), Js('Salter'), Js('Sapper'), Js('Scavenger'), Js('Scholar'), Js('Scout'), Js('Scribe'), Js('Scrivener'), Js('Sculptor'), Js('Seamaster'), Js('Seamstress'), Js('Secretary'), Js('Seer'), Js('Servant'), Js('Shaman'), Js('Shepherd'), Js('Sheriff'), Js('Ship Builder'), Js("Ship's Captain"), Js("Ship's Mate"), Js('Shipwright'), Js('Shoemaker'), Js('Shrubber'), Js('Silversmith'), Js('Singer'), Js('Skinner'), Js('Slave'), Js('Slave Master'), Js('Slave Trader'), Js('Slaver'), Js('Smith'), Js('Smuggler'), Js('Soldier'), Js('Songwriter'), Js('Sorcerer'), Js('Special Forces'), Js('Spice Merchant'), Js('Spiritual Healer'), Js('Sportsman'), Js('Spy'), Js('Squire'), Js('Stable Hand'), Js('Stablehand'), Js('Stabler'), Js('Stevedore'), Js('Steward'), Js('Storyteller'), Js('Student'), Js('Summoner'), Js('Surgeon'), Js('Surveyor'), Js('Sword Smith'), Js('Swordsman'), Js('Synthesist'), Js('Tailor'), Js('Tanner'), Js('Tavernkeep'), Js('Tax Collector'), Js('Teacher'), Js('Technician'), Js('Templar'), Js('Terraformer'), Js('Thatcher'), Js('Thief'), Js('Timelord'), Js('Tinker'), Js('Toll Keeper'), Js('Torturer'), Js('Town Counselor'), Js('Town Crier'), Js('Tracker'), Js('Trader'), Js('Trainer'), Js('Trapper'), Js('Treasure Hunter'), Js('Vendor'), Js('Village Idiot'), Js('Warlock'), Js('Warrior'), Js('Watchman'), Js('Water Carrier'), Js('Weaver'), Js('Wetnurse'), Js('Wheelwright'), Js('Wine Merchant'), Js('Witch'), Js('Wizard'), Js('Wood Merchant'), Js('Woodcarver'), Js('Woodcutter'), Js('Zookeeper'), Js('Zoologist')]))
+pass
+pass
+
+
+# Add lib to the module scope
+professions = var.to_python()

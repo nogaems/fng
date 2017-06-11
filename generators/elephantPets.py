@@ -1,0 +1,42 @@
+__all__ = ['elephantPets']
+
+# Don't look below, you will not understand this Python code :) I don't.
+
+from js2py.pyjs import *
+# setting scope
+var = Scope( JS_BUILTINS )
+set_global_object(var)
+
+# Code follows:
+var.registers(['nm1', 'nm2', 'nameGen'])
+@Js
+def PyJsHoisted_nameGen_(type, this, arguments, var=var):
+    var = Scope({'arguments':arguments, 'this':this, 'type':type}, var)
+    var.registers(['tp', 'result', 'type'])
+    var.put('tp', var.get('type'))
+    var.put('result', Js([]))
+    #for JS loop
+    var.put('i', Js(0.0))
+    while (var.get('i')<Js(10.0)):
+        try:
+            if PyJsStrictEq(var.get('tp'),Js(1.0)):
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm2').get('length'))))
+                var.put('names', var.get('nm2').get(var.get('rnd')))
+            else:
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm1').get('length'))))
+                var.put('names', var.get('nm1').get(var.get('rnd')))
+            var.get('result').callprop('push', var.get('names'))
+        finally:
+                (var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1))
+    pass
+    return var.get('result')
+PyJsHoisted_nameGen_.func_name = 'nameGen'
+var.put('nameGen', PyJsHoisted_nameGen_)
+var.put('nm1', Js([Js('Aadi'), Js('Aakav'), Js('Aakesh'), Js('Aakil'), Js('Aalok'), Js('Aamin'), Js('Aanan'), Js('Aandaleeb'), Js('Aatmadeva'), Js('Aatmik'), Js('Abhiraja'), Js('Aedan'), Js('Aladdin'), Js('Baasu'), Js('Babar'), Js('Bal'), Js('Bala'), Js('Balabhadra'), Js('Baldev'), Js('Balin'), Js('Balraj'), Js('Basant'), Js('Billy'), Js('Bobo'), Js('Brian'), Js('Bubbles'), Js('Cameron'), Js('Chad'), Js('Chaitanya'), Js('Champakali'), Js('Chance'), Js('Chandan'), Js('Chandraraj'), Js('Chandresh'), Js('Charaka'), Js('Charlie'), Js('Charson'), Js('Charudata'), Js('Chris'), Js('Christofer'), Js('Cody'), Js('Daivik'), Js('Daksh'), Js('Dalal'), Js('Damini'), Js('Damodar'), Js('Danveer'), Js('Darshan'), Js('Darwin'), Js('Daud'), Js('Dayanand'), Js('Dayaram'), Js('Derek'), Js('Devin'), Js('Dino'), Js('Donnie'), Js('Drake'), Js('Dumbo'), Js('Edward'), Js('Ekaanta'), Js('Elephant'), Js('Emmett'), Js('Eric'), Js('Fahim'), Js('Falak'), Js('Falan'), Js('Fareed'), Js('Faruq'), Js('Firdos'), Js('Frank'), Js('Frankie'), Js('Freddy'), Js('Ganesh'), Js('Gaurav'), Js('Gavin'), Js('George'), Js('Greybar'), Js('Hansrat'), Js('Hanuman'), Js('Hari'), Js('Harish'), Js('Harjeet'), Js('Horton'), Js('IIshim'), Js('Jabbar'), Js('Jack'), Js('Jagannath'), Js('Jagjit'), Js('Jahan'), Js('Jaidev'), Js('Jaimini'), Js('Jainendra'), Js('Jairaj'), Js('Jake'), Js('Jaladhi'), Js('Jameson'), Js('Jamie'), Js('Janesh'), Js('Jasper'), Js('Javas'), Js('Jawaharlal'), Js('Jayakrishna'), Js('Jayant'), Js('Jeffery'), Js('Jeffrey'), Js('Jeffy'), Js('Jeremy'), Js('Jimmy'), Js('Joey'), Js('Johnny'), Js('Jonah'), Js('Kabir'), Js('Kabr'), Js('Kala'), Js('Kaleb'), Js('Kalhana'), Js('Kalidasa'), Js('Kalinga'), Js('Kalkin'), Js('Kalu'), Js('Kamban'), Js('Kantu'), Js('Kanu'), Js('Kapila'), Js('Kapildev'), Js('Kardama'), Js('Karim'), Js('Karnak'), Js('Karnik'), Js('Kasi'), Js('Kavi'), Js('Kavindra'), Js('Kedar'), Js('Kirk'), Js('Kori'), Js('Krys'), Js('Lakshman'), Js('Lal'), Js('Larry'), Js('Lavanaa'), Js('Leo'), Js('Leon'), Js('Liam'), Js('Lino'), Js('Louie'), Js('Maalin'), Js('Madhav'), Js('Mahadev'), Js('Maharaj'), Js('Mahendra'), Js('Mahesa'), Js('Mahesh'), Js('Mahin'), Js('Mahmoud'), Js('Majid'), Js('Malik'), Js('Manny'), Js('Mansoor'), Js('Marshall'), Js('Max'), Js('Mike'), Js('Nadim'), Js('Nagarjuna'), Js('Nalin'), Js('Nanak'), Js('Nandan'), Js('Nandin'), Js('Narain'), Js('Narayana'), Js('Naren'), Js('Naresh'), Js('Nathan'), Js('Naveed'), Js('Navin'), Js('Neel'), Js('Niaz'), Js('Nirvan'), Js('Nishad'), Js('Noor'), Js('Nuren'), Js('Omandand'), Js('Pach'), Js('Pacho'), Js('Pachy'), Js('Pacman'), Js('Pactin'), Js('Pantni'), Js('Parvaiz'), Js('Patanjau'), Js('Patches'), Js('Pattin'), Js('Peanut'), Js('Quincy'), Js('Rafiq'), Js('Rahim'), Js('Rajendra'), Js('Rajesh'), Js('Rajiv'), Js('Rajnish'), Js('Raleigh'), Js('Ram'), Js('Ramakrishna'), Js('Ramnath'), Js('Ranjit'), Js('Ratan'), Js('Rav'), Js('Ravi'), Js('Ravindra'), Js('Raza'), Js('Richy'), Js('Roimba'), Js('Rozhan'), Js('Russel'), Js('Russell'), Js('Rusten'), Js('Saarik'), Js('Sachdev'), Js('Sahaj'), Js('Sahen'), Js('Sahil'), Js('Sajan'), Js('Sajjan'), Js('Salmalin'), Js('Sammy'), Js('Sanjay'), Js('Sanjiv'), Js('Santosh'), Js('Sarad'), Js('Sarik'), Js('Sarngin'), Js('Sarugin'), Js('Scruffy'), Js('Silver'), Js('Simba'), Js('Smokey'), Js('Socks'), Js('Sonakali'), Js('Spencer'), Js('Sprinkles'), Js('Squirt'), Js('Stevie'), Js('Stomp'), Js('Stomppers'), Js('Taj'), Js('Tanay'), Js('Tarik'), Js('Tarun'), Js('Thumper'), Js('Tim'), Js('Tinkers'), Js('Tino'), Js('Tom'), Js('Tommy'), Js('Tonsofun'), Js('Trunk'), Js('Trunky'), Js('Tubby'), Js('Tuck'), Js('Tucker'), Js('Ty'), Js('Tyler'), Js('Tyrone'), Js('Uday'), Js('Ujala'), Js('Umed'), Js('Urvil'), Js('Uttam'), Js('Vadin'), Js('Valin'), Js('Valmiki'), Js('Vandan'), Js('Vardhamma'), Js('Varen'), Js('Varesh'), Js('Varil'), Js('Varun'), Js('Vasant'), Js('Vasin'), Js('Vasu'), Js('Vatsyayana'), Js('Vihs'), Js('Vijay'), Js('Vijayendra'), Js('Walter'), Js('Wilbur'), Js('Winston'), Js('Yamal'), Js('Yasar'), Js('Yash'), Js('Yashaskar'), Js('Yuki'), Js('Yuri'), Js('Aivat')]))
+var.put('nm2', Js([Js('Aanandini'), Js('Abbie'), Js('Abby'), Js('Abha'), Js('Abigal'), Js('Achala'), Js('Adalyn'), Js('Adhika'), Js('Adhita'), Js('Adita'), Js('Adya'), Js('Ahalya'), Js('Ahilya'), Js('Allison'), Js('Amy'), Js('April'), Js('Azra'), Js('Bahaar'), Js('Baka'), Js('Bakul'), Js('Banht'), Js('Banita'), Js('Bano'), Js('Beeja'), Js('Behira'), Js('Bel'), Js('Bhamini'), Js('Bhanumati'), Js('Bharati'), Js('Bhavika'), Js('Bhuma'), Js('Binali'), Js('Blair'), Js('Blossom'), Js('Bubbles'), Js('Cameron'), Js('Chahna'), Js('Chaitali'), Js('Chaitanya'), Js('Chameli'), Js('Chandaa'), Js('Chandani'), Js('Chandi'), Js('Channa'), Js('Charu'), Js('Charumat'), Js('Cheesecake'), Js('Cherilyn'), Js('Chhaya'), Js('Daisy'), Js('Dakota'), Js('Damayant'), Js('Darpitaa'), Js('Darsha'), Js('Daru'), Js('Dayaa'), Js('Dazzles'), Js('Durva'), Js('Ehani'), Js('Ela'), Js('Elamma'), Js('Eleanor'), Js('Elephante'), Js('Eliphant'), Js('Ella'), Js('Ellafun'), Js('Elle'), Js('Ellen'), Js('Ellie'), Js('Elly'), Js('Elysia'), Js('Emily'), Js('Emma'), Js('Erin'), Js('Flower'), Js('Fulande'), Js('Gabby'), Js('Gambhira'), Js('Ganesa'), Js('Gariana'), Js('Garima'), Js('Gauri'), Js('Georgiana'), Js('Gianna'), Js('Gina'), Js('Grace'), Js('Gracee'), Js('Hara'), Js('Ichchani'), Js('Idaa'), Js('Indu'), Js('Isabella'), Js('Jaamini'), Js('Jackie'), Js('Jalajaa'), Js('Jalaneeli'), Js('Jalini'), Js('Jamie'), Js('Janaki'), Js('Jasmin'), Js('Jenna'), Js('Jennifer'), Js('Jessica'), Js('Jewel'), Js('Jilly'), Js('Jinnat'), Js('Julia'), Js('June'), Js('Kaamilee'), Js('Kaasu'), Js('Kacie'), Js('Kailash'), Js('Kaite'), Js('Kala'), Js('Kanta'), Js('Kasi'), Js('Kate'), Js('Katie'), Js('Kelly'), Js('Kiah'), Js('Kiera'), Js('Kieth'), Js('Kiki'), Js('Kiran'), Js('Kirby'), Js('Kristen'), Js('Kusa'), Js('Laura'), Js('Lavanaa'), Js('Leah'), Js('Leena'), Js('Lia'), Js('Lilly'), Js('Lisa'), Js('Lucy'), Js('Luna'), Js('Maddie'), Js('Madhavi'), Js('Madhu'), Js('Madhulekha'), Js('Madison'), Js('Mali'), Js('Mamta'), Js('Maria'), Js('Marissa'), Js('May'), Js('Maya'), Js('Mia'), Js('Mimi'), Js('Mimzy'), Js('Molly'), Js('Muffy'), Js('Nahida'), Js('Natalie'), Js('Nelly'), Js('Nina'), Js('Paavana'), Js('Paavani'), Js('Padma'), Js('Patches'), Js('Peanut'), Js('Peanuts'), Js('Pollyam'), Js('Pragyata'), Js('Prarthana'), Js('Pratibtha'), Js('Prema'), Js('Premlata'), Js('Priya'), Js('Protima'), Js('Purnima'), Js('Puss'), Js('Radha'), Js('Raya'), Js('Robyn'), Js('Rosealita'), Js('Sadhana'), Js('Safarie'), Js('Safi'), Js('Sagara'), Js('Sakari'), Js('Sara'), Js('Shannon'), Js('Silver'), Js('Sophie'), Js('Sprinkles'), Js('Squirt'), Js('Susy'), Js('Sweetie'), Js('Taya'), Js('Tia'), Js('Tina'), Js('Tinkers'), Js('Tubby'), Js('Tuskany'), Js('Tusky'), Js('Twinkers'), Js('Twinky'), Js('Victoria'), Js('Yasmin'), Js('Yaya'), Js('Zainab'), Js('Zakiyya'), Js('Zandara'), Js('Zarina'), Js('Zia'), Js('Zizi'), Js('Zoey')]))
+pass
+pass
+
+
+# Add lib to the module scope
+elephantPets = var.to_python()

@@ -1,0 +1,21 @@
+
+function nameGen(){
+	var nm1 = ["WelcomeHome","Status_Update","soLong","Click","AbSent","Aberrant","Accident","Achievement Unlocked","AdFree","Addict","Adventure Time Out","AfterMath","Aftermath","Agency","AirLine","AirPort","Alternate Dimension","Amazing!","Ambition","Anxiety","Arch","Article One","Aspect","AtmoSphere","BaitHook","BaitSwitch","Bed Time","Begin","Belief","BestFriend","Big Brother","BitSized","BitterSweet","BlackWhite","Bliss","Blood Money","Borderless","Borrowed","BottomsUp","Boyfriend","Brass Knuckle","BreakFast","Breaking News!","Brother","Cancelled","CandleLight","Candy","Captive Audience","Cattle Prod","Champion","Charity","ChequePlease","ChildHood","ChocoLate","ClassWork","ClickBait","Closet","Clueless","CoWard","ComFort","ComMission","ComPetition","ComPlex","Command","ConFusion","ConSequence","ConTest","ConText","ConTroll","Confidential","CookieCutter","Courage","Coward","Creator","Curiosity","CurtainFall","CustomerService","DailyDose","Dance Off","DataBase","Daydream","DearlyBeloved","Declined","Defeated","Design","Desire","DisHonest","DisPlay","Disappointment","Discount","Divide","Doctor's Order","Double Trouble","DownRight","DownTown","DreamOn","DreamScape","EconoMimics","Emergency!","Employee","EnCourage","EnLightened","Error","ErrorErrorError","Essay Due","Eternity","Exam","ExcuseMe","Excuses","Execute","Faith","Fake","Family First","Fate","Father","FeedBack","Final Exam","FingerLicking","FirstHand","FlawLess","FlowerPower","Follow Me","Forgive","ForgiveMe","Free Choice","FreeDom","FreeGift","Freedom","Friend","FriendlyGiant","GapingWhole","Generosity","Ghost","Girlfriend","Goal!","GoodAsNew","GoodNatured","Goodbye!","Gratis","Guarantee","GuiltLess","Happy Birthday!","Health","HeartBreaker","Hello","Hello World","HelpMe","HeyBeauty","Hilarious!","Honestly","HonorAmong","Hooked","HugsKisses","Humility","Hummmmm","HungryHungry","Hurricane","Husband","IdleHands","Impulse","In a Pickle","InDependence","InFinite","InSanity","InSecure","InVincible","Infinity","Inside Out","Interview","Investment","Invitation","Junior","Just Kidding","Justice","LawLess","LeaderShip","Lecture","LethalDose","Level One","Leviathan","Lewd","Liar Liar","Liberty","LongTerm","Main Priority","MakeShift","Mammoth","Manager","MemberShip","MidKnight","Milkman","Mime","MiracleWork","MirrorMirror","Mortgage","Mother","MyBad","MyPleasure","NaughtyNice","Nemo","New","NewMessage","NightMare","NightNight","No Pressure","NoHonor","One Minute","OnePercent","Oops","Opportunity","Opposites","Organic","OverDue","OverJoyed","OverLooked","Overachiever","Package","Paradise","Parallel","Parcel Delivery","PatientZero","Patriot","Phobia","Phony","Pizzaz","PlayGrounded","PointLess","PowerLess","PowerPlay","PressRecord","PrisonEscape","Private","Private and Confidential","Punishment","Puny","Purchase","Re:","ReCommended","RealityCheck","Recommended","Recording","RelationshipStatus","Relax","Request","Requiem","Resident","Revolution","Reward","Riches","RiddleMeThis","RnD","Rosebud","Rumor","SafetyNet","Salary","Save the Date","ScareCrow","ScratchThat","SecondHand","Security!","SelfControl","ShadyBusiness","Shame!","ShockAwe","SignHere","Signature","Single","Sister","Situation","Slave","SomeWare","SorryNotSorry","Special Delivery","SpiderWeb","Spooky","SpotLess","Stained","StatusUpdate","Stranger","StrangerDanger","TaintedLove","Thoughts","ThunderStorm","Tickets","TidBit","Travel","TravelLog","Trouble","UnEmployed","UnitOne","University","Unmasked","VIP","Victory","Weather","Welcome","Whistle","White Knight","Wife","Witness","Xx","Yesterday","YouPhoria","YourBase"];
+
+	var br = "";
+	var element = document.createElement("div");
+	element.setAttribute("id", "result");
+	
+	for(i = 0; i < 10; i++){
+		rnd = Math.random() * nm1.length | 0;
+		names = nm1[rnd];
+		nm1.splice(rnd, 1);
+		br = document.createElement('br');	
+		element.appendChild(document.createTextNode(names));
+		element.appendChild(br);
+	}
+	if(document.getElementById("result")){
+		document.getElementById("placeholder").removeChild(document.getElementById("result"));
+	}		
+	document.getElementById("placeholder").appendChild(element);
+}

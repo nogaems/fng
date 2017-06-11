@@ -1,0 +1,81 @@
+__all__ = ['westEuropeTowns']
+
+# Don't look below, you will not understand this Python code :) I don't.
+
+from js2py.pyjs import *
+# setting scope
+var = Scope( JS_BUILTINS )
+set_global_object(var)
+
+# Code follows:
+var.registers(['nm1', 'nm11', 'nm12', 'nm4', 'nameGen', 'nm5', 'nm8', 'nm14', 'nm3', 'nm13', 'nm7', 'nm9', 'nm10', 'nm2', 'nm6'])
+@Js
+def PyJsHoisted_nameGen_(type, this, arguments, var=var):
+    var = Scope({'arguments':arguments, 'this':this, 'type':type}, var)
+    var.registers(['tp', 'result', 'type'])
+    var.put('tp', var.get('type'))
+    var.put('result', Js([]))
+    #for JS loop
+    var.put('i', Js(0.0))
+    while (var.get('i')<Js(14.0)):
+        try:
+            if (var.get('i')<Js(2.0)):
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm1').get('length'))))
+                var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm2').get('length'))))
+                var.put('names', (var.get('nm1').get(var.get('rnd'))+var.get('nm2').get(var.get('rnd2'))))
+            else:
+                if (var.get('i')<Js(4.0)):
+                    var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm3').get('length'))))
+                    var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm4').get('length'))))
+                    var.put('names', (var.get('nm3').get(var.get('rnd'))+var.get('nm4').get(var.get('rnd2'))))
+                else:
+                    if (var.get('i')<Js(6.0)):
+                        var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm5').get('length'))))
+                        var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm6').get('length'))))
+                        var.put('names', (var.get('nm5').get(var.get('rnd'))+var.get('nm6').get(var.get('rnd2'))))
+                    else:
+                        if (var.get('i')<Js(8.0)):
+                            var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm7').get('length'))))
+                            var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm8').get('length'))))
+                            var.put('names', (var.get('nm7').get(var.get('rnd'))+var.get('nm8').get(var.get('rnd2'))))
+                        else:
+                            if (var.get('i')<Js(10.0)):
+                                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm9').get('length'))))
+                                var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm10').get('length'))))
+                                var.put('names', (var.get('nm9').get(var.get('rnd'))+var.get('nm10').get(var.get('rnd2'))))
+                            else:
+                                if (var.get('i')<Js(12.0)):
+                                    var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm11').get('length'))))
+                                    var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm12').get('length'))))
+                                    var.put('names', (var.get('nm11').get(var.get('rnd'))+var.get('nm12').get(var.get('rnd2'))))
+                                else:
+                                    var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm13').get('length'))))
+                                    var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm14').get('length'))))
+                                    var.put('names', (var.get('nm13').get(var.get('rnd'))+var.get('nm14').get(var.get('rnd2'))))
+            var.get('result').callprop('push', var.get('names'))
+        finally:
+                (var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1))
+    pass
+    return var.get('result')
+PyJsHoisted_nameGen_.func_name = 'nameGen'
+var.put('nameGen', PyJsHoisted_nameGen_)
+var.put('nm1', Js([Js('Alten'), Js('Am'), Js('Ans'), Js('Bischof'), Js('Blu'), Js('Brau'), Js('Dorn'), Js('Eben'), Js('Ebreich'), Js('Eisen'), Js('Fürsten'), Js('Feld'), Js('Frei'), Js('Gänsern'), Js('Göt'), Js('Geras'), Js('Gmun'), Js('Groß'), Js('Hall'), Js('Hard'), Js('Hart'), Js('Holla'), Js('Inns'), Js('Kapfen'), Js('Kirch'), Js('Kitz'), Js('Klagen'), Js('Kloster'), Js('Knittel'), Js('Krneu'), Js('Kuf'), Js('Land'), Js('Len'), Js('Leon'), Js('Lusten'), Js('Möd'), Js('March'), Js('Mau'), Js('Mistel'), Js('Mitter'), Js('Neu'), Js('Neun'), Js('Poys'), Js('Rank'), Js('Saal'), Js('Salz'), Js('Schär'), Js('Siezen'), Js('Stock'), Js('Ter'), Js('Trais'), Js('Tro'), Js('Vólker'), Js('Vöckla'), Js('Völk'), Js('Vil'), Js('Waid'), Js('Wals'), Js('Wolf'), Js('Wolfs'), Js('Zelt')]))
+var.put('nm2', Js([Js('bühel'), Js('bach'), Js('ben'), Js('berg'), Js('birge'), Js('birn'), Js('bruck'), Js('brunn'), Js('deck'), Js('denz'), Js('ding'), Js('dorf'), Js('ein'), Js('feld'), Js('felden'), Js('furt'), Js('haus'), Js('hausen'), Js('heim'), Js('hofen'), Js('kirch'), Js('kirchen'), Js('kreis'), Js('lach'), Js('ling'), Js('markt'), Js('nau'), Js('nitz'), Js('rau'), Js('schlag'), Js('see'), Js('sill'), Js('stadt'), Js('statt'), Js('stein'), Js('tal'), Js('ten'), Js('tetten'), Js('trenk'), Js('weg'), Js('weil'), Js('zell'), Js('zing'), Js('zis')]))
+var.put('nm3', Js([Js('Aar'), Js('Ander'), Js('Ant'), Js('Bever'), Js('Blanken'), Js('Bras'), Js('Brug'), Js('Brus'), Js('Dam'), Js('Dender'), Js('Dik'), Js('Dil'), Js('Eek'), Js('Etter'), Js('Ever'), Js('For'), Js('Grim'), Js('Hal'), Js('Harel'), Js('Has'), Js('Her'), Js('Heren'), Js('Heus'), Js('Hoog'), Js('Hout'), Js('Kerken'), Js('Knok'), Js('Kort'), Js('Laag'), Js('Land'), Js('Lang'), Js('Loker'), Js('Lom'), Js('Maas'), Js('Molen'), Js('Mous'), Js('Naam'), Js('Nieuw'), Js('Noord'), Js('Oost'), Js('Oud'), Js('Ouden'), Js('Rivier'), Js('Roes'), Js('Schaar'), Js('Schoot'), Js('Sherp'), Js('Sherpen'), Js('Steun'), Js('Tong'), Js('Tor'), Js('Tour'), Js('Turn'), Js('Vil'), Js('Ware'), Js('West'), Js('Wevel'), Js('Wolu'), Js('Zoet'), Js('Zot'), Js('Zotte'), Js('Zout'), Js('Zuid')]))
+var.put('nm4', Js([Js('aarde'), Js('beek'), Js('beke'), Js('berg'), Js('berge'), Js('bergen'), Js('burg'), Js('croen'), Js('den'), Js('eik'), Js('eind'), Js('einde'), Js('ende'), Js('gem'), Js('hal'), Js('heuvel'), Js('hout'), Js('laas'), Js('lare'), Js('lecht'), Js('leeuw'), Js('len'), Js('loon'), Js('mel'), Js('monde'), Js('muide'), Js('port'), Js('ren'), Js('rijk'), Js('ringen'), Js('schaat'), Js('schot'), Js('sel'), Js('selt'), Js('sen'), Js('stal'), Js('stel'), Js('straten'), Js('tals'), Js('ten'), Js('ven'), Js('vik'), Js('voorde'), Js('werp'), Js('werpen'), Js('zen')]))
+var.put('nm5', Js([Js('Épi'), Js('Alen'), Js('Angou'), Js('Anti'), Js('Anto'), Js('Argen'), Js('Auber'), Js('Auri'), Js('Avi'), Js('Ba'), Js('Bé'), Js('Beau'), Js('Bel'), Js('Berge'), Js('Besan'), Js('Bor'), Js('Bou'), Js('Bour'), Js('Ca'), Js('Cam'), Js('Carca'), Js('Cha'), Js('Champi'), Js('Char'), Js('Cho'), Js('Cla'), Js('Cler'), Js('Col'), Js('Colo'), Js('Cour'), Js('Di'), Js('Dra'), Js('Dragui'), Js('Fré'), Js('Genne'), Js('Go'), Js('Gre'), Js('Hague'), Js('Houi'), Js('Leva'), Js('Li'), Js('Mai'), Js('Mar'), Js('Mari'), Js('Marti'), Js('Mau'), Js('Mont'), Js('Montau'), Js('Nan'), Js('Nar'), Js('Or'), Js('Péri'), Js('Pa'), Js('Perpi'), Js('Plai'), Js('Poi'), Js('Pu'), Js('Roa'), Js('Rou'), Js('Sar'), Js('Sau'), Js('Soi'), Js('Ta'), Js('Tou'), Js('Va'), Js('Valen'), Js('Vier'), Js('Villeur'), Js('Vin'), Js('Vitro')]))
+var.put('nm6', Js([Js('çon'), Js('béliard'), Js('bagne'), Js('beuge'), Js('bonne'), Js('ciennes'), Js('court'), Js('fort'), Js('gnan'), Js('gnane'), Js('gneux'), Js('gny'), Js('gues'), Js('gueux'), Js('lès'), Js('lême'), Js('let'), Js('limar'), Js('llac'), Js('lles'), Js('lliers'), Js('llon'), Js('lly'), Js('logne'), Js('lon'), Js('luçon'), Js('luire'), Js('lun'), Js('mans'), Js('mart'), Js('masse'), Js('miers'), Js('momble'), Js('mont'), Js('mur'), Js('nau'), Js('nesse'), Js('nin'), Js('nne'), Js('nnet'), Js('nnois'), Js('noît'), Js('ppe'), Js('ppes'), Js('rac'), Js('rgues'), Js('rault'), Js('ris'), Js('roux'), Js('sart'), Js('seau'), Js('sier'), Js('sir'), Js('ssion'), Js('ssis'), Js('ssonne'), Js('ssons'), Js('ssy'), Js('teaux'), Js('thune'), Js('toise'), Js('tou'), Js('veil'), Js('vers'), Js('ves'), Js('ville'), Js('vin'), Js('yonne'), Js('zieu'), Js('zon')]))
+var.put('nm7', Js([Js('Aben'), Js('Ade'), Js('Adels'), Js('Ahrens'), Js('All'), Js('Allen'), Js('Als'), Js('Alten'), Js('Ans'), Js('Arns'), Js('Auer'), Js('Bür'), Js('Baum'), Js('Ben'), Js('Bern'), Js('Biesen'), Js('Blanken'), Js('Blau'), Js('Blom'), Js('Blum'), Js('Boizen'), Js('Bonn'), Js('Clau'), Js('Cloppen'), Js('Creuz'), Js('Cux'), Js('Darm'), Js('Delmen'), Js('Dettel'), Js('Dieten'), Js('Dillen'), Js('Dingel'), Js('Dor'), Js('Dorn'), Js('Drols'), Js('Eber'), Js('Eiben'), Js('Eisen'), Js('Elm'), Js('Elster'), Js('Elter'), Js('Enne'), Js('Eppel'), Js('Er'), Js('Eschen'), Js('Ess'), Js('Fürsten'), Js('Fell'), Js('Frei'), Js('Freuden'), Js('Fried'), Js('Gail'), Js('Geisel'), Js('Gladen'), Js('Gold'), Js('Grün'), Js('Gries'), Js('Groß'), Js('Großen'), Js('Guden'), Js('Hallen'), Js('Ham'), Js('Har'), Js('Heil'), Js('Helm'), Js('Her'), Js('Immen'), Js('Issel'), Js('König'), Js('Kaiser'), Js('Kron'), Js('Lüding'), Js('Lahn'), Js('Leip'), Js('Lengen'), Js('Mühl'), Js('Münzen'), Js('Markt'), Js('Naum'), Js('Neu'), Js('Neun'), Js('Niedern'), Js('Nurem'), Js('Obern'), Js('Oder'), Js('Olden'), Js('Oster'), Js('Penz'), Js('Pfullen'), Js('Pletten'), Js('Rauen'), Js('Richten'), Js('Rom'), Js('Rosen'), Js('Sachsen'), Js('Schmal'), Js('Schram'), Js('Schwarzen'), Js('Sieg'), Js('Stüh'), Js('Stral'), Js('Tanger'), Js('Thann'), Js('Ummer'), Js('Vell'), Js('Vils'), Js('Vohen'), Js('Wald'), Js('Weißen'), Js('Weil'), Js('Weins'), Js('Witten'), Js('Zieren'), Js('Zwei'), Js('Zwingen')]))
+var.put('nm8', Js([Js('büren'), Js('bach'), Js('beck'), Js('berg'), Js('beuren'), Js('bog'), Js('born'), Js('brück'), Js('bruck'), Js('burg'), Js('ding'), Js('dorf'), Js('drungen'), Js('förde'), Js('feld'), Js('fingen'), Js('furt'), Js('geismar'), Js('gries'), Js('höring'), Js('hal'), Js('han'), Js('hausen'), Js('heim'), Js('hofen'), Js('holder'), Js('holz'), Js('hude'), Js('kamp'), Js('kastel'), Js('kau'), Js('kirchen'), Js('land'), Js('lein'), Js('lingen'), Js('lohn'), Js('lug'), Js('mölsen'), Js('mold'), Js('nau'), Js('now'), Js('räschen'), Js('rath'), Js('roda'), Js('rode'), Js('schau'), Js('scheid'), Js('shafen'), Js('sloh'), Js('stadt'), Js('stedt'), Js('stein'), Js('sten'), Js('thal'), Js('wagen'), Js('wald'), Js('werder'), Js('wig'), Js('zach')]))
+var.put('nm9', Js([Js('Ar'), Js('Ark'), Js('Ath'), Js('Bal'), Js('Ballin'), Js('Bally'), Js('Ban'), Js('Bel'), Js('Bun'), Js('Car'), Js('Castle'), Js('Clon'), Js('Clona'), Js('Coote'), Js('Done'), Js('Drog'), Js('Dub'), Js('Dun'), Js('Dungar'), Js('East'), Js('Eden'), Js('Ennis'), Js('Gal'), Js('Gran'), Js('Grey'), Js('Kil'), Js('Kin'), Js('Lime'), Js('Lis'), Js('Long'), Js('Lough'), Js('Mac'), Js('Mal'), Js('Midle'), Js('Mona'), Js('Mullin'), Js('Na'), Js('Ne'), Js('New'), Js('North'), Js('Ros'), Js('Shan'), Js('Skibbe'), Js('Sli'), Js('South'), Js('Temple'), Js('Thur'), Js('Tippe'), Js('Tra'), Js('Tulla'), Js('Water'), Js('West'), Js('Wex'), Js('Wick'), Js('Youg')]))
+var.put('nm10', Js([Js('bar'), Js('bay'), Js('bet'), Js('blayney'), Js('bridge'), Js('briggan'), Js('common'), Js('crana'), Js('cross'), Js('dalk'), Js('dare'), Js('dee'), Js('derry'), Js('don'), Js('doran'), Js('ford'), Js('gal'), Js('gar'), Js('gheda'), Js('hal'), Js('han'), Js('hill'), Js('kee'), Js('kenny'), Js('kilty'), Js('larney'), Js('lee'), Js('lick'), Js('lin'), Js('lina'), Js('lip'), Js('lone'), Js('low'), Js('meath'), Js('mel'), Js('more'), Js('nagh'), Js('nard'), Js('nasloe'), Js('nes'), Js('ney'), Js('non'), Js('port'), Js('ran'), Js('rary'), Js('rea'), Js('reen'), Js('rey'), Js('rick'), Js('room'), Js('rush'), Js('sale'), Js('shannon'), Js('shel'), Js('sloe'), Js('stone'), Js('stones'), Js('ton'), Js('towel'), Js('try'), Js('van'), Js('way')]))
+var.put('nm11', Js([Js('Al'), Js('Alk'), Js('Amers'), Js('Amstel'), Js('Amster'), Js('Apel'), Js('Appinge'), Js('Arn'), Js('Arne'), Js('As'), Js('Blok'), Js('Bols'), Js('Breda'), Js('Brede'), Js('Coe'), Js('Culem'), Js('Deven'), Js('Dier'), Js('Dik'), Js('Doetin'), Js('Dor'), Js('Drach'), Js('Eind'), Js('Em'), Js('Emmel'), Js('En'), Js('Enk'), Js('Gen'), Js('Gene'), Js('Gorin'), Js('Gro'), Js('Groen'), Js('Haar'), Js('Har'), Js('Heer'), Js('Heeren'), Js('Hel'), Js('Henge'), Js('Hilver'), Js('Hoofd'), Js('Hooge'), Js('Kes'), Js('Laage'), Js('Land'), Js('Leeuw'), Js('Maas'), Js('Medem'), Js('Middel'), Js('Nieuw'), Js('Nieuwe'), Js('Nij'), Js('Noorder'), Js('Ooster'), Js('Raven'), Js('Roosen'), Js('Rotter'), Js('Slo'), Js('Sta'), Js('Steen'), Js('Ter'), Js('Til'), Js('Vlissing'), Js('Volle'), Js('Vollen'), Js('Waal'), Js('Wage'), Js('Wester'), Js('Wijn'), Js('Win'), Js('Wind'), Js('Winter'), Js('Woud'), Js('Zalt'), Js('Zoeter'), Js('Zouter'), Js('Zuider')]))
+var.put('nm12', Js([Js('berg'), Js('bommel'), Js('borg'), Js('burg'), Js('chem'), Js('daal'), Js('dam'), Js('dert'), Js('doorn'), Js('dorp'), Js('drecht'), Js('foort'), Js('fort'), Js('gein'), Js('graaf'), Js('hem'), Js('hof'), Js('hout'), Js('hoven'), Js('huizen'), Js('kerk'), Js('kum'), Js('leen'), Js('lem'), Js('len'), Js('lingen'), Js('lo'), Js('loopen'), Js('maar'), Js('meer'), Js('megen'), Js('melo'), Js('mere'), Js('mond'), Js('muiden'), Js('nep'), Js('neuzen'), Js('ningen'), Js('nisse'), Js('oord'), Js('rade'), Js('ren'), Js('rend'), Js('richem'), Js('rode'), Js('schede'), Js('schoten'), Js('selt'), Js('singen'), Js('stad'), Js('stadt'), Js('stein'), Js('ter'), Js('veen'), Js('venter'), Js('voort'), Js('vorden'), Js('voren'), Js('waard'), Js('ward'), Js('warden'), Js('wijk'), Js('zaal'), Js('zand'), Js('zee'), Js('zijl')]))
+var.put('nm13', Js([Js('Aar'), Js('Adlish'), Js('Affol'), Js('All'), Js('Alt'), Js('Amris'), Js('Appen'), Js('Ar'), Js('As'), Js('Bellin'), Js('Bero'), Js('Bia'), Js('Birs'), Js('Bischof'), Js('Brem'), Js('Burg'), Js('Con'), Js('Crog'), Js('Cud'), Js('Düben'), Js('Delé'), Js('Diessen'), Js('Eg'), Js('Ein'), Js('Er'), Js('Frauen'), Js('Frei'), Js('Freien'), Js('Fri'), Js('Gor'), Js('Grand'), Js('Her'), Js('Hutt'), Js('Ill'), Js('Küs'), Js('Kaiser'), Js('Kling'), Js('Kreuz'), Js('Langen'), Js('Lau'), Js('Laufen'), Js('Lenz'), Js('Lies'), Js('Mün'), Js('München'), Js('Maien'), Js('Men'), Js('Mor'), Js('Neu'), Js('Neun'), Js('Oft'), Js('Op'), Js('Oster'), Js('Porren'), Js('Rappers'), Js('Regens'), Js('Rei'), Js('Rhei'), Js('Rhein'), Js('Richters'), Js('Romain'), Js('Ror'), Js('Schaff'), Js('Sem'), Js('Spreiten'), Js('Steck'), Js('Steffis'), Js('Sur'), Js('Thal'), Js('Unter'), Js('Ver'), Js('Wädens'), Js('Walden'), Js('Walen'), Js('Werden'), Js('Wiedlis'), Js('Winter'), Js('Zolli'), Js('Zur')]))
+var.put('nm14', Js([Js('bach'), Js('berg'), Js('bon'), Js('born'), Js('bourg'), Js('burg'), Js('châtel'), Js('cona'), Js('cote'), Js('cour'), Js('dola'), Js('don'), Js('dorf'), Js('dris'), Js('drisio'), Js('feld'), Js('felden'), Js('gans'), Js('garten'), Js('gen'), Js('ges'), Js('hausen'), Js('hofen'), Js('hurn'), Js('kirch'), Js('kkon'), Js('kon'), Js('lach'), Js('lingen'), Js('môtier'), Js('münster'), Js('mance'), Js('mont'), Js('mundigen'), Js('nach'), Js('nacht'), Js('nau'), Js('neck'), Js('neuve'), Js('nier'), Js('pach'), Js('pen'), Js('refin'), Js('ring'), Js('ringen'), Js('rus'), Js('sau'), Js('schwil'), Js('see'), Js('seen'), Js('sellen'), Js('siedeln'), Js('singen'), Js('soix'), Js('son'), Js('stätten'), Js('stadt'), Js('stal'), Js('steig'), Js('stein'), Js('stuhl'), Js('swil'), Js('tal'), Js('tern'), Js('thal'), Js('wil'), Js('zach'), Js('zell'), Js('zona')]))
+pass
+pass
+
+
+# Add lib to the module scope
+westEuropeTowns = var.to_python()

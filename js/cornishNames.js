@@ -1,0 +1,34 @@
+
+function nameGen(type){
+	var nm1 = ["Aedan","Alan","Anaoc","Androw","Aniud","Arganbri","Argantbri","Argantmoet","Arthek","Arthur","Arthyen","Austol","Awen","Búdic","Beli","Benesek","Bledros","Bleidiud","Branok","Brenci","Breok","Brioc","Britail","Brithael","Bryok","Brytthael","Budic","Cadan","Cador","Cantgethen","Cantgueithen","Caradoc","Carantok","Casek","Casworon","Catgutic","Catuutic","Cemoere","Cemoyre","Cengor","Cenmenoc","Cenmin","Cenmyn","Cest","Cingur","Cinhoedl","Clemmo","Clemo","Clesek","Comoere","Comuyre","Conan","Conmonoc","Conredeu","Corentyn","Costentyn","Cufure","Daveth","Davydh","Day","De","Demelza","Dewi","Dofagan","Edern","Enyon","Freoc","Frioc","Gaudreit","Gawen","Gerens","Gerren","Gest","Goron","Gratcant","Grifiud","Gryffyn","Guaedret","Guentanet","Guentigirn","Guincum","Guithrit","Gurbodu","Gurcant","Gurcencor","Gurci","Gurcon","Gurdilic","Gurguaret","Gurguistl","Gurheter","Guriant","Gurient","Gurlouen","Gurthcid","Guruaret","Gwalather","Hedrek","Hedrok","Hedyn","Hresman","Humfra","Hykka","Iarnguallon","Iarnwallon","Ilcarthon","Iliud","Inisian","Iudicael","Iudnerth","Jacka","Jago","Jeffra","Jenken","Jori","Jory","Josep","Jowan","Karadok","Ke","Kenal","Kenan","Keneder","Kensa","Kenver","Kenwyn","Keverne","Kitto","Klemmo","Konan","Kytto","Leucum","Leumarh","Locryn","Loi","Loucum","Louenan","Loumarch","Lowen","Lowenan","Maban","Madern","Maeloc","March","Margh","Marh","Massen","Mathi","Matuid","Medrod","Melor","Meriasek","Mermen","Mermin","Meryasek","Mewan","Mihal","Modredis","Mor","Morcant","Morgan","Morhaedo","Muelpatrec","Myghal","Myrmen","Nessa","Nikka","Osian","Ossíne","Oysian","Pasco","Pascow","Pawl","Peder","Peran","Perran","Petrok","Piran","Putrael","Resmen","Ret","Rewan","Rinduran","Riol","Ruan","Rudhek","Ruman","Ryd","Ryt","Santo","Seleven","Stefan","Talan","Talek","Taran","Telent","Terithien","Tethion","Tewdar","Tomas","Treave","Treeve","Tristan","Ungust","Uther","Wella","Wendeern","Wincuf","Wurcant","Wurci","Wurcon","Wurgent","Wurgustel","Wurlowen","Yestin","Ylcerthon"];
+	var nm2 = ["Aedoc","Alis","Anauprost","Annik","Arganteilin","Aswen","Beaten","Bennath","Berlewen","Bersaba","Beryan","Borlewen","Briallen","Bryluen","Caja","Ceenguled","Ceinguled","Chesten","Conwenna","Delen","Demelza","Derowen","Derwa","Doryty","Ebrel","Elestren","Elowen","Elys","Emblyn","Endelyn","Eseld","Ewella","Fuandrec","Glanna","Gloiucen","Gloiumed","Gluiucen","Guenbrith","Guencen","Guencenedl","Guenguiu","Guenmon","Guenneret","Gwennol","Hedra","Ia","Igerna","Ilcum","Illcum","Iudprost","Jenefer","Jenifer","Jenifry","Jenna","Josepa","Jowanet","Kaja","Katel","Kelyn","Kelynen","Kensa","Keren","Kerensa","Keresen","Kerezen","Kerra","Kew","Lamorna","Loveday","Lowdy","Lowena","Lowenna","Mabyn","Maria","Medguistl","Medguistyl","Medhuil","Meduil","Medwuistel","Melder","Meliora","Mellyn","Melwyn","Melwynn","Melyonen","Melyor","Meraud","Merouda","Metheven","Morgana","Morgelyn","Moruith","Moruiw","Morveren","Morvoren","Morwen","Morwenna","Nessa","Nonna","Ogurcen","Oncenedl","Oncum","Onguen","Onncum","Onnwuen","Onwean","Onwen","Ourcen","Ourdilic","Ourdylyc","Pasca","Pascatte","Peswera","Proscen","Prosguetel","Proswetel","Rosen","Rosenwyn","Rum","Rumun","Senara","Sewena","Sowena","Sowenna","Splanna","Stefana","Steren","Talwyn","Talwynn","Tamara","Tamsin","Tamsyn","Tecca","Tegen","Tekka","Tregereth","Tressa","Trueth","Wenna","Wuennmon","Ysella"];
+	var nm3 = ["Andrewartha","Angove","Angwin","Argall","Arundell","Baragwanath","Bawden","Bennets","Bennetto","Berryman","Billings","Blewett","Bligh","Boase","Bohenno","Bolitho","Bonython","Borlase","Bosanko","Boscowan","Bosustow","Buglehole","Callaway","Carbis","Cardew","Cardynham","Carkeek","Carlyon","Carmino","Carne","Carwithin","Chalke","Chegwin","Chellew","Chenoweth","Choak","Chynoweth","Clemo","Cock","Colenso","Collick","Connock","Coon","Cornish","Corrington","Couch","Cox","Curnow","Daddow","Davies","Davy","Dew","Dowrick","Dungey","Ede","Edgcumbe","Edwards","FitzSimmons","Fletcher","Foote ","Fox","Freethy","Godolphin","Goldsworthy","Green","Grenfell","Grenville","Gribble","Growden","Gummo ","Gummow","Gundry","Hammett","Hancock","Harris","Harvey","Hender","Hendra","Herle","Hicks","Hobba","Hocking","Hollow","Hugh","Hunkin","Hunkins","Jago","James","Jenkin","Jenkins","Johns","Jope","Jose","Julian","Keast","Kestle","Kiegwin","Killigrew","Kitto","Lanyon","Lawry","Libby","Martin","Matthews","May","Mellin","Menhenick","Menhennett","Menhennick","Miller","Minear","Mitchell","Morcom","Moyle","Nancarrow","Nance","Nancekivell","Nancollas","Nanscawen","Nansladron","Nicholls","Nichols","Oates","Pasco","Pascoe","Pascow","Pearce","Pellow","Pellowe","Penaluna","Penberthy","Pendarves","Pendarvis","Pender","Pengelly","Penhale","Penhaligon","Penhalligon","Penhallow","Penketh","Penrose","Peter","Phillips","Pierce","Pinckney","Polglase","Polglaze","Polkinghorne","Pomeroy","Prideaux","Rablin","Rawle","Rescorla","Restarick","Richards","Rickard","Roberts","Rogers","Roscarrock","Roscrow","Rosevear","Rosewarne","Roskruge","Rous","Rowe","Rowse","Rundle","Runnalls","Sambell","Sambells","Samble","Santo","Skewes","Sleeman","Smith","Spargo","Stephens","Tamblyn","Teague","Thomas","Toll","Townsend","Trebilcock","Tredennick","Treffry","Tregaskis","Tregear","Tregidgo","Treglone","Treglown","Tregloyne","Tregonning","Tregunna","Tregurtha","Treherne","Trelawney","Trelawny","Trelease","Tremain","Tremaine","Tremane","Tremayne","Trembath","Treneer","Trenerry","Trengrouse","Trenholm","Trenouth","Trenoweth","Trerice","Trescothick","Trescott","Treseder","Tresidder","Tresise","Tresloggett","Trethewey","Trevanion","Trevaskis","Trevellick","Trevelyan","Trevethan","Trevillian","Trevithick","Trevorrow","Trevose","Trewarne","Trewartha","Trewavas","Treweek","Trewella","Trewhella","Trewin","Treworgy","Trezise","Trezona","Trudheon","Trueworthy","U'Ren","Uglow","Uren","Vivian","Vivyan","Vyvyan","Walters","Ward","Warn","Wearn","Wearne","Williams"];
+
+	var br = "";
+
+	$('#placeholder').css('textTransform', 'capitalize');
+	var tp = type;
+	var element = document.createElement("div");
+	element.setAttribute("id", "result");
+	
+	for(i = 0; i < 10; i++){
+		rnd2 = Math.floor(Math.random() * nm3.length);
+		if(tp === 1){
+			rnd = Math.floor(Math.random() * nm2.length);
+			names = nm2[rnd] + " " + nm3[rnd2];
+			nm2.splice(rnd, 1);
+		}else{
+			rnd = Math.floor(Math.random() * nm1.length);
+			names = nm1[rnd] + " " + nm3[rnd2];
+			nm1.splice(rnd, 1);
+		}
+		nm3.splice(rnd2, 1);
+		br = document.createElement('br');	
+		element.appendChild(document.createTextNode(names));
+		element.appendChild(br);
+	}
+	if(document.getElementById("result")){
+		document.getElementById("placeholder").removeChild(document.getElementById("result"));
+	}		
+	document.getElementById("placeholder").appendChild(element);
+}

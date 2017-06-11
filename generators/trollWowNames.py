@@ -1,0 +1,49 @@
+__all__ = ['trollWowNames']
+
+# Don't look below, you will not understand this Python code :) I don't.
+
+from js2py.pyjs import *
+# setting scope
+var = Scope( JS_BUILTINS )
+set_global_object(var)
+
+# Code follows:
+var.registers(['nm1', 'nameGen', 'nm4', 'nm3', 'nm2', 'nm6'])
+@Js
+def PyJsHoisted_nameGen_(type, this, arguments, var=var):
+    var = Scope({'arguments':arguments, 'this':this, 'type':type}, var)
+    var.registers(['tp', 'result', 'type'])
+    var.put('tp', var.get('type'))
+    var.put('result', Js([]))
+    #for JS loop
+    var.put('i', Js(0.0))
+    while (var.get('i')<Js(10.0)):
+        try:
+            if PyJsStrictEq(var.get('tp'),Js(1.0)):
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm4').get('length'))))
+                var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm2').get('length'))))
+                var.put('rnd3', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm6').get('length'))))
+                var.put('names', ((var.get('nm4').get(var.get('rnd'))+var.get('nm2').get(var.get('rnd2')))+var.get('nm6').get(var.get('rnd3'))))
+            else:
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm1').get('length'))))
+                var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm2').get('length'))))
+                var.put('rnd3', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm3').get('length'))))
+                var.put('names', ((var.get('nm1').get(var.get('rnd'))+var.get('nm2').get(var.get('rnd2')))+var.get('nm3').get(var.get('rnd3'))))
+            var.get('result').callprop('push', var.get('names'))
+        finally:
+                (var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1))
+    pass
+    return var.get('result')
+PyJsHoisted_nameGen_.func_name = 'nameGen'
+var.put('nameGen', PyJsHoisted_nameGen_)
+var.put('nm1', Js([Js('Al'), Js('An'), Js('Azi'), Js('Dru'), Js('Druk'), Js('Hai'), Js('Hak'), Js('Haka'), Js('Haku'), Js('Ham'), Js('Han'), Js('Hana'), Js('Hok'), Js('Hoki'), Js('Huka'), Js('Ja'), Js('Jal'), Js('Jan'), Js('Jar'), Js('Jes'), Js('Jin'), Js('Ju'), Js('Jum'), Js('Jun'), Js('Kai'), Js('Kaz'), Js('Kel'), Js('Ko'), Js('Kor'), Js('Ku'), Js('Kur'), Js('Kuz'), Js('Li'), Js('Lin'), Js('Maal'), Js('Mal'), Js('Muz'), Js('Mul'), Js('Mal'), Js('Pel'), Js('Pele'), Js('Rah'), Js('Rak'), Js('Rap'), Js('Ras'), Js('Raz'), Js('Rej'), Js('Reji'), Js('Rhaz'), Js('Rhuz'), Js('Ruja'), Js('Ruz'), Js('Seji'), Js('Sen'), Js('Ses'), Js('Sesh'), Js('Sez'), Js('Sha'), Js('Shak'), Js('She'), Js('Shen'), Js('Sin'), Js('Shun'), Js('Tan'), Js('Taz'), Js('Tes'), Js('Tesh'), Js('Traz'), Js('Trez'), Js('Tun'), Js('Tzal'), Js('Tzan'), Js('Tzul'), Js('Tzun'), Js('Ugo'), Js('Um'), Js('Un'), Js('Ur'), Js('Uthel'), Js('Ven'), Js('Vol'), Js('Vu'), Js('Vul'), Js('Vuz'), Js('Vuza'), Js('Vuze'), Js('Wan'), Js('Won'), Js('Wun'), Js('Xan'), Js('Xen'), Js('Xon'), Js('Xu'), Js('Xuk'), Js('Xun'), Js('Za'), Js('Zae'), Js('Zaej'), Js('Zal'), Js('Zan'), Js('Zando'), Js('Zax'), Js('Zeb'), Js('Zel'), Js('Zela'), Js('Zen'), Js('Zendo'), Js('Zes'), Js('Zil'), Js('Zilzi'), Js('Zin'), Js('Zol'), Js('Zon'), Js('Zu'), Js('Zub'), Js('Zuba'), Js('Zuf'), Js('Zul'), Js('Zula'), Js('Zulya'), Js('Zun'), Js('Zuva'), Js('Zux'), Js('Val'), Js('Van'), Js('Vun'), Js('Vin'), Js('Von'), Js('Kan'), Js('Kun'), Js('Kuz'), Js('Jam'), Js('Jama'), Js('Jum'), Js('Juma'), Js('Jun'), Js('Jan'), Js('Juna'), Js('Zal'), Js('Sal'), Js('Zala'), Js('Zula'), Js('Zalu'), Js('Gol'), Js('Gul'), Js('Gal'), Js('Mug'), Js('Mig'), Js('Ros'), Js('Rus')]))
+var.put('nm2', Js([Js('aj'), Js('uj'), Js('ij'), Js('az'), Js('uz'), Js('iz'), Js('ah'), Js('uh'), Js('an'), Js('un'), Js('on'), Js('ajin'), Js('ujin'), Js('ijin'), Js('nan'), Js('nun'), Js('non'), Js('mun'), Js('mon'), Js('ju'), Js('ji'), Js('za'), Js('zu'), Js('zul'), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js(''), Js('')]))
+var.put('nm3', Js([Js("'Ahjen"), Js("'Ahjin"), Js("'Anjin"), Js("'Aya"), Js("'Cha"), Js("'Do"), Js("'Gan"), Js("'Ghan"), Js("'Ijen"), Js("'Jabu"), Js("'Jian"), Js("'Jin"), Js("'Keiki"), Js("'Kyo"), Js("'Mak"), Js("'Mon"), Js("'Nanji"), Js("'Nanju"), Js("'Nay"), Js("'Oji"), Js("'Ojin"), Js("'Rimon"), Js("'Shalay"), Js("'Sora"), Js("'Thuwa"), Js("'Tish"), Js("'To"), Js("'Uljin"), Js("'Ulkaz"), Js("'Umijo"), Js("'Unjin"), Js("'Unya"), Js("'Zan"), Js('abar'), Js('agi'), Js('ahjen'), Js('ahjin'), Js('aji'), Js('ajin'), Js('akijin'), Js('akjin'), Js('alai'), Js('alik'), Js('ambi'), Js('amijo'), Js('amike'), Js('ane'), Js('anjin'), Js('anjo'), Js('armek'), Js('ash'), Js('ashi'), Js('asuwa'), Js('avo'), Js('awan'), Js('aya'), Js('azin'), Js('azko'), Js('bin'), Js('bir'), Js('bu'), Js('cha'), Js('do'), Js('ejin'), Js('embi'), Js('engu'), Js('eshi'), Js('ga'), Js('gajin'), Js('gan'), Js('ghan'), Js('gu'), Js('hjin'), Js('ijen'), Js('ima'), Js('ingi'), Js('injo'), Js('jabu'), Js('jel'), Js('jian'), Js('jin'), Js('ju'), Js('kalai'), Js('keiki'), Js('kima'), Js('kuraz'), Js('kyo'), Js('lai'), Js('laji'), Js('lak'), Js('ma'), Js('mak'), Js('mbu'), Js('medi'), Js('mok'), Js('mon'), Js('nanji'), Js('nanju'), Js('nay'), Js('odah'), Js('oji'), Js('ojin'), Js('oku'), Js('raz'), Js('rimon'), Js('ru'), Js('shalay'), Js('sora'), Js('thal'), Js('thil'), Js('thul'), Js('thuwa'), Js('tish'), Js('to'), Js('ulabar'), Js('uljin'), Js('ulkaz'), Js('umijo'), Js('umike'), Js('ungu'), Js('unjin'), Js('unjo'), Js('unya'), Js('uraz'), Js('wan'), Js('yambi'), Js('ypto'), Js('yptu'), Js('zahn'), Js('zan'), Js('zibin'), Js('zibo'), Js('zim')]))
+var.put('nm4', Js([Js('Aj'), Js('Aji'), Js('Ak'), Js('Ake'), Js('Al'), Js('Alu'), Js('Alun'), Js('An'), Js('Anji'), Js('Anju'), Js('Ar'), Js('Ara'), Js('As'), Js('Asze'), Js('At'), Js('Ate'), Js('Ba'), Js('Baji'), Js('Bal'), Js('Bala'), Js('Bali'), Js('Balli'), Js('Ben'), Js('Beni'), Js('Benni'), Js('Bi'), Js('Bie'), Js('Bo'), Js('Boo'), Js('Boon'), Js('Bul'), Js('Bula'), Js('Buli'), Js('Bulli'), Js('Bulu'), Js('Bun'), Js('Dei'), Js('Eci'), Js('Eji'), Js('El'), Js('Ele'), Js('Fey'), Js('Gir'), Js('Ha'), Js('Hai'), Js('Hola'), Js('Hula'), Js('Il'), Js('Ila'), Js('Illa'), Js('Jam'), Js('Jama'), Js('Jan'), Js('Jav'), Js('Java'), Js('Juv'), Js('Juva'), Js('Ka'), Js('Kai'), Js('Kan'), Js('Kat'), Js('Kata'), Js('Katu'), Js('Ke'), Js('Kea'), Js('Kej'), Js('Khel'), Js('Khij'), Js('Khuj'), Js('Khul'), Js('Khuw'), Js('Ki'), Js('Kin'), Js('Kiya'), Js('Kiz'), Js('Kizi'), Js('Kulu'), Js('Kuz'), Js('Luj'), Js('Luji'), Js('Maka'), Js('Man'), Js('Mei'), Js('Mele'), Js('Mo'), Js('Moz'), Js('Nele'), Js('Neli'), Js('Puj'), Js('Puja'), Js('Ra'), Js('Rac'), Js('Ran'), Js('Rash'), Js('Ren'), Js('Ron'), Js('Sae'), Js('Saen'), Js('Saj'), Js('Sal'), Js('Saon'), Js('Sega'), Js('Sen'), Js('Sesh'), Js('Sha'), Js('Shak'), Js('Shaka'), Js('Sham'), Js('Shari'), Js('Sia'), Js('Sian'), Js('Son'), Js('Soni'), Js('Suj'), Js('Sul'), Js('Suli'), Js('Suly'), Js('Tal'), Js('Tas'), Js('Tay'), Js('Tayo'), Js('Tazzi Tizzi'), Js('Te'), Js('Tej'), Js('Teja'), Js('Tez'), Js('Teza'), Js('Tezzi'), Js('Tiz'), Js('Tiza'), Js('Tul'), Js('Tus'), Js('Un'), Js('Unji'), Js('Vaj'), Js('Val'), Js('Van'), Js('Ve'), Js('Veh'), Js('Vehe'), Js('Ven'), Js('Vin'), Js('Von'), Js('Vuj'), Js('Vul'), Js('Vun'), Js('Xi'), Js('Xia'), Js('Xu'), Js('Ya'), Js('Yah'), Js('Yash'), Js('Yashi'), Js('Ye'), Js('Yer'), Js('Yera'), Js('Yi'), Js('Yishi'), Js('Yu'), Js('Yuh'), Js('Za'), Js('Zael'), Js('Zaj'), Js('Zal'), Js('Zam'), Js('Zar'), Js('Zara'), Js('Zashi'), Js('Ze'), Js('Zea'), Js('Zeal'), Js('Zel'), Js('Zele'), Js('Zen'), Js('Zesa'), Js('Zeti'), Js('Zhon'), Js('Zia'), Js('Zir'), Js('Zola'), Js('Zolla'), Js('Zoti'), Js('Zu'), Js('Zuj'), Js('Zul'), Js('Zula'), Js('Zulla'), Js('Zur'), Js('Zyr')]))
+var.put('nm6', Js([Js("'Anji"), Js("'Aya"), Js("'Dur"), Js("'Enji"), Js("'Eza"), Js("'Jen"), Js("'Jin"), Js("'Jun"), Js("'Kelah"), Js("'Mahi"), Js("'Tsu"), Js("'Ujia"), Js("'Unji"), Js("'Unna"), Js("'Zali"), Js("'Zula"), Js("'Zuli"), Js('aca'), Js('aci'), Js('ajia'), Js('ajie'), Js('ajin'), Js('ala'), Js('alae'), Js('alu'), Js('amja'), Js('amor'), Js('andi'), Js('ani'), Js('anja'), Js('anji'), Js('any'), Js('ara'), Js('ari'), Js('asha'), Js('ashi'), Js('atha'), Js('aty'), Js('aya'), Js('ayo'), Js('azae'), Js('azea'), Js('azi'), Js('azra'), Js('di'), Js('dur'), Js('eja'), Js('ejie'), Js('elea'), Js('emalu'), Js('ena'), Js('enji'), Js('era'), Js('esa'), Js('esha'), Js('eshia'), Js('eta'), Js('eti'), Js('eza'), Js('ezzi'), Js('hena'), Js('ia'), Js('iaja'), Js('ijazi'), Js('ijo'), Js('ila'), Js('ilith'), Js('ina'), Js('inda'), Js('ini'), Js('ino'), Js('isa'), Js('ishi'), Js('ixia'), Js('iya'), Js('izali'), Js('izi'), Js('ja'), Js('jari'), Js('jin'), Js('kelah'), Js('lynn'), Js('mahi'), Js('mei'), Js('ola'), Js('ona'), Js('onji'), Js('onna'), Js('onoo'), Js('oti'), Js('oza'), Js('ra'), Js('raa'), Js('shia'), Js('siya'), Js('toa'), Js('uja'), Js('ujia'), Js('ujin'), Js('ukraa'), Js('ula'), Js('ulae'), Js('ulea'), Js('uli'), Js('ulli'), Js('ullu'), Js('ulu'), Js('una'), Js('unja'), Js('unjin'), Js('unna'), Js('usah'), Js('usha'), Js('utie'), Js('uwei'), Js('uxia'), Js('uzzi'), Js('watha'), Js('ylin'), Js('yra'), Js('zae'), Js('zali'), Js('zari'), Js('zea'), Js('zula'), Js('zuli')]))
+pass
+pass
+
+
+# Add lib to the module scope
+trollWowNames = var.to_python()

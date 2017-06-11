@@ -1,0 +1,36 @@
+__all__ = ['crabs']
+
+# Don't look below, you will not understand this Python code :) I don't.
+
+from js2py.pyjs import *
+# setting scope
+var = Scope( JS_BUILTINS )
+set_global_object(var)
+
+# Code follows:
+var.registers(['nm1', 'nameGen'])
+@Js
+def PyJsHoisted_nameGen_(this, arguments, var=var):
+    var = Scope({'arguments':arguments, 'this':this}, var)
+    var.registers(['result'])
+    var.put('result', Js([]))
+    #for JS loop
+    var.put('i', Js(0.0))
+    while (var.get('i')<Js(10.0)):
+        try:
+            var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm1').get('length'))))
+            var.put('names', var.get('nm1').get(var.get('rnd')))
+            var.get('result').callprop('push', var.get('names'))
+        finally:
+                (var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1))
+    pass
+    return var.get('result')
+PyJsHoisted_nameGen_.func_name = 'nameGen'
+var.put('nameGen', PyJsHoisted_nameGen_)
+var.put('nm1', Js([Js('AlPinchino'), Js('Alpha'), Js('Alt'), Js('Angel'), Js('Antedeluvius'), Js('Anthozoan'), Js('Antipatharia'), Js('Aphrodite'), Js('Apollo'), Js('Aqua'), Js('Arial'), Js('Arie'), Js('Arnold'), Js('Atoll'), Js('Auburn'), Js('Aura'), Js('Ava'), Js('Azilia'), Js('Azure'), Js('Azz'), Js('Azzi'), Js('Baby'), Js('BamBam'), Js('Barbecue'), Js('Barnacle'), Js('Barnegat'), Js('Bartholomew'), Js('Bashful'), Js('Bay'), Js('Bella'), Js('Bibbity'), Js('BigMo'), Js('Biggie'), Js('Bippity'), Js('Biscuit'), Js('Bitsy'), Js('Blazer'), Js('Blister'), Js('Blondie'), Js('Blueberry'), Js('Bluestar'), Js('Bluto'), Js('Bo'), Js('Bob'), Js('Boppity'), Js('Bounce'), Js('Brittany'), Js('Brooke'), Js('Bubba'), Js('Buddy'), Js('Bungie'), Js('Burt'), Js('Buttersauce'), Js('Butterscotch'), Js('Buttons'), Js('Cakes'), Js('Callinectes'), Js('Cami'), Js('CanCan'), Js('Cangrejo'), Js('Cant'), Js('Caps'), Js('Caramel'), Js('Carapace'), Js('Carlonia'), Js('Carolina'), Js('Champagne'), Js('Chance'), Js('Charmander'), Js('Checkers'), Js('Cheese'), Js('Cheeto'), Js('Cherry'), Js('Chespeake'), Js('Chester'), Js('Chip'), Js('Chloe'), Js('Chowder'), Js('Chuck'), Js('CindyClawford'), Js('CitizenSnips'), Js('Clacker'), Js('Clark'), Js('Claude'), Js('Clause'), Js('Clawdia'), Js('ClawdiaSchiffer'), Js('Clawford'), Js('Claws'), Js('Clawz'), Js('Clicker'), Js('Clipper'), Js('Clyde'), Js('Cobbler'), Js('Cobo'), Js('Coco'), Js('Cooper'), Js('Copper'), Js('Coral'), Js('Coraline'), Js('Cotton'), Js('CrabCakes'), Js('Crabanasty'), Js('Crabina'), Js('Crabohydrate'), Js('Crack'), Js('Crane'), Js('Crash'), Js('Creepers'), Js('Crimson'), Js('Crunchy'), Js('Crusher'), Js('Crusty'), Js('Current'), Js('Dazzle'), Js('Deadliest'), Js('DeeLish'), Js('Delicious'), Js('Digglet'), Js('Dinner'), Js('Dino'), Js('Dixie'), Js('Dora'), Js('DrZoidberg'), Js('Dude'), Js('Dusty'), Js('Dylan'), Js('Edd'), Js('Elmo'), Js('Elvis'), Js('Emilleo'), Js('Emma'), Js('Emmo'), Js('Enter'), Js('Ernie'), Js('Escape'), Js('Eugene'), Js('Execrable'), Js('Extender'), Js('Fang'), Js('Flash'), Js('Flexi'), Js('Francis'), Js('Fritz'), Js('Frothy'), Js('Fuzzball'), Js('George'), Js('Georgie'), Js('Gil'), Js('Girtrude'), Js('Gizmo'), Js('Gordon'), Js('Grabandhold'), Js('Grabby'), Js('Griper'), Js('Groceries'), Js('Grouchy'), Js('Grumpy'), Js('Hairy'), Js('Hardheaded'), Js('Hardy'), Js('Harry'), Js('Harvy'), Js('Heidi'), Js('Helio'), Js('Hemana'), Js('Hemie'), Js('Hepzibah'), Js('Herman'), Js('Hermes'), Js('Hermi'), Js('Hermie'), Js('Hermikey'), Js('Hermilia'), Js('Hermione'), Js('Hermit'), Js('Hermy'), Js('Hiawatha'), Js('Hiro'), Js('Hopper'), Js('Horseshoe'), Js('IHateButr'), Js('Illsib'), Js('Indy'), Js('Ipinchthings'), Js('Itsy'), Js('Izzi'), Js('Jacques'), Js('Jade'), Js('Jenny'), Js('July'), Js('Kalakia'), Js('Kani'), Js('Killer'), Js('Kingkong'), Js('Kingler'), Js('Krabby'), Js('KrabbyPatty'), Js('Kraken'), Js('Kuka'), Js('Kyle'), Js('Lance'), Js('Lapis'), Js('Latonka'), Js('Latoya'), Js('Lemon'), Js('Leo'), Js('Lexy'), Js('Lillian'), Js('Lily'), Js('Lime'), Js('LimePie'), Js('LittleMan'), Js('Liv'), Js('Lock'), Js('Lucee'), Js('Lunchables'), Js('Lynchpin'), Js('Mae'), Js('Maggie'), Js('Maja'), Js('Malcolm'), Js('Mango'), Js('Mark'), Js('Marvin'), Js('Matilda'), Js('Maverick'), Js('Max'), Js('Maxy'), Js('MeHateBaths'), Js('Meatball'), Js('Meekrob'), Js('Mia'), Js('Mikey'), Js('Missy'), Js('Moony'), Js('Moreno'), Js('MrCrabbitz'), Js('MrCrabz'), Js('MrPinch'), Js('MrSea'), Js('MrsCrabapple'), Js('Muffin'), Js('Mynah'), Js('Nazar'), Js('Nero'), Js('Nigel'), Js('Noah'), Js('Norbert'), Js('Oasis'), Js('Ocean'), Js('Oceandrus'), Js('Octocorallia'), Js('Oggnob'), Js('OldBay'), Js('Omega'), Js('OneEyedWillie'), Js('Onyx'), Js('Oreo'), Js('Ormond'), Js('Oscar'), Js('Pace'), Js('Palm'), Js('Patty'), Js('Pebbles'), Js('Peddley'), Js('Penny'), Js('Pepsi'), Js('Periscope'), Js('Peurto'), Js('Piccolo'), Js('Pierr'), Js('Pincers'), Js('Pinch'), Js('Pincher'), Js('Pinchino'), Js('Pinchy'), Js('Pinstripe'), Js('Pique'), Js('Pixie'), Js('Pointy'), Js('Pootie'), Js('Popeye'), Js('Porticus'), Js('Portunus'), Js('Poseidon'), Js('Prawn'), Js('Princess'), Js('Print'), Js('Pumba'), Js('Purpy'), Js('Quarts'), Js('Radar'), Js('Rafael'), Js('Rainbow'), Js('Randy'), Js('Ranger'), Js('Recluse'), Js('Reef'), Js('Rex'), Js('Rio'), Js('Ripple'), Js('Riptide'), Js('Rocklobster'), Js('Rogue'), Js('Ron'), Js('Roshi'), Js('Rosie'), Js('Ruby'), Js('Rugose'), Js('Runt'), Js('Rusty'), Js('Sally'), Js('Salty'), Js('Sam'), Js('Sandy'), Js('Sapphire'), Js('Saute'), Js('Savvanah'), Js('Scooter'), Js('Scratchy'), Js('Scroll'), Js('Scuttlebutt'), Js('SeaBiscuit'), Js('SeaChicken'), Js('SeafoodSam'), Js('Seamore'), Js('Sebastian'), Js('Sellfish'), Js('Serendipity'), Js('Serrata'), Js('Shabastin'), Js('Shabby'), Js('Sham'), Js('Shammy'), Js('Shamrock'), Js('Shelby'), Js('Sheldon'), Js('Shell'), Js('Shelly'), Js('Shift'), Js('Shine'), Js('Shizzelle'), Js('Shoman'), Js('Shorty'), Js('Sideways'), Js('Simmer'), Js('Skipper'), Js('Slowbro'), Js('SmallFry'), Js('Snap'), Js('Snapp'), Js('Snappah'), Js('Snapper'), Js('Snappy'), Js('Snaps'), Js('Snipper'), Js('Snippy'), Js('Snips'), Js('Snookums'), Js('Softshell'), Js('Sparkle'), Js('Sparky'), Js('Speedy'), Js('Spider'), Js('Spike'), Js('Spikes'), Js('Spikey'), Js('Spot'), Js('Spyder'), Js('Squeaker'), Js('Stan'), Js('Star'), Js('Steamed'), Js('Stryder'), Js('Stuart'), Js('StudMuffin'), Js('Styx'), Js('Subclause'), Js('Sunny'), Js('Sunset'), Js('Sunshine'), Js('Surf'), Js('Surimi'), Js('Switch'), Js('Syd'), Js('Tab'), Js('Tang'), Js('Tango'), Js('TaxiCrab'), Js('Taz'), Js('TiaMaria'), Js('Tiago'), Js('Tide'), Js('Timon'), Js('Tingle'), Js('Tinka'), Js('Tonks'), Js('Tony'), Js('Topper'), Js('Trevor'), Js('Tweedle'), Js('Tweezer'), Js('Twister'), Js('Twitch'), Js('Twonka'), Js('Vicegrip'), Js('Waddles'), Js('Waikiki'), Js('Wallie'), Js('Water'), Js('Waves'), Js('Weakpoint'), Js('Wendi'), Js('Wheezer'), Js('Whopper'), Js('Wonka'), Js('Xavier'), Js('Yolanda'), Js('Yssup'), Js('Zeus'), Js('Zippy'), Js('Zoantharia'), Js('Zoe'), Js('iPinch')]))
+pass
+pass
+
+
+# Add lib to the module scope
+crabs = var.to_python()

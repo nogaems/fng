@@ -1,0 +1,72 @@
+__all__ = ['azerbaijaniNames']
+
+# Don't look below, you will not understand this Python code :) I don't.
+
+from js2py.pyjs import *
+# setting scope
+var = Scope( JS_BUILTINS )
+set_global_object(var)
+
+# Code follows:
+var.registers(['nameGen'])
+@Js
+def PyJsHoisted_nameGen_(type, this, arguments, var=var):
+    var = Scope({'arguments':arguments, 'this':this, 'type':type}, var)
+    var.registers(['nm1', 'nm4', 'nm5', 'type', 'nm3', 'tp', 'nm7', 'nm2', 'result', 'nm6'])
+    var.put('nm1', Js([Js('Üzeyir'), Js('ßşrÿf'), Js('ßdalat'), Js('ßlÿsgÿr'), Js('ßləkbər'), Js('ßliş'), Js('ßmin'), Js('ßnvÿr'), Js('ßsgÿr'), Js('İbiş'), Js('İbrahim'), Js('İlham'), Js('İlkin'), Js('İlqar'), Js('İlyas'), Js('İmam'), Js('İmran'), Js('İnqlab'), Js('İntiqam'), Js('İsa'), Js('İsgÿndÿr'), Js('İslam'), Js('İsmət'), Js('İsmayil'), Js('İxtiyar'), Js('İzzÿt'), Js('Şükür'), Js('Şÿfa'), Js('Şÿrÿfaddin'), Js('Şahin'), Js('Şamil'), Js('Şamxal'), Js('Şirin'), Js('Şirzad'), Js('Űlvi'), Js('Űmid'), Js('Əbűlhəsən'), Js('Əbdűləli'), Js('Əhmad'), Js('Əkbər'), Js('Əliəkrəm'), Js('Əli'), Js('Əmir'), Js('Ərtoğrul'), Js('Aüamÿli'), Js('Aüamusa'), Js('Aüaxan'), Js('Ağahadi'), Js('Ağasəfa'), Js('Abbas'), Js('Abbasqulu'), Js('Adil'), Js('Agil'), Js('Akif'), Js('Allahverdi'), Js('Anar'), Js('Arif'), Js('Asif'), Js('Asiman'), Js('Aslan'), Js('Atabala'), Js('Aydin'), Js('Azər'), Js('Azad'), Js('Bÿhaulla'), Js('Bÿhruz'), Js('Başir'), Js('Baba'), Js('Bahadur'), Js('Bakir'), Js('Bayram'), Js('Behbud'), Js('Bilal'), Js('Cəlal'), Js('Cəlil'), Js('Cəmil'), Js('Cabbar'), Js('Cahan'), Js('Cahangir'), Js('Cavad'), Js('Cavid'), Js('Ceymur'), Js('Ceyxun'), Js('Chingiz'), Js('Dadaş'), Js('Elçin'), Js('Elariz'), Js('Eldÿniz'), Js('Eldar'), Js('Elman'), Js('Elxan'), Js('Emin'), Js('Etibar'), Js('Eyyub'), Js('Füzuli'), Js('Fÿrid'), Js('Fÿrxad'), Js('Fÿyaz'), Js('Fərman'), Js('Fəxri'), Js('Faiq'), Js('Famil'), Js('Fazil'), Js('Fikrÿt'), Js('Firudin'), Js('Fuad'), Js('Gülaüa'), Js('Gündüz'), Js('Hümbət'), Js('Hüseyn'), Js('Hüseynqulu'), Js('Hÿmid'), Js('Həci'), Js('Həsən'), Js('Hafiz'), Js('Haydÿr'), Js('Israfil'), Js('Kÿrim'), Js('Kəmran'), Js('Kənan'), Js('Kamal'), Js('Kamil'), Js('Karlen'), Js('Kaz'), Js('Mübariz'), Js('Müzÿffar'), Js('Mÿmmÿd'), Js('Mənaf'), Js('Mənsur'), Js('Mahir'), Js('Maqsud'), Js('Mehdi'), Js('Mikayıl'), Js('Mirəli'), Js('Mirzÿ'), Js('Murad'), Js('Musa'), Js('Muxtar'), Js('Nübar'), Js('Nürÿddin'), Js('Nüsrət'), Js('Nəcəf'), Js('Nərmin'), Js('Nəsimi'), Js('Naği'), Js('Namiq'), Js('Nazim'), Js('Nicat'), Js('Niyaz'), Js('Nizami'), Js('Novruz'), Js('Oqtay'), Js('Orxan'), Js('Orxun'), Js('Osman'), Js('Paşa'), Js('Qabil'), Js('Qasim'), Js('Qiyas'), Js('Qoşqar'), Js('Qulam'), Js('Rüfət'), Js('Rüstÿm'), Js('Rÿsul'), Js('Rəşad'), Js('Rəşid'), Js('Rəis'), Js('Rafael'), Js('Rafiq'), Js('Ramiz'), Js('Rasim'), Js('Riza'), Js('Süleyman'), Js('Sÿbuhi'), Js('Sÿmÿd'), Js('Səlahəddin'), Js('Səlin'), Js('Sərvər'), Js('Sərvan'), Js('Sərxan'), Js('Sabir'), Js('Sadix'), Js('Saleh'), Js('Salman'), Js('Samir'), Js('Seyfulla'), Js('Seyran'), Js('Surxey'), Js('Tÿrlan'), Js('Tahir'), Js('Taqor'), Js('Teymurçin'), Js('Teymur'), Js('Teymuraz'), Js('Tofiq'), Js('Tunar'), Js('Tural'), Js('Turan'), Js('Urfan'), Js('Urxan'), Js('Vüqar'), Js('Vüsal'), Js('Vÿli'), Js('Vadim'), Js('Vahid'), Js('Valeh'), Js('Valid'), Js('Vaqif'), Js('Vasif'), Js('Xÿlil'), Js('Xalid'), Js('Xaliq'), Js('Xankişi'), Js('Xanlar'), Js('Yalçın'), Js('Yunis'), Js('Yusif'), Js('Zakir'), Js('Zaman'), Js('Zamin'), Js('Zamir'), Js('Zaur'), Js('Zeynal'), Js('Zeynulla'), Js('Ziya')]))
+    var.put('nm2', Js([Js('Çimnaz'), Js('ßdibÿ'), Js('ßdilÿ'), Js('ßminÿ'), Js('İlnarə'), Js('İlqarə'), Js('İnarə'), Js('İnayət'), Js('İnna'), Js('İntişar'), Js('İradə'), Js('İrina'), Js('İsmət'), Js('İzzÿt'), Js('Şüküfÿ'), Js('Şükür'), Js('Şÿfa'), Js('Şÿfiqÿ'), Js('Şəhrəbanu'), Js('Şəmsiyyə'), Js('Şərafət'), Js('Şirin'), Js('Űlviyya'), Js('Əcəbnaz'), Js('Əcmət'), Js('Əntigə'), Js('Əsmar'), Js('Afət'), Js('Afaq'), Js('Aidə'), Js('Aliyÿ'), Js('Almas'), Js('Arifÿ'), Js('Arzu'), Js('Ayçiçək'), Js('Ayüun'), Js('Aybÿniz'), Js('Aygül'), Js('Ayla'), Js('Aynur'), Js('Aysel'), Js('Aysu'), Js('Aytÿkin'), Js('Aytÿn'), Js('Bənövşə'), Js('Balaxanım'), Js('Brilyant'), Js('Cəmilə'), Js('Cahan'), Js('Dünya'), Js('Dünyamalı'), Js('Dürdanÿ'), Js('Dürnisa'), Js('Dilşad'), Js('Dilarÿ'), Js('Durna'), Js('Dursun'), Js('Elmirÿ'), Js('Elnarÿ'), Js('Esmeralda'), Js('Etiqad'), Js('Fÿxriyyÿ'), Js('Fatihÿ'), Js('Fatimə'), Js('Fatma'), Js('Fidan'), Js('Firəngiz'), Js('Firuzÿ'), Js('Fizzÿ'), Js('Flora'), Js('Gülüş'), Js('Gülüstan'), Js('Gülşÿn'), Js('Gülarÿ'), Js('Gülbala'), Js('Gülnarÿ'), Js('Gülnaz'), Js('Gültəkin'), Js('Günay'), Js('Gűlsűm'), Js('Hökümə'), Js('Həcər'), Js('Jalÿ'), Js('Könül'), Js('Kamalə'), Js('Lÿman'), Js('Lətifə'), Js('Lamiyə'), Js('Leyla'), Js('Liana'), Js('Lyudmila'), Js('Mÿdina'), Js('Mÿrziyya'), Js('Məhəbbət'), Js('Məhru'), Js('Mənsurə'), Js('Məryam'), Js('Məsmə'), Js('Mətanət'), Js('Mahirÿ'), Js('Maleykə'), Js('Mehparÿ'), Js('Meyransa'), Js('Minurə'), Js('Nüşabÿ'), Js('Nübar'), Js('Nÿrgiz'), Js('Nÿrminÿ'), Js('Nÿzakÿt'), Js('Nəfisə'), Js('Nəriman'), Js('Nəsib'), Js('Nahidə'), Js('Naibÿ'), Js('Nailə'), Js('Nasreen'), Js('Nasrin'), Js('Natəvan'), Js('Natalya'), Js('Natella'), Js('Nazilÿ'), Js('Nazli'), Js('Nigar'), Js('Nisÿ'), Js('Nonna'), Js('Nurşÿrÿf'), Js('Nurastÿ'), Js('Nurlanÿ'), Js('Pÿrvinÿ'), Js('Pərişan'), Js('Pakizə'), Js('Qalina'), Js('Qumru'), Js('Rübeyda'), Js('Rüxşarÿ'), Js('Rÿmilÿ'), Js('Rÿna'), Js('Rəfiqə'), Js('Rəhilə'), Js('Rəsmiyyə'), Js('Rəxşəndə'), Js('Raifə'), Js('Reyhan'), Js('Roza'), Js('Ruhÿngiz'), Js('Ruhiyyə'), Js('Sükeynÿ'), Js('Sÿbina'), Js('Sÿfurÿ'), Js('Sÿidÿ'), Js('Sÿriyya'), Js('Sűreyyə'), Js('Sədaqat'), Js('Səhər'), Js('Səmayə'), Js('Sərəncam'), Js('Sabirÿ'), Js('Sahibÿ'), Js('Samirÿ'), Js('Sara'), Js('Sevil'), Js('Sevinc'), Js('Sidiqə'), Js('Sima'), Js('Solmaz'), Js('Sona'), Js('Suüra'), Js('Tünzalə'), Js('Tÿrlan'), Js('Təhminə'), Js('Təranə'), Js('Tamaşa'), Js('Tamam'), Js('Tamara'), Js('Tamilla'), Js('Tinatin'), Js('Tuquyya'), Js('Tura'), Js('Turan'), Js('Ulduz'), Js('Vüsalÿ'), Js('Vÿfa'), Js('Vahidÿ'), Js('Validÿ'), Js('Xədicə'), Js('Xalidÿ'), Js('Xanim'), Js('Xatirə'), Js('Yana'), Js('Yeganÿ'), Js('Zöhrə'), Js('Züleyxa'), Js('Zülfiiyyə'), Js('Zümrüd'), Js('Zÿrifÿ'), Js('Zÿrinÿ'), Js('Zÿynÿgül'), Js('Zűbeydə'), Js('Zəhra'), Js('Zərnigar'), Js('Zaminÿ'), Js('Zarəngiz'), Js('Zemfira'), Js('Zeynəb'), Js('Zinÿt')]))
+    var.put('nm3', Js([Js('Abbasguliyev'), Js('Abbasov'), Js('Abdulayev'), Js('Abdulin'), Js('Abdullayev'), Js('Abdulov'), Js('Abdurrahimov'), Js('Abdurrahmanov'), Js('Abiyev'), Js('Abulhasanov'), Js('Adigozalov'), Js('Afandiyev'), Js('Aghababayev'), Js('Aghakhanov'), Js('Aghamaliyev'), Js('Aghamedhiyev'), Js('Aghamirov'), Js('Aghamirzayev'), Js('Aghanazarov'), Js('Aghayev'), Js('Ahadov'), Js('Ahmadov'), Js('Akbarov'), Js('Alakbarov'), Js('Alasgarov'), Js('Aliyev'), Js('Aljanov'), Js('Allahverdiyev'), Js('Allahyarov'), Js('Amirbeyov'), Js('Arablinski'), Js('Asgarov'), Js('Aslanov'), Js('Babayev'), Js('Baghirov'), Js('Bahlulov'), Js('Baylarbayov'), Js('Behbudov'), Js('Dadashov'), Js('Farajov'), Js('Fattahov'), Js('Gajarov'), Js('Gambarov'), Js('Garakhanov'), Js('Garayev'), Js('Gasimov'), Js('Gayibov'), Js('Gaziyev'), Js('Gharabaghi'), Js('Guliyev'), Js('Gurbanov'), Js('Hagverdiyev'), Js('Hajibabayev'), Js('Hajibeyov'), Js('Hajiyev'), Js('Hasanov'), Js('Haziyev'), Js('Heybatov'), Js('Hidayatov'), Js('Humbatov'), Js('Huseynov'), Js('Ibragimov'), Js('Ibrahimbeyov'), Js('Ibrahimov'), Js('Iravani'), Js('Isgandarov'), Js('Ismayilov'), Js('Jabbarov'), Js('Jabiyev'), Js('Jabrayilov'), Js('Jafarov'), Js('Jahangirov'), Js('Jalilov'), Js('Jamalov'), Js('Jamilov'), Js('Jamshidov'), Js('Janaliyev'), Js('Javadov'), Js('Karimov'), Js('Kazimov'), Js('Khalilov'), Js('Khanmammadow'), Js('Magsudov'), Js('Mahammadov'), Js('Maharramov'), Js('Mahmudov'), Js('Majidov'), Js('Mamishov'), Js('Mammadaliyev'), Js('Mammadbeyov'), Js('Mammadguliyev'), Js('Mammadov'), Js('Mehdiuev'), Js('Mehraliyev'), Js('Mirgasimov'), Js('Mirjavadov'), Js('Mirzayev'), Js('Nabiyev'), Js('Naghiyev'), Js('Najafov'), Js('Narimanbeyov'), Js('Orujov'), Js('Panahov'), Js('Rahimov'), Js('Rajabov'), Js('Salahov'), Js('Salmanov'), Js('Samedov'), Js('Seyidov'), Js('Shahbazov'), Js('Sharifov'), Js('Taghiyev'), Js('Tahmazov'), Js('Topchubashov'), Js('Vahabov'), Js('Valiyev'), Js('Vazirov'), Js('Zadeh')]))
+    var.put('nm4', Js([Js('Abbasguliyeva'), Js('Abbasova'), Js('Abdulayeva'), Js('Abdulin'), Js('Abdullayeva'), Js('Abdulova'), Js('Abdurrahimova'), Js('Abdurrahmanova'), Js('Abiyeva'), Js('Abulhasanova'), Js('Adigozalova'), Js('Afandiyeva'), Js('Aghababayeva'), Js('Aghakhanova'), Js('Aghamaliyeva'), Js('Aghamedhiyeva'), Js('Aghamirova'), Js('Aghamirzayeva'), Js('Aghanazarova'), Js('Aghayeva'), Js('Ahadova'), Js('Ahmadova'), Js('Akbarova'), Js('Alakbarova'), Js('Alasgarova'), Js('Aliyeva'), Js('Aljanova'), Js('Allahverdiyeva'), Js('Allahyarova'), Js('Amirbeyova'), Js('Arablinski'), Js('Asgarova'), Js('Aslanova'), Js('Babayeva'), Js('Baghirova'), Js('Bahlulova'), Js('Baylarbayova'), Js('Behbudova'), Js('Dadashova'), Js('Farajova'), Js('Fattahova'), Js('Gajarova'), Js('Gambarova'), Js('Garakhanova'), Js('Garayeva'), Js('Gasimova'), Js('Gayibova'), Js('Gaziyeva'), Js('Gharabaghi'), Js('Guliyeva'), Js('Gurbanova'), Js('Hagverdiyeva'), Js('Hajibabayeva'), Js('Hajibeyova'), Js('Hajiyeva'), Js('Hasanova'), Js('Haziyeva'), Js('Heybatova'), Js('Hidayatova'), Js('Humbatova'), Js('Huseynova'), Js('Ibragimova'), Js('Ibrahimbeyova'), Js('Ibrahimova'), Js('Iravani'), Js('Isgandarova'), Js('Ismayilova'), Js('Jabbarova'), Js('Jabiyeva'), Js('Jabrayilova'), Js('Jafarova'), Js('Jahangirova'), Js('Jalilova'), Js('Jamalova'), Js('Jamilova'), Js('Jamshidova'), Js('Janaliyeva'), Js('Javadova'), Js('Karimova'), Js('Kazimova'), Js('Khalilova'), Js('Khanmammadow'), Js('Magsudova'), Js('Mahammadova'), Js('Maharramova'), Js('Mahmudova'), Js('Majidova'), Js('Mamishova'), Js('Mammadaliyeva'), Js('Mammadbeyova'), Js('Mammadguliyeva'), Js('Mammadova'), Js('Mehdiueva'), Js('Mehraliyeva'), Js('Mirgasimova'), Js('Mirjavadova'), Js('Mirzayeva'), Js('Nabiyeva'), Js('Naghiyeva'), Js('Najafova'), Js('Narimanbeyova'), Js('Orujova'), Js('Panahova'), Js('Rahimova'), Js('Rajabova'), Js('Salahova'), Js('Salmanova'), Js('Samedova'), Js('Seyidova'), Js('Shahbazova'), Js('Sharifova'), Js('Taghiyeva'), Js('Tahmazova'), Js('Topchubashova'), Js('Vahabova'), Js('Valiyeva'), Js('Vazirova'), Js('Zadeh')]))
+    var.put('nm5', Js([Js('oğlu'), Js('lı'), Js('li'), Js('lu'), Js('lü'), Js('gil'), Js('soy'), Js('zadə')]))
+    var.put('nm6', Js([Js('qızı'), Js('lı'), Js('li'), Js('lu'), Js('lü'), Js('gil'), Js('soy'), Js('zadə')]))
+    var.put('nm7', Js([Js('a'), Js('e'), Js('i'), Js('o'), Js('u'), Js('y'), Js('ə'), Js('ÿ')]))
+    var.put('tp', var.get('type'))
+    var.put('result', Js([]))
+    #for JS loop
+    var.put('i', Js(0.0))
+    while (var.get('i')<Js(10.0)):
+        try:
+            if PyJsStrictEq(var.get('tp'),Js(1.0)):
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm2').get('length'))))
+                if (var.get('i')<Js(5.0)):
+                    var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm4').get('length'))))
+                    var.put('names', ((var.get('nm2').get(var.get('rnd'))+Js(' '))+var.get('nm4').get(var.get('rnd2'))))
+                    var.get('nm4').callprop('splice', var.get('rnd2'), Js(1.0))
+                else:
+                    var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm1').get('length'))))
+                    var.put('rnd3', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm6').get('length'))))
+                    var.put('names', (((var.get('nm2').get(var.get('rnd'))+Js(' '))+var.get('nm1').get(var.get('rnd2')))+var.get('nm6').get(var.get('rnd3'))))
+                var.get('nm2').callprop('splice', var.get('rnd'), Js(1.0))
+            else:
+                var.put('rnd', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm1').get('length'))))
+                if (var.get('i')<Js(5.0)):
+                    var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm3').get('length'))))
+                    var.put('names', ((var.get('nm1').get(var.get('rnd'))+Js(' '))+var.get('nm3').get(var.get('rnd2'))))
+                    var.get('nm3').callprop('splice', var.get('rnd2'), Js(1.0))
+                else:
+                    var.put('rnd2', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm1').get('length'))))
+                    var.put('rnd3', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm5').get('length'))))
+                    #for JS loop
+                    var.put('j', Js(0.0))
+                    while (var.get('j')<=var.get('nm7').get('length')):
+                        try:
+                            if PyJsStrictEq(var.get('nm1').get(var.get('rnd2')).callprop('substr', (var.get('nm1').get(var.get('rnd2')).get('length')-Js(1.0))),var.get('j')):
+                                while PyJsStrictEq(var.get('rnd3'),Js(0.0)):
+                                    var.put('rnd3', var.get('Math').callprop('floor', (var.get('Math').callprop('random')*var.get('nm5').get('length'))))
+                        finally:
+                                (var.put('j',Js(var.get('j').to_number())+Js(1))-Js(1))
+                    var.put('names', (((var.get('nm1').get(var.get('rnd'))+Js(' '))+var.get('nm1').get(var.get('rnd2')))+var.get('nm5').get(var.get('rnd3'))))
+                var.get('nm1').callprop('splice', var.get('rnd'), Js(1.0))
+            var.get('result').callprop('push', var.get('names'))
+        finally:
+                (var.put('i',Js(var.get('i').to_number())+Js(1))-Js(1))
+    pass
+    return var.get('result')
+PyJsHoisted_nameGen_.func_name = 'nameGen'
+var.put('nameGen', PyJsHoisted_nameGen_)
+pass
+pass
+
+
+# Add lib to the module scope
+azerbaijaniNames = var.to_python()
